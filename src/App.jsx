@@ -5,7 +5,7 @@ import EthosBlogCMS from './ui/projects/ethosBlogCMS/EthosBlogCMS';
 import PageNotFound from './ui/PageNotFound';
 import Casamento from './ui/projects/casamento/Casamento';
 import EthosBlog from './ui/projects/ethosBlog/EthosBlog';
-import UseGames from './ui/projects/UseGames/useGames';
+import UseGames from './ui/projects/useGames/useGames';
 import Yakuza from './ui/projects/yakuza/Yakuza';
 import Layout from './ui/Layout';
 import Timer from './ui/projects/timer/Timer';

@@ -1,11 +1,13 @@
 import { Outlet, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import Header from './header/Header';
 import Footer from './Footer';
-import { useTranslation } from 'react-i18next';
 
 function Layout() {
    const location = useLocation();
    const { i18n } = useTranslation();
+
    const currentLanguage = i18n.language;
    const pathname = location.pathname;
 
