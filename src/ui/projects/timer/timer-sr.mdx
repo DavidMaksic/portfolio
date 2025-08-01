@@ -1,0 +1,104 @@
+import ArticleH2 from './../ArticleH2';
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+
+import TimerImg from './../../../../assets/timer.png';
+import TimerImg1 from './../../../../assets/timer-1.png';
+import TimerImg2 from './../../../../assets/timer-2.png';
+import TimerImg3 from './../../../../assets/timer-3.png';
+import TimerImg4 from './../../../../assets/timer-4.png';
+import TimerImg5 from './../../../../assets/timer-5.png';
+
+import TimerMobileImg1 from './../../../../assets/timer-mobile-1.png';
+import TimerMobileImg2 from './../../../../assets/timer-mobile-2.png';
+import TimerMobileImg3 from './../../../../assets/timer-mobile-3.png';
+import TimerMobileImg4 from './../../../../assets/timer-mobile-4.png';
+import TimerMobileImg5 from './../../../../assets/timer-mobile-5.png';
+
+# Тренинг Тајмер
+
+### Једноставан тајмер са опцијом за прављење предефинисаних тренинга.
+
+<HeroImage image={TimerImg} title="Тренинг Тајмер" />
+
+Тренинг Тајмер је апликација коју покреће React где корисници могу да направе и сачувају планове за тренинг. Апликација користи Redux Toolkit за напредни state management.
+
+<br />
+<br />
+
+<TableOfContents h2Arr={['брз-тренинг', 'прављење-плана']} />
+
+<br />
+<br />
+
+<ArticleH2 id={'брз-тренинг'} text={'Брз тренинг'} />
+
+Почетна страна (која може да се види изнад) нуди стандардне опције за подешавање тренинга: сет, рад и одмор. Након што корисник кликне START дугме, екран са тајмером ће се појавити. Овде корисник може да прескочи сет или заустави свој тренинг.
+
+<br />
+
+<ArticleImage
+   image={TimerImg1}
+   imageMobile={TimerMobileImg1}
+   isResponsive={true}
+   alt="Екран са тајмером"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'прављење-плана'} text={'Прављење плана'} />
+
+Корисник има опцију да брзо направи план за тренинг на почетном екрану, ако кликне на SAVE дугме. Видеће модални екран који очекује од њега да упише име тренинга. Овај тренинг ће бити направљен на основу података са почетном екрана (сет, рад и одмор).
+
+<br />
+
+<ArticleImage
+   image={TimerImg2}
+   imageMobile={TimerMobileImg2}
+   isResponsive={true}
+   alt="Екран за прављење плана"
+/>
+
+<br />
+<br />
+
+Након што направи план како је приказано изнад, или након што кликне на PRESETS дугме на почетној страни, корисник ће бити пребачен на страницу са плановима за тренинге где ће сви његови планови бити приказани. Овде ће такође имати опцију да направи нови план.
+
+<br />
+
+<ArticleImage
+   image={TimerImg3}
+   imageMobile={TimerMobileImg3}
+   isResponsive={true}
+   alt="Екран са плановима за тренинге"
+/>
+
+<br />
+<br />
+
+Ако изабере да направи план на PRESETS страни, биће му приказана посебна страна која очекује све неопходне податке.
+
+<br />
+
+<ArticleImage
+   image={TimerImg4}
+   imageMobile={TimerMobileImg4}
+   isResponsive={true}
+   alt="Екран за прављење плана"
+/>
+
+<br />
+<br />
+
+Након што подеси параметре плана, корисник може започети тренинг.
+
+<br />
+
+<ArticleImage
+   image={TimerImg5}
+   imageMobile={TimerMobileImg5}
+   isResponsive={true}
+   alt="Екран са тајмером"
+/>

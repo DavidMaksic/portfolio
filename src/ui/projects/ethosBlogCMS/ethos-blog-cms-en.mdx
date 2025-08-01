@@ -1,0 +1,232 @@
+import ArticleH2 from './../ArticleH2';
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+
+import EthosCMSImg from './../../../../assets/ethos-cms.png';
+import CmsImg1 from './../../../../assets/cms-1.png';
+import CmsImg3 from './../../../../assets/cms-3.png';
+import CmsImg4 from './../../../../assets/cms-4.png';
+import CmsImg5 from './../../../../assets/cms-5.png';
+import CmsImg6 from './../../../../assets/cms-6.png';
+import CmsImg7 from './../../../../assets/cms-7.png';
+import CmsImg8 from './../../../../assets/cms-8.png';
+import CmsImg9 from './../../../../assets/cms-9.png';
+import CmsImg10 from './../../../../assets/cms-10.png';
+import CmsImg11 from './../../../../assets/cms-11.png';
+import CmsImg12 from './../../../../assets/cms-12.png';
+import CmsImg13 from './../../../../assets/cms-13.png';
+import CmsImg14 from './../../../../assets/cms-14.png';
+import CmsImg15 from './../../../../assets/cms-15.png';
+import CmsImg16 from './../../../../assets/cms-16.png';
+import CmsImg17 from './../../../../assets/cms-17.png';
+import CmsImg18 from './../../../../assets/cms-18.png';
+
+# Ethos Blog CMS
+
+### A Content Management System (CMS) app for managing blog website. Only authors have access to enter the app. Contains WYSIWYG text editor.
+
+<HeroImage image={EthosCMSImg} title="Ethos Blog CMS" />
+
+This is the internal application for the Ethos blog, only accessable to the authors of the blog. It's an SPA powered by **React**, providing users with fast navigation.
+
+<br />
+
+Authentication and authorization are implemented using **Supabase Auth**. For writing
+articles, **BlockNote** text editor is used. As for responsive design, desktops and
+laptops are supported. Application data is stored in **Supabase** database. Deployed
+on **Vercel**.
+
+<br />
+<br />
+
+<TableOfContents
+   h2Arr={[
+      'log-in-screen',
+      'dashboard',
+      'article-creator',
+      'article-management',
+      'features',
+      'tag-creator',
+      'author-list',
+      'settings',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'log-in-screen'} text={'Log in screen'} />
+
+First of all, only approved users can log in. Existing authors are the only ones who can create new authors. When new author wants to gain access to the site, they use a password provided by an existing author and, after they verify their e-mail address, they can log in.
+
+<br />
+
+<ArticleImage image={CmsImg1} alt="Log in screen" />
+
+<br />
+<br />
+
+<ArticleH2 id={'dashboard'} text={'Dashboard'} />
+
+Upon logging in, new author will see the dashboard page, which contains all the relevant information and statistics about the blog. Here user can see all the drafted articles that haven't been published yet.
+
+<br />
+
+<ArticleImage image={EthosCMSImg} alt="Dashboard" />
+
+<br />
+<br />
+
+<ArticleH2 id={'article-creator'} text={'Article creator'} />
+
+Here authors can write their articles. There are a lot of options, such as choosing a title, description, category and image (which can be previewed); language can be set as well, which changes article's font. There is also a side config button on the right, which opens a small menu with theme, fullscreen and scroll options.
+
+<br />
+
+<ArticleImage image={CmsImg3} alt="Article creator" />
+
+<br />
+<br />
+
+Fullscreen option temporarily hides sidebar and header, which gives more space for easier writing. As for the article's content, thanks to the WYSIWYG text editor, author has many options for styling the text.
+
+<br />
+
+<ArticleImage image={CmsImg4} alt="Article creator" />
+
+<br />
+<br />
+
+<ArticleH2 id={'article-management'} text={'Article management'} />
+
+Arhive is the major part of the app. Here authors can see basic information regarding all the articles; they can search, sort, filter by status, etc.
+
+<br />
+
+<ArticleImage image={CmsImg5} alt="Archive" />
+
+<br />
+<br />
+
+If they click on article's title, they can see how an article looks. Main image card contains edit and delete options.
+
+<br />
+
+<ArticleImage image={CmsImg6} alt="Article page" />
+
+<br />
+<br />
+
+While inspecting the article, author can use basic options on the right. For example, table of contents.
+
+<br />
+
+<ArticleImage image={CmsImg7} alt="Article page options" />
+
+<br />
+<br />
+
+Authors can edit their articles, with the same options as in article creator.
+
+<br />
+
+<ArticleImage image={CmsImg8} alt="Article edit page" />
+
+<br />
+<br />
+
+When they are done with editing, authors can also change current status of the article.
+
+<br />
+
+<ArticleImage image={CmsImg9} alt="Article edit page" />
+
+<br />
+<br />
+
+<ArticleH2 id={'features'} text={'Features'} />
+
+This page has two parts: main and tag features. Here authors can decide which articles will be featured on the landing page of the blog. "Main features" is a slider with one or more articles.
+
+<br />
+
+<ArticleImage image={CmsImg10} alt="Main features" />
+
+<br />
+<br />
+
+"Tag features" is a collection of 3 articles; each tag can have up to 3 featured articles. If there are only 2 featured articles here, they won't be displayed; 3 articles are a minimum.
+
+<br />
+
+<ArticleImage image={CmsImg11} alt="Tag features" />
+
+<br />
+<br />
+
+When adding articles, this modal will show up. Author can search and choose which article to feature.
+
+<br />
+
+<ArticleImage image={CmsImg12} alt="Feature modal" />
+
+<br />
+<br />
+
+<ArticleH2 id={'tag-creator'} text={'Tag creator'} />
+
+On this page authors can create new tags (categories). They can choose colors, and see the preview.
+
+<br />
+
+<ArticleImage image={CmsImg13} alt="Tag creator" />
+
+<br />
+<br />
+
+Same options are provided when editing existing tags. When choosing a color, a modal pops up that provides plenty of options.
+
+<br />
+
+<ArticleImage image={CmsImg14} alt="Tag edit" />
+
+<br />
+<br />
+
+<ArticleH2 id={'author-list'} text={'Author list'} />
+
+All authors are displayed here, with some basic information about them.
+
+<br />
+
+<ArticleImage image={CmsImg15} alt="Authors page" />
+
+<br />
+<br />
+
+If the gear icon is clicked, author will be navigated to the profile settings page. Here they can change their full name, description, image or password.
+
+<br />
+
+<ArticleImage image={CmsImg16} alt="Profile edit" />
+
+<br />
+<br />
+
+When creating a new author, all the standard information is required. In all inputs of the app, validation is implemented; in this case, passwords need to match, and other fields must not be empty.
+
+<br />
+
+<ArticleImage image={CmsImg17} alt="Author creator" />
+
+<br />
+<br />
+
+<ArticleH2 id={'settings'} text={'Settings'} />
+
+Currently, there is only one setting here: the comment length.
+
+<br />
+
+<ArticleImage image={CmsImg18} alt="Settings" />

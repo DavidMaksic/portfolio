@@ -1,0 +1,119 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleH2 from './../ArticleH2';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+
+import BlogImg from './../../../../assets/blog.png';
+import BlogImg1 from './../../../../assets/blog-1.png';
+import BlogImg2 from './../../../../assets/blog-2.png';
+import BlogImg3 from './../../../../assets/blog-3.png';
+import BlogImg4 from './../../../../assets/blog-4.png';
+import BlogImg5 from './../../../../assets/blog-5.png';
+
+import BlogMobileImg from './../../../../assets/blog-mobile.png';
+import BlogMobileImg1 from './../../../../assets/blog-mobile-1.png';
+import BlogMobileImg2 from './../../../../assets/blog-mobile-2.png';
+import BlogMobileImg3 from './../../../../assets/blog-mobile-3.png';
+import BlogMobileImg4 from './../../../../assets/blog-mobile-4.png';
+import BlogMobileImg5 from './../../../../assets/blog-mobile-5.png';
+
+# Блог Апликација
+
+### Једноставна блогинг апликација са функцијом обележавања чланака. Направљена са ванила JavaScript-ом користећи MVC архитектуру.
+
+<HeroImage
+   image={BlogImg}
+   imageMobile={BlogMobileImg}
+   isResponsive={true}
+   title="Блог Апликација"
+/>
+
+Мој Блог је ванила JavaScript апликација која омогућава својим корисницима да пишу, мењају и бришу чланке. Направљена је у HTML-у, са ванила CSS-ом и JavaScript-ом. Апликација је структуисана користећи MVC (Model-View-Controller) архитектуру, која раздваја апликацију у три дела зарад лакшег разумевања.
+
+<br />
+<br />
+
+<TableOfContents
+   h2Arr={['почетни-екран', 'писање-чланка', 'управљање-сачуваним-чланцима']}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'почетни-екран'} text={'Почетни екран'} />
+
+Ако још није објављен ни један чланак, корисник ће видети ову поруку. Чланци могу бити филтрирани по категоријама и сачувани за касније читање.
+
+<br />
+
+<ArticleImage
+   image={BlogImg1}
+   imageMobile={BlogMobileImg1}
+   isResponsive={true}
+   alt="Почетни екран"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'писање-чланка'} text={'Писање чланка'} />
+
+Након што је дугме за додавање чланка притиснуто, појавиће се модални прозор за писање чланка. Овде корисник може да пише чланак, и да изабере одговарајућу категорију. Markdown је подржан у писању текста, што може да се види на слици испод.
+
+<br />
+
+<ArticleImage
+   image={BlogImg2}
+   imageMobile={BlogMobileImg2}
+   isResponsive={true}
+   alt="Кретор чланака"
+/>
+
+<br />
+<br />
+
+Након објављивања чланка, модални прозор ће се затворити и чланак ће бити приказан.
+
+<br />
+
+<ArticleImage
+   image={BlogImg3}
+   imageMobile={BlogMobileImg3}
+   isResponsive={true}
+   alt="Садржај чланка"
+/>
+
+<br />
+<br />
+
+Ако корисник није задовољан са резултатом, чланак може бити измењен или избрисан.
+
+<br />
+
+<ArticleImage
+   image={BlogImg4}
+   imageMobile={BlogMobileImg4}
+   isResponsive={true}
+   alt="Article options"
+/>
+
+<br />
+<br />
+
+<ArticleH2
+   id={'управљање-сачуваним-чланцима'}
+   text={'Управљање сачуваним чланцима'}
+/>
+
+Артикли могу бити сачувани, након чега ће се налазити у горњем левом делу странице.
+
+<br />
+
+<ArticleImage
+   image={BlogImg5}
+   imageMobile={BlogMobileImg5}
+   isResponsive={true}
+   alt="Управљање сачуваним чланцима"
+/>
+
+<br />

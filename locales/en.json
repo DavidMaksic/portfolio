@@ -1,0 +1,45 @@
+{
+   "Header": {
+      "nav-link-1": "Projects",
+      "nav-link-2": "About",
+      "nav-link-3": "Skills",
+      "return": "Return"
+   },
+
+   "HeroPart1": "I'm ",
+   "HeroPart2": ", a Front-End developer who builds and designs websites using ",
+   "HeroPart3": " and ",
+
+   "Projects": {
+      "h1": "My Projects",
+      "show-more-btn": "Show more",
+      "show-less-btn": "Show less"
+   },
+
+   "About": {
+      "h1": "About me",
+      "name": "David Maksić",
+      "p1": "I'm a self-taught Front-End web developer from Serbia. I'm 25 and my current focus is learning Next.js and React. Other technologies I'm interested in are TypeScript and UI libraries (and many more).",
+      "p2-part1": "My web-dev journey started when I found out you don't need to be math expert to code, but mainly to exercise logic. I was recommended ",
+      "p2-part2": " as a first step into web development in 2021 and have started slowly looking into it throughout 2022. As my learning got more serious, in 2023 I decided to work harder as I started building small projects where I practiced basics: HTML, CSS and Javascript.",
+      "p3-part1": "In 2024 I started learning ",
+      "p3-part2": " which changed my perspective of coding; building modern web apps got so much more easier and fun. After some time I decided to cover ",
+      "p3-part3": " as well, by creating something I wanted to do for some time: a fully functional blog built from scratch."
+   },
+
+   "Skills": {
+      "h1": "Skills",
+      "core-tech": "Core Technologies",
+      "other-tech": "Database and Development Tools"
+   },
+
+   "Footer": {
+      "p1-part1": "Built with ",
+      "p1-part2": " and ",
+      "p1-part3": ". Hosted on ",
+      "p1-part4": "",
+      "p2": "Copyright © 2025 David Maksić. All rights reserved."
+   },
+
+   "TableOfContents": "Table of contents"
+}

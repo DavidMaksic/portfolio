@@ -1,0 +1,49 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
+
+import UseGamesImg from './../../../../assets/use-games.png';
+import UseGamesImg1 from './../../../../assets/use-games-1.png';
+import UseGamesImg2 from './../../../../assets/use-games-2.png';
+
+# useGames Апликација
+
+### Апликација која преузима податке о видео-играма користећи REST API. Корисници могу да разгледају, оцене и сачувају игре.
+
+<HeroImage image={UseGamesImg} title="useGames Апликација" />
+
+UseGames је апликација где је могуће тражити, оценити и сачувати видео-игре. Направљена је са React-ом и Tailwind CSS-ом. RAWG API је коришћен за преузимање података о играма.
+
+<br />
+<br />
+
+<TableOfContents h2Arr={['тражење-књиге', 'преглед-сачуваних-књига']} />
+
+<br />
+<br />
+
+<ArticleH2 id={'тражење-књиге'} text={'Тражење књиге'} />
+
+Када корисник напише име игре, листа игара ће се појавити на левој страни екрана, где свака игра може бити изабрана. Са десне стране су приказани детаљи о тренутно изабраној игри, где се од корисника очекује да оцени игру и да упише колико му је сати било потребно да је пређе. Корисник може да сачува игру само ако је попунио оба податка.
+
+<br />
+
+<ArticleImage image={UseGamesImg1} alt="Тражење књиге" isResponsive={false} />
+
+<br />
+<br />
+
+<ArticleH2 id={'преглед-сачуваних-књига'} text={'Преглед сачуваних књига'} />
+
+По повратку на почетни екран, са десне стране ће бити приказане сачуване игре и одређене статистике везане за њих.
+
+<br />
+
+<ArticleImage
+   image={UseGamesImg2}
+   alt="Преглед сачуваних књига"
+   isResponsive={false}
+/>
+
+<br />

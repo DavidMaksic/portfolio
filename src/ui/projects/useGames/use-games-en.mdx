@@ -1,0 +1,53 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
+
+import UseGamesImg from './../../../../assets/use-games.png';
+import UseGamesImg1 from './../../../../assets/use-games-1.png';
+import UseGamesImg2 from './../../../../assets/use-games-2.png';
+
+# useGames App
+
+### App which fetches game data using REST API. Users can browse, rate and save games.
+
+<HeroImage image={UseGamesImg} title="useGames App" />
+
+useGames is a browsing app for finding, rating and saving video-games. It's built with React and Tailwind CSS. RAWG video game API is used for data fetching.
+
+<br />
+<br />
+
+<TableOfContents h2Arr={['searching-for-a-game', 'managing-saved-games']} />
+
+<br />
+<br />
+
+<ArticleH2 id={'searching-for-a-game'} text={'Searching for a game'} />
+
+When user searches for a game, a list of games will be displayed on the left side, from which each game can be selected. On the right, details of the currently selected game are displayed, where user can input data: rating and hours played. User can save the game only if both are specified.
+
+<br />
+
+<ArticleImage
+   image={UseGamesImg1}
+   alt="Searching for a game"
+   isResponsive={false}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'managing-saved-games'} text={'Managing saved games'} />
+
+Upon returning to the initial screen, game statistics will be shown on the right, along with the list of saved games.
+
+<br />
+
+<ArticleImage
+   image={UseGamesImg2}
+   alt="Managing saved games"
+   isResponsive={false}
+/>
+
+<br />

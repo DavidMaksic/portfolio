@@ -1,0 +1,258 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
+
+import EthosImg from './../../../../assets/ethos.png';
+import EthosImg0 from './../../../../assets/ethos-0.png';
+import EthosImg1 from './../../../../assets/ethos-1.png';
+import EthosImg2 from './../../../../assets/ethos-2.png';
+import EthosImg3 from './../../../../assets/ethos-3.png';
+import EthosImg4 from './../../../../assets/ethos-4.png';
+import EthosImg5 from './../../../../assets/ethos-5.png';
+import EthosImg6 from './../../../../assets/ethos-6.png';
+import EthosImg7 from './../../../../assets/ethos-7.png';
+import EthosImg8 from './../../../../assets/ethos-8.png';
+import EthosImg9 from './../../../../assets/ethos-9.png';
+import EthosImg10 from './../../../../assets/ethos-10.png';
+import EthosImg11 from './../../../../assets/ethos-11.png';
+import EthosImg12 from './../../../../assets/ethos-12.png';
+
+import EthosMobileImg0 from './../../../../assets/ethos-mobile-0.jpg';
+import EthosMobileImg1 from './../../../../assets/ethos-mobile-1.png';
+import EthosMobileImg2 from './../../../../assets/ethos-mobile-2.png';
+import EthosMobileImg3 from './../../../../assets/ethos-mobile-3.webp';
+import EthosMobileImg4 from './../../../../assets/ethos-mobile-4.png';
+import EthosMobileImg5 from './../../../../assets/ethos-mobile-5.png';
+import EthosMobileImg6 from './../../../../assets/ethos-mobile-6.jpg';
+import EthosMobileImg7 from './../../../../assets/ethos-mobile-7.png';
+import EthosMobileImg8 from './../../../../assets/ethos-mobile-8.png';
+import EthosMobileImg9 from './../../../../assets/ethos-mobile-9.png';
+import EthosMobileImg10 from './../../../../assets/ethos-mobile-10.png';
+import EthosMobileImg11 from './../../../../assets/ethos-mobile-11.png';
+import EthosMobileImg12 from './../../../../assets/ethos-mobile-12.png';
+
+# Етос Блог
+
+### Блог вебсајт направљен користећи Next.js који садржи интернационализацију, аутентикацију корисника и систем коментарисања.
+
+<HeroImage image={EthosImg} title="Етос Блог" />
+
+Etos Блог омогућава својим корисницама да раде много тога: читају и сачувају чланке, коментаришу, итд. Вебсајт покреће **Next.js** који пружа брзо почетно учитавање и рендеровање на серверу.
+
+<br />
+
+Аутентикација и ауторизација су изведене користећи **NextAuth**.
+Интернационализација је подржана захваљујући **next-intl** библиотеци. **Tailwind-а** је коришћен за стилизовање и сајт је могуће користити на уређајима разних величина захваљујући прилагодљивом дизајну.
+
+<br />
+
+Подаци из апликације су сачувани у **Supabase-овој** бази података. Сајт је хостован
+на **Vercel-у**.
+
+<br />
+<br />
+
+<TableOfContents
+   h2Arr={[
+      'почетна-страна',
+      'чланак',
+      'архива',
+      'о-блогу',
+      'кориснички-профил',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'почетна-страна'} text={'Почетна страна'} />
+
+При уласку на блог, корисник ће прво видети слајдер са истакнутим чланцима. На врху се налази мени са навигацијом, корисничким профилом и дугмад за промену теме и језика. На мобилним уређајима, овај мени је померен у модални прозор.
+
+<br />
+
+<ArticleImage
+   image={EthosImg0}
+   imageMobile={EthosMobileImg0}
+   alt="Почетна страна"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Испод, корисник ће видети чланке из истакнутих категорија.
+
+<br />
+
+<ArticleImage
+   image={EthosImg1}
+   imageMobile={EthosMobileImg1}
+   alt="Истакнуте категорије"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Задњи сегмент почетне стране је секција "Најновији чланци", где корисник има опцију да филтрира чланке по категоријама.
+
+<br />
+
+<ArticleImage
+   image={EthosImg2}
+   imageMobile={EthosMobileImg2}
+   alt="Најновији чланци"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'чланак'} text={'Чланак'} />
+
+Ово је главни део блога. Испод наслова се налази главна слика са основним подацима о аутору и пар опција.
+
+<br />
+
+<ArticleImage
+   image={EthosImg3}
+   imageMobile={EthosMobileImg3}
+   alt="Чланак"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Сви чланци су написани користећи WYSIWYG текст едитор, што значи да су богато улепшани и уређени са сликама, видеима, итд. Све слике је могуће глатко увећати кликом. Са десне стране се налази дугме за конфигурацију које има пар корисних опција (садржај, промена теме, итд).
+
+<br />
+
+<ArticleImage
+   image={EthosImg4}
+   imageMobile={EthosMobileImg4}
+   alt="Опције чланка"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Након садржаја чланка, корисник ће видети картицу са подацима о аутору. Са леве стране се налазе основне опције за: лајковање, коментарисање, сачување и дељење чланка. Испод, корисник може да остави коментар (ако је пријављен).
+
+<br />
+
+<ArticleImage
+   image={EthosImg5}
+   imageMobile={EthosMobileImg5}
+   alt="Опције чланка"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Овај део странице приказује све коментаре и одговоре, са опцијом за сортирање. Корисници могу да лајкују коментаре, и да сакрију одговоре.
+
+<br />
+
+<ArticleImage
+   image={EthosImg6}
+   imageMobile={EthosMobileImg6}
+   alt="Коментари"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'архива'} text={'Архива'} />
+
+На овој страни корисници могу да претражују, сортирају и филтрирају све чланке.
+
+<br />
+
+<ArticleImage
+   image={EthosImg7}
+   imageMobile={EthosMobileImg7}
+   alt="Архива"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'о-блогу'} text={'О блогу'} />
+
+Овде корисници могу прочитати кратак опис овог блога и сазнати етимологију његовог имена. Испод се налази листа свих аутора.
+
+<br />
+
+<ArticleImage
+   image={EthosImg8}
+   imageMobile={EthosMobileImg8}
+   alt="О блогу"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'кориснички-профил'} text={'Кориснички профил'} />
+
+Након пријављивања, корисник ће имати приступ свом профилу. Испрва ће видети страницу "Преглед", која приказује неке профилне статистике.
+
+<br />
+
+<ArticleImage
+   image={EthosImg9}
+   imageMobile={EthosMobileImg9}
+   alt="Преглед профила"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Након навигације на секцију "Коментари", корисник ће видети све своје коментаре и одговоре. Може да их сортира, и још битније, да оде на њихову позицију у чланку кликом.
+
+<br />
+
+<ArticleImage
+   image={EthosImg10}
+   imageMobile={EthosMobileImg10}
+   alt="Кориснички коментари"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+У екцији "Сачувано", корисник има приступ свим сачуваним чланцима. Претрага, сортирање и пагинација су доступни, као и у архиви.
+
+<br />
+
+<ArticleImage
+   image={EthosImg11}
+   imageMobile={EthosMobileImg11}
+   alt="Сачувани чланци"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Напокон, стижемо до подешавања профила. Овде корисник може да промени своје име и профилну слику.
+
+<br />
+
+<ArticleImage
+   image={EthosImg12}
+   imageMobile={EthosMobileImg12}
+   alt="Подешавање профила"
+   isResponsive={true}
+/>
+
+<br />

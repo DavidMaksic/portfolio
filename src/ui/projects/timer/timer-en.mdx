@@ -1,0 +1,104 @@
+import ArticleH2 from './../ArticleH2';
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+
+import TimerImg from './../../../../assets/timer.png';
+import TimerImg1 from './../../../../assets/timer-1.png';
+import TimerImg2 from './../../../../assets/timer-2.png';
+import TimerImg3 from './../../../../assets/timer-3.png';
+import TimerImg4 from './../../../../assets/timer-4.png';
+import TimerImg5 from './../../../../assets/timer-5.png';
+
+import TimerMobileImg1 from './../../../../assets/timer-mobile-1.png';
+import TimerMobileImg2 from './../../../../assets/timer-mobile-2.png';
+import TimerMobileImg3 from './../../../../assets/timer-mobile-3.png';
+import TimerMobileImg4 from './../../../../assets/timer-mobile-4.png';
+import TimerMobileImg5 from './../../../../assets/timer-mobile-5.png';
+
+# Training Timer
+
+### A simple timer with preset feature for creating multiple workouts.
+
+<HeroImage image={TimerImg} title="Training Timer" />
+
+Training Timer is a React-powered app that enables the user to create a workout from the get-go, or to create a preset. It's built using Redux Toolkit for advanced state management.
+
+<br />
+<br />
+
+<TableOfContents h2Arr={['quick-workout', 'creating-a-preset']} />
+
+<br />
+<br />
+
+<ArticleH2 id={'quick-workout'} text={'Quick workout'} />
+
+Initial page (which can be seen above) offers some basic workout options: sets, work and rest. After user clicks the START button, workout timer screen will appear. Here user can skip the sets or pause his training.
+
+<br />
+
+<ArticleImage
+   image={TimerImg1}
+   imageMobile={TimerMobileImg1}
+   isResponsive={true}
+   alt="Timer screen"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'creating-a-preset'} text={'Creating a preset'} />
+
+User has an option to create a preset quickly on the initial screen by pressing the SAVE button. They will see a modal which requires a name to be inputed. This workout will be created based on the initial screen data (sets, work and rest).
+
+<br />
+
+<ArticleImage
+   image={TimerImg2}
+   imageMobile={TimerMobileImg2}
+   isResponsive={true}
+   alt="Preset creator screen"
+/>
+
+<br />
+<br />
+
+After creating a preset as shown above, or after clicking PRESETS button on the main page, user will be navigated to the presets page where all of their custom workouts are displayed. Here they will also have an option to create a new workout.
+
+<br />
+
+<ArticleImage
+   image={TimerImg3}
+   imageMobile={TimerMobileImg3}
+   isResponsive={true}
+   alt="Results screen"
+/>
+
+<br />
+<br />
+
+If they choose to create a workout in the presets page, they will be shown a seperate page that requires all the necessary data.
+
+<br />
+
+<ArticleImage
+   image={TimerImg4}
+   imageMobile={TimerMobileImg4}
+   isResponsive={true}
+   alt="Results screen"
+/>
+
+<br />
+<br />
+
+After setting workout parameters, user can commence their workout.
+
+<br />
+
+<ArticleImage
+   image={TimerImg5}
+   imageMobile={TimerMobileImg5}
+   isResponsive={true}
+   alt="Results screen"
+/>
