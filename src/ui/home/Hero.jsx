@@ -25,7 +25,9 @@ function Hero() {
             >
                {t('HeroPart1')}
 
-               <span className="font-italic italic font-thin">David</span>
+               <span className="font-italic italic font-thin xs:font-medium">
+                  David
+               </span>
 
                {t('HeroPart2')}
 
