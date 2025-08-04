@@ -54,13 +54,13 @@ function LanguageButton() {
          <AnimatePresence>
             {open && (
                <ul
-                  className="absolute space-y-1 p-1 mt-3 min-w-[9.9rem] text-xl lg:right-0 rounded-2xl bg-primary border border-primary-300 dark:bg-primary-200/40 dark:border-primary-400/10 shadow-lg backdrop-blur-2xl cursor-pointer"
+                  className="absolute space-y-1 p-1 mt-3 min-w-[9.9rem] text-xl lg:right-0 rounded-2xl bg-primary border border-primary-300 dark:bg-[#27252b] dark:border-primary-400/10 shadow-lg cursor-pointer"
                   ref={ref}
                   onClick={() => setOpen(false)}
                >
                   {languages.map((item) => (
                      <li
-                        className="flex justify-between items-center relative font-normal rounded-xl py-2 pr-4 pl-5 hover:bg-primary-200/50 dark:hover:bg-primary-200/45 duration-75 [&_img]:opacity-80 group"
+                        className="flex justify-between items-center relative font-normal rounded-xl py-2 pr-4 pl-5 hover:bg-primary-200/50 dark:hover:bg-[#2c2b31] duration-75 [&_img]:opacity-80 group"
                         key={item.lang}
                         onClick={() => {
                            changeLanguage(item.code);
