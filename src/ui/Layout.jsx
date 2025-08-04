@@ -4,6 +4,11 @@ import { useTranslation } from 'react-i18next';
 import Header from './header/Header';
 import Footer from './Footer';
 
+// TODO: Screenshot better images
+// TODO: Fix image zoom size on mobile devices
+// TODO: Fix favicon
+// TODO: Add VsCode re-design project
+
 function Layout() {
    const location = useLocation();
    const { i18n } = useTranslation();
