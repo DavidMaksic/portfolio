@@ -21,8 +21,8 @@ function Hero() {
             <span
                className={`${
                   currentLanguage === 'en'
-                     ? 'font-bold leading-18 md:leading-19 xs:leading-12.5'
-                     : 'font-extrabold leading-17 md:leading-18 xs:leading-12.5'
+                     ? 'font-bold leading-18 md:leading-19 xs:leading-12'
+                     : 'font-extrabold leading-17 md:leading-18 xs:leading-12'
                } text-6xl xs:text-[2.5rem] 2xs:text-4xl text-primary-800`}
             >
                {t('HeroPart1')}
