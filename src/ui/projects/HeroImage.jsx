@@ -54,10 +54,10 @@ function HeroImage({ image, title }) {
    }, [isDarkMode]);
 
    return (
-      <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[4rem] xs:mx-0 bg-white dark:bg-primary-100/50">
+      <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[4rem] xs:mx-0 bg-white dark:bg-primary-300/25">
          <img
             src={image}
-            className="rounded-3xl dark:opacity-90"
+            className="rounded-3xl dark:opacity-90 dark:shadow-md"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 

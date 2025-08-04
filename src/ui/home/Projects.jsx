@@ -279,7 +279,7 @@ function Projects() {
          {!open && (
             <button
                onClick={() => setOpen((open) => !open)}
-               className="flex items-center gap-2 self-center shadow-article text-lg text-primary-600 rounded-full pr-3.5 pl-4.5 py-1.5 hover:translate-y-[-4px] transition bg-white dark:bg-primary-300/15"
+               className="flex items-center gap-2 self-center shadow-article text-lg text-primary-600 rounded-full pr-3.5 pl-4.5 py-1.5 hover:translate-y-[-4px] transition bg-white dark:bg-primary-300/25"
             >
                <span>{t('Projects.show-more-btn')}</span>
                <FaCaretDown />
@@ -304,7 +304,7 @@ function Projects() {
             <a
                href="#projects"
                onClick={() => setOpen((open) => !open)}
-               className="flex items-center gap-2 self-center shadow-article text-lg text-primary-600 rounded-full pr-3.5 pl-4.5 py-1.5 hover:translate-y-[-4px] transition bg-white dark:bg-primary-300/15"
+               className="flex items-center gap-2 self-center shadow-article text-lg text-primary-600 rounded-full pr-3.5 pl-4.5 py-1.5 hover:translate-y-[-4px] transition bg-white dark:bg-primary-300/25"
             >
                <span>{t('Projects.show-less-btn')}</span>
                <FaCaretUp />

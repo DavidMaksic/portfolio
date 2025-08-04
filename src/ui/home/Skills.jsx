@@ -52,7 +52,7 @@ function Skills() {
          </span>
 
          <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
-            <div className="flex flex-col gap-3 shadow-xs border border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-5 bg-white/50 dark:bg-primary-200/30 backdrop-blur-lg">
+            <div className="flex flex-col gap-3 shadow-xs border border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-5 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
                <h4> {t('Skills.core-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-3">
@@ -62,7 +62,7 @@ function Skills() {
                </div>
             </div>
 
-            <div className="flex flex-col gap-3 border shadow-xs border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-5 bg-white/50 dark:bg-primary-200/30 backdrop-blur-lg">
+            <div className="flex flex-col gap-3 border shadow-xs border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-5 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
                <h4> {t('Skills.other-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-3">
