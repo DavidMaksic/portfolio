@@ -54,7 +54,7 @@ function LanguageButton() {
          <AnimatePresence>
             {open && (
                <ul
-                  className="absolute space-y-1 p-1 mt-3 min-w-[9.9rem] text-xl lg:right-0 rounded-2xl bg-primary border border-primary-300 dark:bg-[#27252b] dark:border-primary-400/10 shadow-lg cursor-pointer"
+                  className="absolute space-y-1 p-1 mt-3 min-w-[9.9rem] text-xl lg:right-0 rounded-2xl bg-primary border border-primary-300 dark:bg-[#27252b] xs:dark:bg-[#322d3b] dark:border-primary-400/10 shadow-lg cursor-pointer"
                   ref={ref}
                   onClick={() => setOpen(false)}
                >
