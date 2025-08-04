@@ -61,7 +61,7 @@ function HeroImage({ image, title }) {
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
-         <div className="py-4 px-6 flex justify-between items-center gap-6">
+         <div className="py-4 px-6 xs:px-4 flex justify-between items-center gap-6">
             <div className="flex items-center gap-2 flex-wrap ">
                {featuredProject?.techStack.map((tech) => (
                   <Tech icon={tech.icon} name={tech.name} key={tech.name} />
@@ -71,7 +71,7 @@ function HeroImage({ image, title }) {
                   ))}
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex xs:flex-col items-center gap-3 xs:gap-2">
                {featuredProject?.codeLink !== undefined ||
                otherProject?.codeLink !== undefined ? (
                   <Link

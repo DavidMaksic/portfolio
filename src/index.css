@@ -573,6 +573,8 @@ p {
    }
 }
 
+/* Default */
+
 @media (max-width: 1921px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
