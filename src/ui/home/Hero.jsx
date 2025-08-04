@@ -15,17 +15,19 @@ function Hero() {
          viewport={{ once: true }}
          transition={{ duration: 0.5 }}
          id="#hero"
-         className="w-4/5 sm:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
+         className="w-4/5 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
       >
          <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10">
             <span
                className={`${
-                  currentLanguage === 'en' ? 'font-bold' : 'font-extrabold'
-               } text-6xl xs:text-[2.5rem] 2xs:text-5xl text-primary-800 leading-17 xs:leading-11.5 2xs:leading-14`}
+                  currentLanguage === 'en'
+                     ? 'font-bold leading-18 md:leading-19 xs:leading-12.5'
+                     : 'font-extrabold leading-17 md:leading-18 xs:leading-12.5'
+               } text-6xl xs:text-[2.5rem] 2xs:text-4xl text-primary-800`}
             >
                {t('HeroPart1')}
 
-               <span className="font-italic italic font-thin xs:font-medium">
+               <span className="font-italic italic font-thin md:font-medium">
                   David
                </span>
 

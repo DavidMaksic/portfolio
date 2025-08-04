@@ -1,8 +1,9 @@
-import { useTranslation } from 'react-i18next';
-import LanguageButton from './LanguageButton';
-import { Link, useLocation } from 'react-router-dom';
-import { useDarkMode } from '../../contexts/DarkModeContext';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
+import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { TbArrowBackUp } from 'react-icons/tb';
+import { useDarkMode } from '../../contexts/DarkModeContext';
+import LanguageButton from './LanguageButton';
 
 function Navigation() {
    const { t } = useTranslation();
@@ -12,38 +13,33 @@ function Navigation() {
 
    return (
       <nav className="text-base font-semibold text-primary-600">
-         <ul className="flex gap-8 xs:gap-6 items-center">
+         <ul className="flex gap-6 xs:gap-6 items-center">
             {pathname === '/' ? (
-               <li className="flex items-center gap-10 xs:gap-8 sm:hidden">
-                  <div>
-                     <a
-                        href="#projects"
-                        className="hover:text-primary-700 transition"
-                     >
-                        {t('Header.nav-link-1')}
-                     </a>
-                  </div>
-                  <div>
-                     <a
-                        href="#about"
-                        className="hover:text-primary-700 transition text-nowrap"
-                     >
-                        {t('Header.nav-link-2')}
-                     </a>
-                  </div>
-                  <div>
-                     <a
-                        href="#skills"
-                        className="hover:text-primary-700 transition"
-                     >
-                        {t('Header.nav-link-3')}
-                     </a>
-                  </div>
+               <li className="flex items-center gap-10 md:gap-8 sm:hidden">
+                  <a
+                     href="#projects"
+                     className="hover:text-primary-700 transition"
+                  >
+                     {t('Header.nav-link-1')}
+                  </a>
+                  <a
+                     href="#about"
+                     className="hover:text-primary-700 transition text-nowrap"
+                  >
+                     {t('Header.nav-link-2')}
+                  </a>
+                  <a
+                     href="#skills"
+                     className="hover:text-primary-700 transition"
+                  >
+                     {t('Header.nav-link-3')}
+                  </a>
                </li>
             ) : (
                <li>
                   <Link to={'/'} className="transition hover:text-primary-700">
-                     {t('Header.return')}
+                     <span className="xs:hidden">{t('Header.return')}</span>
+                     <TbArrowBackUp className="hidden xs:block size-7 stroke-[1.6px]" />
                   </Link>
                </li>
             )}

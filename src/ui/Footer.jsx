@@ -8,7 +8,7 @@ function Footer() {
    const pathname = location.pathname;
 
    return (
-      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 xs:w-full self-center backdrop-blur-lg rounded-3xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
+      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center  w-[45.5rem] md:w-[40rem] sm:w-full! self-center backdrop-blur-lg rounded-3xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
          <div className="flex xs:flex-col xs:gap-14 justify-between items-center w-full">
             <div className="flex items-center justify-center gap-2 rounded-lg w-fit">
                <Link
@@ -33,7 +33,7 @@ function Footer() {
             </div>
 
             {pathname === '/' && (
-               <ul className="flex items-center gap-10 xs:gap-5 text-lg text-primary-600">
+               <ul className="flex items-center gap-5 text-lg text-primary-600">
                   <li>
                      <a
                         href="#projects"
@@ -42,7 +42,8 @@ function Footer() {
                         {t('Header.nav-link-1')}
                      </a>
                   </li>
-                  <span className="hidden xs:block text-xs">•</span>
+
+                  <span className="text-xs">•</span>
 
                   <li>
                      <a
@@ -52,7 +53,8 @@ function Footer() {
                         {t('Header.nav-link-2')}
                      </a>
                   </li>
-                  <span className="hidden xs:block text-xs">•</span>
+
+                  <span className="text-xs">•</span>
 
                   <li>
                      <a
