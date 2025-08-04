@@ -15,7 +15,7 @@ function Hero() {
          viewport={{ once: true }}
          transition={{ duration: 0.5 }}
          id="#hero"
-         className="w-4/5 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
+         className="w-4/5 lg:w-11/12 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
       >
          <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10">
             <span
