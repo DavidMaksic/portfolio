@@ -1,6 +1,6 @@
 import { featuredProjects, otherProjects } from '../home/Projects';
 import { FiExternalLink } from 'react-icons/fi';
-import { useDarkMode } from '../../contexts/DarkModeContext';
+import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ import Tech from '../home/Tech';
 function HeroImage({ image, title }) {
    const featured = featuredProjects.map((item) => item);
    const other = otherProjects.map((item) => item);
-   const { isDarkMode } = useDarkMode();
+   const isMobile = useMediaQuery({ maxWidth: 768 });
 
    // Title is needed to figure out which is the current project, so we can get its techStack
    const [featuredProject] = featured.filter(
@@ -23,21 +23,9 @@ function HeroImage({ image, title }) {
 
    // Image Zoom logic
    useEffect(() => {
-      let zoom;
-
-      if (isDarkMode) {
-         zoom = mediumZoom('.parent img', {
-            margin: 100,
-            background: 'black',
-         });
-      }
-
-      if (!isDarkMode) {
-         zoom = mediumZoom('.parent img', {
-            margin: 100,
-            background: 'white',
-         });
-      }
+      const zoom = mediumZoom('.parent img', {
+         margin: isMobile ? 20 : 60,
+      });
 
       const handleClick = (e) => {
          if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
@@ -51,7 +39,7 @@ function HeroImage({ image, title }) {
          document.removeEventListener('click', handleClick);
          zoom.detach();
       };
-   }, [isDarkMode]);
+   }, []);
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[4rem] xs:mx-0 bg-white dark:bg-primary-300/25">

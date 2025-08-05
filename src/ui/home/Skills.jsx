@@ -33,10 +33,11 @@ const otherTech = [
    { icon: <RiSupabaseFill className="size-8" />, name: 'Supabase' },
    { icon: <SiRedux className="size-8" />, name: 'Redux' },
    { icon: <SiReactrouter className="size-8" />, name: 'React Router' },
-   { icon: <SiReactquery className="size-8" />, name: 'TanStack Query' },
+   { icon: <SiReactquery className="size-8" />, name: 'React Query' },
    { icon: <SiMdx className="size-8" />, name: 'MDX' },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
 ];
+console.log();
 
 function Skills() {
    const { t } = useTranslation();

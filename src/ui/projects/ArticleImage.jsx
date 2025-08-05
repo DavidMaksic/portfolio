@@ -1,24 +1,14 @@
-import { useDarkMode } from '../../contexts/DarkModeContext';
+import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
 import mediumZoom from 'medium-zoom';
 
 function ArticleImage({ image, imageMobile, alt, isResponsive }) {
-   const { isDarkMode } = useDarkMode();
+   const isMobile = useMediaQuery({ maxWidth: 768 });
 
    useEffect(() => {
-      let zoom;
-
-      if (isDarkMode) {
-         zoom = mediumZoom('.parent img', {
-            margin: 100,
-            background: 'black',
-         });
-      } else {
-         zoom = mediumZoom('.parent img', {
-            margin: 100,
-            background: 'white',
-         });
-      }
+      const zoom = mediumZoom('.parent img', {
+         margin: isMobile ? 20 : 60,
+      });
 
       const handleClick = (e) => {
          if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
@@ -32,7 +22,7 @@ function ArticleImage({ image, imageMobile, alt, isResponsive }) {
          document.removeEventListener('click', handleClick);
          zoom.detach();
       };
-   }, [isDarkMode]);
+   }, []);
 
    if (isResponsive)
       return (
