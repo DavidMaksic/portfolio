@@ -7,7 +7,9 @@ import Footer from './Footer';
 // TODO: Screenshot better images
 // TODO: Fix image zoom size on mobile devices
 // TODO: Fix favicon
+// TODO: Main image zoom in border radius
 // TODO: Add VsCode re-design project
+// TODO: In CMS, make modal list scrollable in features
 
 function Layout() {
    const location = useLocation();
