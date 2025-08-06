@@ -41,5 +41,10 @@
       "p2": "Copyright © 2025 David Maksić. All rights reserved."
    },
 
-   "TableOfContents": "Table of contents"
+   "TableOfContents": "Table of contents",
+
+   "PageNotFound": {
+      "message": "Page not found...",
+      "back-btn": "Go back"
+   }
 }

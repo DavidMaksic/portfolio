@@ -41,5 +41,10 @@
       "p2": "Copyright © 2025 Давид Максић. Сва права су задржама."
    },
 
-   "TableOfContents": "Садржај"
+   "TableOfContents": "Садржај",
+
+   "PageNotFound": {
+      "message": "Страница није пронађена...",
+      "back-btn": "Назад"
+   }
 }

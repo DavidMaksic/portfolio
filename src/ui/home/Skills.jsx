@@ -37,7 +37,6 @@ const otherTech = [
    { icon: <SiMdx className="size-8" />, name: 'MDX' },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
 ];
-console.log();
 
 function Skills() {
    const { t } = useTranslation();
