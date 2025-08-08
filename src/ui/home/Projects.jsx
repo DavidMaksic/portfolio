@@ -13,7 +13,7 @@ import {
    RiSupabaseFill,
    RiTailwindCssFill,
 } from 'react-icons/ri';
-import { SiReactquery, SiRedux, SiReactrouter } from 'react-icons/si';
+import { SiReactquery, SiRedux, SiReactrouter, SiUmami } from 'react-icons/si';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useTranslation } from 'react-i18next';
@@ -58,6 +58,10 @@ export const featuredProjects = [
          {
             name: 'Supabase',
             icon: <RiSupabaseFill />,
+         },
+         {
+            name: 'Umami',
+            icon: <SiUmami />,
          },
          {
             name: 'Responsive',
