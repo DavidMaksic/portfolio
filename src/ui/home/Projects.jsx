@@ -17,7 +17,12 @@ import { SiReactquery, SiRedux, SiReactrouter, SiUmami } from 'react-icons/si';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useTranslation } from 'react-i18next';
-import { IoLanguage } from 'react-icons/io5';
+import {
+   IoExtensionPuzzleOutline,
+   IoLanguage,
+   IoSettingsOutline,
+} from 'react-icons/io5';
+import { CgShortcut } from 'react-icons/cg';
 import { motion } from 'motion/react';
 
 import ProjectPreview from './ProjectPreview';
@@ -28,6 +33,7 @@ import YakuzaImg from './../../../assets/yakuza.png';
 import EthosImg from './../../../assets/ethos.png';
 import timerImg from './../../../assets/timer.png';
 import blogImg from './../../../assets/blog.png';
+import vsCode from './../../../assets/vscode.png';
 
 export const featuredProjects = [
    {
@@ -254,6 +260,35 @@ export const otherProjects = [
       projectURL: 'yakuza',
       codeLink: 'https://github.com/DavidMaksic/Yakuza-site',
       demoLink: 'https://davidmaksic.github.io/Yakuza-site/',
+   },
+
+   {
+      titleEn: 'VS Code Redesign',
+      titleSr: 'VS Code Редизајн',
+      image: vsCode,
+      descriptionEn:
+         'Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my settings, extensions and shortcuts.',
+      descriptionSr:
+         'Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом.',
+      techStack: [
+         {
+            name: 'CSS',
+            icon: <FaCss3Alt />,
+         },
+         {
+            name: 'Extensions',
+            icon: <IoExtensionPuzzleOutline />,
+         },
+         {
+            name: 'Shortcuts',
+            icon: <CgShortcut />,
+         },
+         {
+            name: 'Settings',
+            icon: <IoSettingsOutline />,
+         },
+      ],
+      projectURL: 'vscode',
    },
 ];
 

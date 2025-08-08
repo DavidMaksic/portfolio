@@ -210,6 +210,12 @@ p {
    margin: 0rem 8rem;
 }
 
+.list-disc {
+   color: var(--color-primary-700);
+   line-height: 1.6;
+   margin: 0.5rem 8rem;
+}
+
 @media (max-width: 768px) {
    h1 {
       margin-left: 4rem;

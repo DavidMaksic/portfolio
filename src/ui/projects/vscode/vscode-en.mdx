@@ -1,0 +1,215 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
+
+import VSCode from './../../../../assets/vscode.png';
+import VSCodeImg1 from './../../../../assets/vscode-1.png';
+import VSCodeImg2 from './../../../../assets/vscode-2.png';
+import VSCodeImg3 from './../../../../assets/vscode-3.png';
+import VSCodeImg4 from './../../../../assets/vscode-4.png';
+import VSCodeImg5 from './../../../../assets/vscode-5.png';
+import VSCodeImg6 from './../../../../assets/vscode-6.png';
+import VSCodeImg7 from './../../../../assets/vscode-7.png';
+import VSCodeImg8 from './../../../../assets/vscode-8.png';
+import VSCodeImg9 from './../../../../assets/vscode-9.png';
+import VSCodeImg10 from './../../../../assets/vscode-10.png';
+import VSCodeImg11 from './../../../../assets/vscode-11.png';
+import VSCodeImg12 from './../../../../assets/vscode-12.png';
+
+# VS Code Redesign
+
+### Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my settings, extensions and shortcuts.
+
+<HeroImage image={VSCode} title="VS Code Redesign" />
+
+This redesign was made possible by using **Custom CSS and JS loader** extension made by be5invis. All changes are made by simply overriding VS Code's CSS styles. No JavaScript was used.
+
+<br />
+
+At the beginning of the article I will share all the extensions I use, along with useful shortcuts which are intuitively made for easy navigation, and settings which hide unnecessary clutter.
+
+<br />
+<br />
+
+<TableOfContents
+   h2Arr={[
+      'my-extensions',
+      'main-screen',
+      'sidebars',
+      'settings',
+      'terminal',
+      'modals',
+      'pop-ups',
+      'other-details',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'my-extensions'} text={'My extensions'} />
+
+Here is a list of all the extensions I'm using.
+
+<br />
+
+Styling:
+
+<ul className="list-disc pl-6">
+   <li>**One Monokai Theme**</li>
+   <li>**Fluent icons** (sidebar)</li>
+   <li>**File-icons** (file explorer)</li>
+   <li>**GlassIt-VSC** (window transparency)</li>
+   <li>**Color Highlight**</li>
+   <li>**Better comments**</li>
+</ul>
+
+<br />
+
+Other:
+
+<ul className="list-disc pl-6">
+   <li>**Prettier**</li>
+   <li>**VSCode Animations**</li>
+   <li>**Tailwind Fold**</li>
+   <li>**ESLint**</li>
+   <li>**DotENV**</li>
+   <li>**JS Auto Backticks**</li>
+   <li>**Image preview**</li>
+   <li>**Auto Rename Tag**</li>
+   <li>**JS Console Utils**</li>
+</ul>
+
+<br />
+<br />
+
+<ArticleH2 id={'main-screen'} text={'Main screen'} />
+
+Upon applying redesigned CSS styles, user will see that the main screen with code has basically zero clutter. All sidebars (top, left and bottom) are gone leaving a lot of space for code itself, with no distractions.
+
+<br />
+
+There are no line numbers on the left either (user can search for a specific line using a built-in modal, which is way faster).
+
+<br />
+
+<ArticleImage image={VSCodeImg1} alt="Main screen" />
+
+<br />
+<br />
+
+<ArticleH2 id={'sidebars'} text={'Sidebars'} />
+
+First showcased sidebar is the **file explorer**. Sidebar navigation itself is hidden (which can be seen on the main article image above), and keyboard shortcuts are used for navigation between sidebars (and for opening other screens, like settings).
+
+<br />
+
+<ArticleImage image={VSCodeImg2} alt="File sidebar" />
+
+<br />
+<br />
+
+**Search** sidebar is next, which - thanks to bigger paddings and margins - is way easier to navigate.
+
+<br />
+
+<ArticleImage image={VSCodeImg3} alt="File search" />
+
+<br />
+<br />
+
+Both **extension** sidebar and extension page feature a modernized look.
+
+<br />
+
+<ArticleImage image={VSCodeImg4} alt="Extension screen" />
+
+<br />
+<br />
+
+<ArticleH2 id={'settings'} text={'Settings'} />
+
+Whole settings page is refreshed, from inputs, to dropdown lists and buttons.
+
+<br />
+
+<ArticleImage image={VSCodeImg5} alt="Settings screen" />
+
+<br />
+<br />
+
+Keybinds screen is updated slightly as well.
+
+<br />
+
+<ArticleImage image={VSCodeImg6} alt="Keybinds screen" />
+
+<br />
+<br />
+
+<ArticleH2 id={'terminal'} text={'Terminal'} />
+
+Terminal is also redesigned, with less clutter. This counts for other pages too.
+
+<br />
+
+<ArticleImage image={VSCodeImg7} alt="Terminal" />
+
+<br />
+<br />
+
+<ArticleH2 id={'modals'} text={'Modals'} />
+
+Modals have a new look, with softer edges and backdrop blur. This goes for all modals (as they are of the same type, just different content). They are accessed by keyboard shortcuts.
+
+<br />
+
+I mainly use two: for accessing files in the current project, and for opening other projects.
+
+<br />
+
+<ArticleImage image={VSCodeImg8} alt="Search modal" />
+
+<br />
+<br />
+
+<ArticleH2 id={'pop-ups'} text={'Pop-ups'} />
+
+These feature, in my opinion, best redesign. With backdrop blur, and more space for easier reading, information (and other) pop-ups are actually useful.
+
+<br />
+
+<ArticleImage image={VSCodeImg9} alt="Pop-ups" />
+
+<br />
+<br />
+
+Color picker has a new look as well.
+
+<br />
+
+<ArticleImage image={VSCodeImg10} alt="Main screen" />
+
+<br />
+<br />
+
+<ArticleH2 id={'other-details'} text={'Other details'} />
+
+Here I will list lots of small redesigns. Most of these options are very unsightly and hard to see; with the new look they are way more comfortable to use. Right click menu is first.
+
+<br />
+
+<ArticleImage image={VSCodeImg11} alt="Right click options" />
+
+<br />
+<br />
+
+Next is searching for the same word(s).
+
+<br />
+
+<ArticleImage image={VSCodeImg12} alt="Word search" />
+
+<br />
+<br />

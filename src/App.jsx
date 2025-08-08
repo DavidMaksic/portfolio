@@ -7,6 +7,7 @@ import Casamento from './ui/projects/casamento/Casamento';
 import EthosBlog from './ui/projects/ethosBlog/EthosBlog';
 import UseGames from './ui/projects/useGames/useGames';
 import Yakuza from './ui/projects/yakuza/Yakuza';
+import VSCode from './ui/projects/vscode/VSCode';
 import Layout from './ui/Layout';
 import Timer from './ui/projects/timer/Timer';
 import Blog from './ui/projects/blog/Blog';
@@ -23,10 +24,11 @@ function App() {
                   <Route path="/ethos-blog" element={<EthosBlog />} />
                   <Route path="/ethos-blog-cms" element={<EthosBlogCMS />} />
                   <Route path="/casamento" element={<Casamento />} />
-                  <Route path="/blog" element={<Blog />} />
-                  <Route path="/yakuza" element={<Yakuza />} />
                   <Route path="/timer" element={<Timer />} />
                   <Route path="/use-games" element={<UseGames />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/yakuza" element={<Yakuza />} />
+                  <Route path="/vscode" element={<VSCode />} />
                </Route>
 
                <Route path="*" element={<PageNotFound />} />
