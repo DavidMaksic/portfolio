@@ -41,7 +41,7 @@ export const featuredProjects = [
       titleSr: 'Етос Блог',
       image: EthosImg,
       descriptionEn:
-         'A Next.js blog website featuring internationalization, user authentication and comment system. Designed for a comfy reading experience.',
+         'A Next.js blog website featuring internationalization, user authentication and a comment system. Designed for a comfy reading experience.',
       descriptionSr:
          'Блог вебсајт направљен користећи Next.js који садржи интернационализацију, аутентикацију корисника и систем коментарисања.',
       techStack: [
