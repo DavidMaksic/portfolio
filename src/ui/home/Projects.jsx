@@ -116,6 +116,35 @@ export const featuredProjects = [
    },
 
    {
+      titleEn: 'VS Code Redesign',
+      titleSr: 'VS Code Редизајн',
+      image: vsCode,
+      descriptionEn:
+         'Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my settings, extensions and shortcuts.',
+      descriptionSr:
+         'Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом.',
+      techStack: [
+         {
+            name: 'CSS',
+            icon: <FaCss3Alt />,
+         },
+         {
+            name: 'Extensions',
+            icon: <IoExtensionPuzzleOutline />,
+         },
+         {
+            name: 'Shortcuts',
+            icon: <CgShortcut />,
+         },
+         {
+            name: 'Settings',
+            icon: <IoSettingsOutline />,
+         },
+      ],
+      projectURL: 'vscode',
+   },
+
+   {
       titleEn: 'O Casamento',
       titleSr: 'O Casamento',
       image: CasamentoImg,
@@ -145,7 +174,9 @@ export const featuredProjects = [
       codeLink: 'https://github.com/DavidMaksic/O-Casamento',
       demoLink: 'https://davidmaksic.github.io/O-Casamento/',
    },
+];
 
+export const otherProjects = [
    {
       titleEn: 'Training Timer',
       titleSr: 'Тренинг Тајмер',
@@ -176,9 +207,7 @@ export const featuredProjects = [
       codeLink: 'https://github.com/DavidMaksic/Training-Timer',
       demoLink: 'https://davidmaksic.github.io/Training-Timer/',
    },
-];
 
-export const otherProjects = [
    {
       titleEn: 'useGames App',
       titleSr: 'useGames Апликација',
@@ -260,35 +289,6 @@ export const otherProjects = [
       projectURL: 'yakuza',
       codeLink: 'https://github.com/DavidMaksic/Yakuza-site',
       demoLink: 'https://davidmaksic.github.io/Yakuza-site/',
-   },
-
-   {
-      titleEn: 'VS Code Redesign',
-      titleSr: 'VS Code Редизајн',
-      image: vsCode,
-      descriptionEn:
-         'Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my settings, extensions and shortcuts.',
-      descriptionSr:
-         'Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом.',
-      techStack: [
-         {
-            name: 'CSS',
-            icon: <FaCss3Alt />,
-         },
-         {
-            name: 'Extensions',
-            icon: <IoExtensionPuzzleOutline />,
-         },
-         {
-            name: 'Shortcuts',
-            icon: <CgShortcut />,
-         },
-         {
-            name: 'Settings',
-            icon: <IoSettingsOutline />,
-         },
-      ],
-      projectURL: 'vscode',
    },
 ];
 

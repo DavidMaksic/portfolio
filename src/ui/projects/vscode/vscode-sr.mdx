@@ -1,23 +1,217 @@
 import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
+
 import VSCode from './../../../../assets/vscode.png';
-import EntirePageImage from './../EntirePageImage.jsx';
-import YakuzaEntirePageImg from './../../../../assets/yakuza-entire-page.webp';
+import VSCodeImg1 from './../../../../assets/vscode-1.png';
+import VSCodeImg2 from './../../../../assets/vscode-2.png';
+import VSCodeImg3 from './../../../../assets/vscode-3.png';
+import VSCodeImg4 from './../../../../assets/vscode-4.png';
+import VSCodeImg5 from './../../../../assets/vscode-5.png';
+import VSCodeImg6 from './../../../../assets/vscode-6.png';
+import VSCodeImg7 from './../../../../assets/vscode-7.png';
+import VSCodeImg8 from './../../../../assets/vscode-8.png';
+import VSCodeImg9 from './../../../../assets/vscode-9.png';
+import VSCodeImg10 from './../../../../assets/vscode-10.png';
+import VSCodeImg11 from './../../../../assets/vscode-11.png';
+import VSCodeImg12 from './../../../../assets/vscode-12.png';
 
 # VS Code Редизајн
 
-### Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом. Такође делим и своју листу екстензија, које чине писање кода много бржим.
+### Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом.
 
 <HeroImage image={VSCode} title="VS Code Редизајн" />
 
-Yakuza Kiwami 2 вебсајт је редизајн заснован на званичном сајту ове видео-игре која је у власништву компаније SEGA. Направљен са HTML-ом, ванила CSS-ом, и са JavaScript-ом за неке функционалности.
+Овај редизајн је урађен користећи **Custom CSS and JS loader** екстензију направљену од стране be5invis. Све промене су обављене са најобичнијим CSS стиловима. JavaScript није коришћен.
 
 <br />
 
-Дизајн сајта је заснован на познатим бојама ове франшизе, са пар CSS трикова који имају за циљ да улепшају сајт. Прилагодљиви дизајн је искоришћен да би омогућио прегледност на многим уређајима.
+At the beginning of the article I will share all the extensions I use, along with useful shortcuts which are intuitively made for easy navigation, and settings which hide unnecessary clutter.
+
+На почетку чланка ћу поделити све своје екстензије које користим, пречице на тастатури које су интуитивно изабране зарад лакше навигације, и подешавања која сакривају непотребан садржај.
 
 <br />
 <br />
 
-<EntirePageImage image={YakuzaEntirePageImg} alt="Цела страна" />
+<TableOfContents
+   h2Arr={[
+      'моје-екстензије',
+      'главни-екран',
+      'помоћни-менији',
+      'подешавања',
+      'терминал',
+      'модали',
+      'искачући-прозори',
+      'остали-детаљи',
+   ]}
+/>
 
+<br />
+<br />
+
+<ArticleH2 id={'моје-екстензије'} text={'Моје екстензије'} />
+
+Овде се налази листа свих екстензија које свакодневно користим:
+
+<br />
+
+Стилови:
+
+<ul className="list-disc pl-6">
+   <li>**One Monokai Theme**</li>
+   <li>**Fluent icons** (за помоћни мени)</li>
+   <li>**File-icons** (претраживач фајлова)</li>
+   <li>**GlassIt-VSC** (провидност екрана)</li>
+   <li>**Color Highlight**</li>
+   <li>**Better comments**</li>
+</ul>
+
+<br />
+
+Остало:
+
+<ul className="list-disc pl-6">
+   <li>**Prettier**</li>
+   <li>**VSCode Animations**</li>
+   <li>**Tailwind Fold**</li>
+   <li>**ESLint**</li>
+   <li>**DotENV**</li>
+   <li>**JS Auto Backticks**</li>
+   <li>**Image preview**</li>
+   <li>**Auto Rename Tag**</li>
+   <li>**JS Console Utils**</li>
+</ul>
+
+<br />
+<br />
+
+<ArticleH2 id={'главни-екран'} text={'Главни екран'} />
+
+При активацији нових CSS стилова, корисник ће видети да је са главног екрана уклоњен сав непотребан садржај. Сви помоћни менији (горњи, леви и доњи) су уклоњени остављајући доста више простора за сам код.
+
+<br />
+
+Са леве стране нема ни бројева који обележавају линије кода (ако корисника интересује одређена линија кода, може да је претражи користећи већ постојећи модални прозор, што је много брже).
+
+<br />
+
+<ArticleImage image={VSCodeImg1} alt="Главни екран" />
+
+<br />
+<br />
+
+<ArticleH2 id={'помоћни-менији'} text={'Помоћни менији'} />
+
+Први приказани помоћни мени је мени за **преглед фајлова**. Навигација лево од помоћних менија је сакривена (она се може видети изнад, на главној слици чланка), а за отварање и затварање ових менија (и других екрана, попут подешавања) користе се пречице на тастатури (што чини писање кода неупоредиво бржим, иако испрва захтева мало навике).
+
+<br />
+
+<ArticleImage image={VSCodeImg2} alt="Преглед фајлова" />
+
+<br />
+<br />
+
+Мени за **претрагу фајлова** је следећи, који је - захваљујући већим маргинама и више простора - лакши за коришћење.
+
+<br />
+
+<ArticleImage image={VSCodeImg3} alt="Претрага фајлова" />
+
+<br />
+<br />
+
+Помоћни мени за **екстензије** и страница са детаљима екстензија имају нови модеран изглед.
+
+<br />
+
+<ArticleImage image={VSCodeImg4} alt="Екран за екстензије" />
+
+<br />
+<br />
+
+<ArticleH2 id={'подешавања'} text={'Подешавања'} />
+
+Читава екран за подешавања је освежена, од инпута, до падајућих листи и дугмади.
+
+<br />
+
+<ArticleImage image={VSCodeImg5} alt="Подешавања" />
+
+<br />
+<br />
+
+Екран за пречице на тастатури је такође побољшан.
+
+<br />
+
+<ArticleImage image={VSCodeImg6} alt="Пречице за тастатуру" />
+
+<br />
+<br />
+
+<ArticleH2 id={'терминал'} text={'Терминал'} />
+
+И терминал је редизајниран; сав вишак је уклоњен. Остале странице поред терминала су такође сређене.
+
+<br />
+
+<ArticleImage image={VSCodeImg7} alt="Терминал" />
+
+<br />
+<br />
+
+<ArticleH2 id={'модали'} text={'Модали'} />
+
+Модали имају нови изглед, са блажим ивицама и позадинским ефектом замагљеног стакла. Ово важи за све модале (јер су истог типа, само са другачијим садржајем). Приступа им се путем пречица на тастатури.
+
+<br />
+
+Ја највише користим два: за приступ фајловима у тренутном пројекту, и за отварање других пројеката.
+
+<br />
+
+<ArticleImage image={VSCodeImg8} alt="Модал за претрагу фајлова" />
+
+<br />
+<br />
+
+<ArticleH2 id={'искачући-прозори'} text={'Искачући прозори'} />
+
+Промена изгледа овог помоћног прозора је, по мом мишљењу, једна од битнијих. Са позадинским ефектом замагљеног стакла, и више простора за лакше читање, овај прозор (као и други овог типа) су заправо корисни за промену.
+
+<br />
+
+<ArticleImage image={VSCodeImg9} alt="Искачући прозори" />
+
+<br />
+<br />
+
+Бирач боја такође има нови дизајн.
+
+<br />
+
+<ArticleImage image={VSCodeImg10} alt="Бирач боја" />
+
+<br />
+<br />
+
+<ArticleH2 id={'остали-детаљи'} text={'Остали детаљи'} />
+
+Овде ћу представити доста мањих промена. Већина ових опција су веома неугледне и тешке за приметити; нови изглед их чини много удобнијим за коришћење. Први на реду је мени који се отвара десним кликом.
+
+<br />
+
+<ArticleImage image={VSCodeImg11} alt="Опције десног клика" />
+
+<br />
+<br />
+
+Следећи је мени за претрагу речи.
+
+<br />
+
+<ArticleImage image={VSCodeImg12} alt="Претрага речи" />
+
+<br />
 <br />

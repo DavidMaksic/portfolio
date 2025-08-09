@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import Header from './header/Header';
 import Footer from './Footer';
 
+// TODO: Optimize VS Code images
+
 function Layout() {
    const location = useLocation();
    const { i18n } = useTranslation();
