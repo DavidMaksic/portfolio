@@ -23,7 +23,7 @@ function Hero() {
                   currentLanguage === 'en'
                      ? 'font-bold leading-18 md:leading-19 xs:leading-12'
                      : 'font-extrabold leading-17 md:leading-18 xs:leading-12'
-               } text-6xl xs:text-[2.49rem] 2xs:text-4xl text-primary-800`}
+               } text-6xl sm:text-[3.6rem] xs:text-[2.49rem] 2xs:text-4xl text-primary-800`}
             >
                {t('HeroPart1')}
 
