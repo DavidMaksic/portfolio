@@ -13,11 +13,11 @@ const coreTech = [
    { icon: <FaReact className="size-9" />, name: 'React' },
    {
       icon: <FaJs className="size-9" />,
-      name: 'Javascript',
+      name: 'JavaScript',
    },
    {
       icon: <RiTailwindCssFill className="size-9" />,
-      name: 'Tailwind CSS',
+      name: 'Tailwind',
    },
    {
       icon: <FaCss3Alt className="size-9" />,
