@@ -43,7 +43,7 @@ function Hero() {
                      </span>,
                      <span
                         key="next"
-                        className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#7f00de] to-[#ff007f]"
+                        className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#7f00de] to-[#ff198c]"
                      >
                         Next.js
                      </span>,
