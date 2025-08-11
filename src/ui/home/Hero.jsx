@@ -49,7 +49,7 @@ function Hero() {
                      </span>,
                      <span
                         key="tailwind"
-                        className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#afd601] to-[#00ce89]"
+                        className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#00ce89] to-[#afd601]"
                      >
                         Tailwind
                      </span>,
