@@ -25,7 +25,7 @@ function About() {
             <img
                src={AboutImage}
                alt="Image of David"
-               className="shadow--sm rounded-2xl h-130 md:h-178 object-cover xs:justify-self-center xs:h-120 dark:opacity-90"
+               className="shadow--sm rounded-2xl h-128 md:h-178 object-cover xs:justify-self-center xs:h-120 dark:opacity-90"
             />
 
             <div className="flex flex-col gap-8">

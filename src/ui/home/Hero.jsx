@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
+import { SiReaddotcv } from 'react-icons/si';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import WordRotate from './WordRotate';
@@ -84,6 +85,18 @@ function Hero() {
                   className="hover:bg-primary-200/50 transition p-2 rounded-xl"
                >
                   <FaLinkedin className="size-6" />
+               </Link>
+
+               <div className="h-5 w-1 border-r border-primary-400" />
+
+               <Link
+                  to="https://drive.google.com/file/d/1jYWtNI2IM-V_1dfM2CKFDRGxbtRLu9I4/view?usp=sharing"
+                  target="_blank"
+                  aria-label="CV"
+                  className="flex items-center gap-2 hover:bg-primary-200/50 transition p-2 rounded-xl"
+               >
+                  <SiReaddotcv className="size-6 stroke-[0.2px]" />
+                  {t('CV')}
                </Link>
             </div>
          </div>
