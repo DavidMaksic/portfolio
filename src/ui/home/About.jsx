@@ -21,11 +21,11 @@ function About() {
             {t('About.h1')}
          </span>
 
-         <div className="grid grid-cols-[1fr_2.8fr] md:grid-cols-[1fr_1.2fr] sm:grid-cols-1! gap-24 lg:gap-10">
+         <div className="grid grid-cols-[1fr_2.8fr] md:grid-cols-1! gap-24 lg:gap-10">
             <img
                src={AboutImage}
                alt="Image of David"
-               className="shadow--sm rounded-2xl h-128 md:h-178 object-cover sm:justify-self-center xs:h-120 dark:opacity-90"
+               className="shadow--sm rounded-2xl h-128 md:h-140 sm:h-120! object-cover md:justify-self-center dark:opacity-90"
             />
 
             <div className="flex flex-col gap-8">

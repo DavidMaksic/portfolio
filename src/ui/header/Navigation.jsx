@@ -50,7 +50,7 @@ function Navigation() {
                <button
                   role="button"
                   aria-label="Light/Dark Mode Button"
-                  className="hover:bg-primary-300/30 dark:hover:bg-primary-400/20 p-2 rounded-xl transition"
+                  className="hover:bg-white/40 dark:hover:bg-primary-400/20 p-2 rounded-xl transition"
                   onClick={toggleDarkMode}
                >
                   {isDarkMode ? (
