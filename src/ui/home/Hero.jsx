@@ -90,7 +90,7 @@ function Hero() {
                <div className="h-5 w-1 border-r border-primary-400" />
 
                <Link
-                  to="https://drive.google.com/file/d/1jYWtNI2IM-V_1dfM2CKFDRGxbtRLu9I4/view?usp=sharing"
+                  to="https://drive.google.com/file/d/1d_AVw-WwmVMxCHYAzpCIk4jsLAQzXqhn/view?usp=drive_link"
                   target="_blank"
                   aria-label="CV"
                   className="flex items-center gap-2 hover:bg-primary-200/50 transition p-2 rounded-xl"
