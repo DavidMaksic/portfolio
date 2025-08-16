@@ -275,19 +275,19 @@ p {
 @media (max-width: 3850px) {
    .background-gradient {
       background-image: radial-gradient(
-            1400px 600px at 1500px 100px,
-            #ffefc4d3 0px,
-            transparent 55%
+            1200px 900px at 1400px -100px,
+            #ddcd9f 0px,
+            transparent 65%
          ),
          radial-gradient(
-            1400px 500px at 1800px 100px,
-            #ff9e9e98 0px,
-            transparent 55%
+            1200px 900px at 1800px -100px,
+            #ff8e8ea8 0px,
+            transparent 65%
          ),
          radial-gradient(
-            1400px 600px at 2300px 100px,
-            #bea0ceaf 0px,
-            transparent 55%
+            1200px 900px at 2400px -100px,
+            #bea0ce 0px,
+            transparent 65%
          ),
          radial-gradient(
             4000px 2500px at 1200px 100%,
@@ -306,18 +306,18 @@ p {
 @media (max-width: 2570px) {
    .background-gradient {
       background-image: radial-gradient(
-            1000px 600px at 1000px 0px,
-            #ffefc4d3 0px,
+            1000px 800px at 900px -80px,
+            #ddcd9f 0px,
             transparent 55%
          ),
          radial-gradient(
-            1000px 500px at 1150px 0px,
-            #ff9e9e98 0px,
+            1000px 800px at 1200px -80px,
+            #ff8e8ea8 0px,
             transparent 55%
          ),
          radial-gradient(
-            1000px 600px at 1500px 0px,
-            #bea0ceaf 0px,
+            1000px 800px at 1600px -80px,
+            #bea0ce 0px,
             transparent 55%
          ),
          radial-gradient(
@@ -337,19 +337,19 @@ p {
 @media (max-width: 1921px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 600px at 700px -100px,
-            #ddcc9f 0px,
-            transparent 55%
+            800px 600px at 700px -60px,
+            #ddcd9f 0px,
+            transparent 45%
          ),
          radial-gradient(
-            600px 600px at 900px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            800px 600px at 950px -60px,
+            #ff8e8ea8 0px,
+            transparent 45%
          ),
          radial-gradient(
-            700px 600px at 1150px -100px,
+            800px 600px at 1200px -60px,
             #bea0ce 0px,
-            transparent 55%
+            transparent 45%
          ),
          radial-gradient(
             4000px 2500px at 700px 100%,
@@ -368,19 +368,19 @@ p {
 @media (max-width: 1580px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 600px at 500px -100px,
-            #ddcc9f 0px,
-            transparent 55%
+            800px 600px at 500px -60px,
+            #ddcd9f 0px,
+            transparent 45%
          ),
          radial-gradient(
-            600px 600px at 700px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            800px 600px at 700px -60px,
+            #ff8e8ea8 0px,
+            transparent 45%
          ),
          radial-gradient(
-            700px 600px at 1000px -100px,
+            800px 600px at 1000px -60px,
             #bea0ce 0px,
-            transparent 55%
+            transparent 45%
          ),
          radial-gradient(
             4000px 2500px at 500px 100%,
@@ -399,19 +399,19 @@ p {
 @media (max-width: 1270px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 600px at 400px -100px,
-            #ddcc9f 0px,
-            transparent 55%
+            800px 600px at 400px -60px,
+            #ddcd9f 0px,
+            transparent 45%
          ),
          radial-gradient(
-            600px 600px at 600px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            800px 600px at 600px -60px,
+            #ff8e8ea8 0px,
+            transparent 45%
          ),
          radial-gradient(
-            700px 600px at 900px -100px,
+            800px 600px at 900px -60px,
             #bea0ce 0px,
-            transparent 55%
+            transparent 45%
          ),
          radial-gradient(
             4000px 2500px at 300px 100%,
@@ -430,19 +430,19 @@ p {
 @media (max-width: 1024px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 600px at 300px -100px,
-            #ddcc9f 0px,
-            transparent 55%
+            800px 600px at 300px -40px,
+            #ddcd9f 0px,
+            transparent 40%
          ),
          radial-gradient(
-            600px 600px at 500px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            800px 600px at 475px -40px,
+            #ff8e8ea8 0px,
+            transparent 40%
          ),
          radial-gradient(
-            700px 600px at 700px -100px,
+            800px 600px at 750px -40px,
             #bea0ce 0px,
-            transparent 55%
+            transparent 40%
          ),
          radial-gradient(
             4000px 2500px at 200px 100%,
@@ -461,14 +461,19 @@ p {
 @media (max-width: 768px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 600px at 200px -100px,
-            #ddcc9f 0px,
-            transparent 55%
+            800px 600px at 200px -40px,
+            #ddcd9f 0px,
+            transparent 40%
          ),
          radial-gradient(
-            600px 600px at 400px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            800px 600px at 350px -40px,
+            #ff8e8ea8 0px,
+            transparent 40%
+         ),
+         radial-gradient(
+            800px 600px at 580px -40px,
+            #bea0ce 0px,
+            transparent 40%
          ),
          radial-gradient(
             4000px 2500px at 100px 100%,
@@ -487,19 +492,19 @@ p {
 @media (max-width: 650px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 600px at 150px -100px,
-            #ddcc9f 0px,
-            transparent 55%
+            700px 600px at 120px -40px,
+            #ddcd9f 0px,
+            transparent 40%
          ),
          radial-gradient(
-            600px 600px at 350px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            700px 600px at 320px -40px,
+            #ff8e8ea8 0px,
+            transparent 40%
          ),
          radial-gradient(
-            700px 600px at 550px -100px,
+            700px 600px at 520px -40px,
             #bea0ce 0px,
-            transparent 55%
+            transparent 40%
          ),
          radial-gradient(
             4000px 2500px at -100px 100%,
@@ -518,17 +523,17 @@ p {
 @media (max-width: 450px) {
    .background-gradient {
       background-image: radial-gradient(
-            500px 500px at 100px -0px,
+            600px 500px at 100px -20px,
             #ddcc9f 0px,
             transparent 40%
          ),
          radial-gradient(
-            500px 500px at 200px -0px,
+            600px 500px at 200px -20px,
             #ff8e8ea8 0px,
             transparent 40%
          ),
          radial-gradient(
-            600px 500px at 350px -0px,
+            600px 500px at 350px -20px,
             #bea0ce 0px,
             transparent 40%
          ),
