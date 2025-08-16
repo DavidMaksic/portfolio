@@ -23,11 +23,11 @@ function ProjectPreview({ projectData }) {
          <img
             src={image}
             alt={currentLanguage === 'en' ? titleEn : titleSr}
-            className="w-full bg-primary-900 text-primary-50 h-56 md:h-96 sm:h-85! xs:h-52! rounded-2xl object-cover shadow-md dark:opacity-90"
+            className="w-full bg-primary-900 text-primary-50 h-56 md:h-72 sm:h-57! xs:h-52! rounded-2xl object-cover shadow-md dark:opacity-90"
          />
 
          <div className="flex flex-col gap-2 p-3 md:py-4">
-            <h4 className="text-2xl md:text-4xl xs:text-2xl! font-semibold text-primary-900">
+            <h4 className="text-2xl md:text-4xl sm:text-3xl! xs:text-2xl! font-semibold text-primary-900">
                {currentLanguage === 'en' ? titleEn : titleSr}
             </h4>
 

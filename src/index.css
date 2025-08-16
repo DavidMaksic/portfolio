@@ -45,9 +45,15 @@ html {
    }
 }
 
+@media (max-width: 768px) {
+   html {
+      font-size: 16px;
+   }
+}
+
 @media (max-width: 650px) {
    html {
-      font-size: 13px;
+      font-size: 17px;
    }
 }
 
@@ -229,44 +235,54 @@ p {
    }
 
    h2 {
-      margin: 0.8rem 4rem;
+      margin: 0.8rem 3rem;
    }
 
    h3 {
-      margin: 0rem 4rem;
+      margin: 0rem 3rem;
    }
 
    p {
-      margin: 0rem 4rem;
+      margin: 0rem 3rem;
    }
 
    .list-disc {
-      margin: 0.5rem 4rem;
+      margin: 0.5rem 3rem;
+   }
+}
+
+@media (max-width: 640px) {
+   h1 {
+      font-size: 48px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+   }
+
+   h2 {
+      font-size: 38px;
+      margin: 0.5rem 0rem;
+   }
+
+   h3 {
+      margin: 0rem 0rem;
+   }
+
+   p {
+      margin: 0rem 0rem;
+   }
+
+   .list-disc {
+      margin: 0.5rem 0rem;
    }
 }
 
 @media (max-width: 450px) {
    h1 {
       font-size: 34px;
-      margin-left: 0rem;
-      margin-right: 0rem;
    }
 
    h2 {
       font-size: 28px;
-      margin: 0.5rem 0rem;
-   }
-
-   h3 {
-      margin: 0rem 0rem;
-   }
-
-   p {
-      margin: 0rem 0rem;
-   }
-
-   .list-disc {
-      margin: 0.5rem 0rem;
    }
 }
 
@@ -523,17 +539,17 @@ p {
 @media (max-width: 450px) {
    .background-gradient {
       background-image: radial-gradient(
-            600px 500px at 100px -20px,
+            600px 600px at 100px -60px,
             #ddcc9f 0px,
             transparent 40%
          ),
          radial-gradient(
-            600px 500px at 200px -20px,
+            600px 600px at 200px -60px,
             #ff8e8ea8 0px,
             transparent 40%
          ),
          radial-gradient(
-            600px 500px at 350px -20px,
+            600px 600px at 350px -60px,
             #bea0ce 0px,
             transparent 40%
          ),

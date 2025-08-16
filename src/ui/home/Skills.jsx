@@ -54,7 +54,7 @@ function Skills() {
             {t('Skills.h1')}
          </span>
 
-         <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
+         <div className="grid grid-cols-2 gap-6 md:grid-cols-1 md:px-20 sm:px-0!">
             <div className="flex flex-col gap-5 shadow-xs border border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-5 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
                <h4 className="text-primary-600 text-center">
                   {t('Skills.core-tech')}
