@@ -15,16 +15,16 @@ function Hero() {
          whileInView={{ transform: 'translateY(0px)', opacity: 1 }}
          viewport={{ once: true }}
          id="#hero"
-         className="w-4/5 lg:w-11/12 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
+         className="w-4/5 lg:w-11/12 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 md:px-0! self-center"
       >
          <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10">
             <motion.div
                layout
                className={`${
                   currentLanguage === 'en'
-                     ? 'font-bold leading-18 md:leading-19 xs:leading-12'
-                     : 'font-extrabold leading-17 md:leading-18 xs:leading-12'
-               } text-6xl sm:text-[3.6rem] xs:text-[2.49rem] 2xs:text-4xl text-primary-800`}
+                     ? 'font-bold leading-18 md:leading-17 xs:leading-12.5 2xs:leading-13 text-6xl md:text-[3.3rem] xs:text-[2.49rem] 2xs:text-[2.55rem]'
+                     : 'font-extrabold leading-18 xs:leading-12.5 2xs:leading-13 text-[4rem] md:text-6xl xs:text-[2.49rem] 2xs:text-[2.5rem]'
+               }  sm:text-[3.6rem] text-primary-800`}
             >
                {t('HeroPart1')}
 

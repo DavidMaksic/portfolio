@@ -74,6 +74,7 @@ button,
 @custom-variant sm (@media (max-width: 640px));
 @custom-variant xs (@media (max-width: 450px));
 @custom-variant 2xs (@media (max-width: 390px));
+@custom-variant 3xs (@media (max-width: 340px));
 
 @font-face {
    font-family: 'stylish';
