@@ -107,6 +107,7 @@ button,
 
    --shadow-preview: 0 0 40px 0px #d6d6d6;
    --shadow-article: 0 0 40px 0px #f4f4f4;
+   --shadow-links: 0 0 40px 0px #e8e8e8;
 }
 
 @layer base {
@@ -151,6 +152,10 @@ button,
 
 .shadow-article {
    @apply border border-primary-400/30 dark:border-primary-400/10 shadow-article dark:shadow-none;
+}
+
+.shadow-links {
+   @apply border border-primary-400/40 dark:border-primary-400/15 shadow-links dark:shadow-none;
 }
 
 .shadow {
@@ -513,14 +518,19 @@ p {
 @media (max-width: 450px) {
    .background-gradient {
       background-image: radial-gradient(
-            500px 600px at 0px -100px,
+            500px 500px at 100px -0px,
             #ddcc9f 0px,
-            transparent 55%
+            transparent 40%
          ),
          radial-gradient(
-            500px 600px at 200px -100px,
-            #ff8e8e8e 0px,
-            transparent 55%
+            500px 500px at 200px -0px,
+            #ff8e8ea8 0px,
+            transparent 40%
+         ),
+         radial-gradient(
+            600px 500px at 350px -0px,
+            #bea0ce 0px,
+            transparent 40%
          ),
          radial-gradient(
             4000px 2500px at 50px 100%,

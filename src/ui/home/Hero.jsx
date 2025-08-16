@@ -22,7 +22,7 @@ function Hero() {
                layout
                className={`${
                   currentLanguage === 'en'
-                     ? 'font-bold leading-18 md:leading-17 xs:leading-12.5 2xs:leading-13 text-6xl md:text-[3.3rem] xs:text-[2.49rem] 2xs:text-[2.55rem]'
+                     ? 'font-bold leading-18 md:leading-17 xs:leading-13 2xs:leading-13 text-6xl md:text-[3.3rem] xs:text-[2.49rem] 2xs:text-[2.55rem]'
                      : 'font-extrabold leading-18 xs:leading-12.5 2xs:leading-13 text-[4rem] md:text-6xl xs:text-[2.49rem] 2xs:text-[2.5rem]'
                }  sm:text-[3.6rem] text-primary-800`}
             >
@@ -66,7 +66,7 @@ function Hero() {
                />
             </motion.div>
 
-            <div className="self-center flex items-center justify-center gap-2 rounded-2xl w-fit px-2.5 py-1 border border-primary-400/40 shadow-sm dark:border-primary-400/15 dark:bg-primary-100/50">
+            <div className="self-center flex items-center justify-center gap-2 rounded-2xl w-fit px-2.5 py-1 shadow-links dark:bg-primary-100/50">
                <Link
                   to="https://github.com/DavidMaksic"
                   target="_blank"
