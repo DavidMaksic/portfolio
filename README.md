@@ -6,7 +6,7 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 
 <br>
 
-![portfolio image](/assets/portfolio.png)
+![portfolio image](/assets/portfolio-2.png)
 
 <br>
 
