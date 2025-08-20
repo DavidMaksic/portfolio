@@ -12,7 +12,7 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 
 This project was inspired by:
 
-- nelsonlai.me
+- ![nelsonlai.me](https://nelsonlai.me/)
 - theodorusclarence.com
 - nabeelhassan.dev
 - Radnaabazar.vercel.app
