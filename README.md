@@ -8,6 +8,8 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 
 ![portfolio image](/assets/portfolio.png)
 
+<br>
+
 This project was inspired by:
 
 - nelsonlai.me
