@@ -16,5 +16,5 @@ This project was inspired by:
 - [theodorusclarence.com](https://theodorusclarence.com)
 - [nabeelhassan.dev](https://nabeelhassan.dev)
 - [Radnaabazar.vercel.app](https://radnaabazar.vercel.app/en)
-- [benoldham.dev](benoldham.dev)
-- [bilelhamitouche.vercel.app](bilelhamitouche.vercel.app)
+- [benoldham.dev](https://www.benoldham.dev/)
+- [bilelhamitouche.vercel.app](https://bilelhamitouche.vercel.app/)
