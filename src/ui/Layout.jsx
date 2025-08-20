@@ -20,7 +20,7 @@ function Layout() {
          >
             <main
                className={`mx-auto w-full max-w-5xl flex flex-col min-h-screen text-xl antialiased px-4 text-primary-800 md:px-12 xs:px-6 ${
-                  pathname !== '/' ? 'gap-16 xs:gap-10' : 'gap-28'
+                  pathname !== '/' ? 'gap-16 xs:gap-10' : 'gap-29'
                } ${
                   currentLanguage === 'en' ? 'font-default' : 'font-cyrillic'
                }`}
