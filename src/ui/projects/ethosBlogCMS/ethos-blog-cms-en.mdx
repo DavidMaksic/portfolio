@@ -22,6 +22,7 @@ import CmsImg15 from './../../../../assets/cms-15.png';
 import CmsImg16 from './../../../../assets/cms-16.png';
 import CmsImg17 from './../../../../assets/cms-17.png';
 import CmsImg18 from './../../../../assets/cms-18.png';
+import CmsImg19 from './../../../../assets/admin-permissions.png';
 
 # Ethos Blog CMS
 
@@ -33,10 +34,7 @@ This is the internal application for the Ethos blog, only accessable to the auth
 
 <br />
 
-Authentication and authorization are implemented using **Supabase Auth**. For writing
-articles, **BlockNote** text editor is used. As for responsive design, desktops and
-laptops are supported. Application data is stored in **Supabase** database. Deployed
-on **Vercel**.
+Authentication, authorization and admin permissions are implemented using **Supabase Auth**. For writing articles, **BlockNote** text editor is used. As for responsive design, desktops and laptops are supported. Application data is stored in **Supabase** database. Deployed on **Vercel**.
 
 <br />
 <br />
@@ -45,6 +43,7 @@ on **Vercel**.
    h2Arr={[
       'log-in-screen',
       'dashboard',
+      'admin-permissions',
       'article-creator',
       'article-management',
       'features',
@@ -75,6 +74,21 @@ Upon logging in, new author will see the dashboard page, which contains all the 
 <br />
 
 <ArticleImage image={CmsImg2} alt="Dashboard" />
+
+<br />
+<br />
+
+<ArticleH2 id={'admin-permissions'} text={'Admin permissions'} />
+
+This project is showcased with a profile which has admin permissions. Image bellow shows restricted navigation sidebar of the usual (non-admin) author. Protected routes cannot be accessed.
+
+<br />
+
+Only an admin can create new author profiles, feature articles, create and edit tags, and manage settings. Admins can also edit and delete any article.
+
+<br />
+
+<ArticleImage image={CmsImg19} alt="Admin permissions" />
 
 <br />
 <br />
