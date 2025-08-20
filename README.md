@@ -12,9 +12,9 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 
 This project was inspired by:
 
-- [nelsonlai.me](https://nelsonlai.me/)
-- theodorusclarence.com
-- nabeelhassan.dev
-- Radnaabazar.vercel.app
-- benoldham.dev
-- bilelhamitouche.vercel.app
+- [nelsonlai.me](https://nelsonlai.me)
+- [theodorusclarence.com](https://theodorusclarence.com)
+- [nabeelhassan.dev](https://nabeelhassan.dev)
+- [Radnaabazar.vercel.app](https://radnaabazar.vercel.app/en)
+- [benoldham.dev](benoldham.dev)
+- [bilelhamitouche.vercel.app](bilelhamitouche.vercel.app)
