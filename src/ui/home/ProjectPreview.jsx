@@ -18,7 +18,7 @@ function ProjectPreview({ projectData }) {
    return (
       <Link
          to={`/${projectURL}`}
-         className="rounded-3xl flex flex-col shadow-preview overflow-hidden hover:translate-y-[-10px] transition duration-200 p-2 md:p-4 sm:p-2! gap-2 dark:bg-primary-300/25"
+         className="rounded-3xl flex flex-col shadow-preview overflow-hidden hover:translate-y-[-4px] transition duration-200 p-2 md:p-4 sm:p-2! gap-2 dark:bg-primary-300/25"
       >
          <img
             src={image}

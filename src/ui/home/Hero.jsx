@@ -66,12 +66,12 @@ function Hero() {
                />
             </motion.div>
 
-            <div className="self-center flex items-center justify-center gap-2 rounded-2xl w-fit px-2.5 py-1 shadow-links dark:bg-primary-100/50">
+            <div className="self-center flex items-center justify-center gap-1.5 rounded-2xl w-fit px-2.5 py-1 shadow-links dark:bg-primary-100/50">
                <Link
                   to="https://github.com/DavidMaksic"
                   target="_blank"
                   aria-label="Github"
-                  className="hover:bg-primary-200/50 transition p-2 rounded-xl"
+                  className="hover:bg-primary-200/50 transition p-2.5 rounded-xl"
                >
                   <FaGithub className="size-6" />
                </Link>
@@ -82,7 +82,7 @@ function Hero() {
                   to="https://www.linkedin.com/in/david-maksi%C4%87-b44948379/"
                   target="_blank"
                   aria-label="LinkedIn"
-                  className="hover:bg-primary-200/50 transition p-2 rounded-xl"
+                  className="hover:bg-primary-200/50 transition p-2.5 rounded-xl"
                >
                   <FaLinkedin className="size-6" />
                </Link>

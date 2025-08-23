@@ -10,12 +10,12 @@ function Footer() {
    return (
       <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center  w-[45.5rem] md:w-[40rem] sm:w-full! self-center backdrop-blur-lg rounded-3xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
          <div className="flex xs:flex-col xs:gap-14 justify-between items-center w-full">
-            <div className="flex items-center justify-center gap-2 rounded-lg w-fit">
+            <div className="flex items-center justify-center gap-1.5 w-fit">
                <Link
                   to="https://github.com/DavidMaksic"
                   target="_blank"
                   aria-label="Github"
-                  className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"
+                  className="hover:bg-primary-400/20 transition p-2.5 rounded-xl opacity-85 hover:opacity-100 dark:hover:bg-primary-400/20"
                >
                   <FaGithub className="size-5" />
                </Link>
@@ -26,7 +26,7 @@ function Footer() {
                   to="https://www.linkedin.com/in/david-maksi%C4%87-b44948379/"
                   target="_blank"
                   aria-label="LinkedIn"
-                  className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"
+                  className="hover:bg-primary-400/20 transition ml-0.5 p-2.5 rounded-xl opacity-85 hover:opacity-100 dark:hover:bg-primary-400/20"
                >
                   <FaLinkedinIn className="size-5" />
                </Link>

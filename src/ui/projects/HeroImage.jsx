@@ -50,7 +50,7 @@ function HeroImage({ image, title }) {
          />
 
          <div className="py-4 px-6 xs:px-4 flex justify-between items-center gap-6">
-            <div className="flex items-center gap-2 flex-wrap ">
+            <div className="flex items-center gap-2 flex-wrap">
                {featuredProject?.techStack.map((tech) => (
                   <Tech icon={tech.icon} name={tech.name} key={tech.name} />
                )) ||
@@ -59,13 +59,13 @@ function HeroImage({ image, title }) {
                   ))}
             </div>
 
-            <div className="flex xs:flex-col items-center gap-3 xs:gap-2">
+            <div className="flex xs:flex-col items-center gap-2 xs:gap-2">
                {featuredProject?.codeLink !== undefined ||
                otherProject?.codeLink !== undefined ? (
                   <Link
                      to={featuredProject?.codeLink || otherProject?.codeLink}
                      target="_blank"
-                     className="hover:bg-primary-200 transition p-2 rounded-lg"
+                     className="hover:bg-primary-100 dark:hover:bg-primary-200 transition p-2.5 rounded-xl"
                   >
                      <FaGithub className="size-6" />
                   </Link>
@@ -76,7 +76,7 @@ function HeroImage({ image, title }) {
                   <Link
                      to={featuredProject?.demoLink || otherProject?.demoLink}
                      target="_blank"
-                     className="hover:bg-primary-200 transition p-2 rounded-lg"
+                     className="hover:bg-primary-100 dark:hover:bg-primary-200 transition p-2.5 rounded-xl"
                   >
                      <FiExternalLink className="size-6" />
                   </Link>
