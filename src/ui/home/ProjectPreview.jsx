@@ -1,3 +1,5 @@
+import { HiOutlineBookOpen } from 'react-icons/hi';
+import { FiExternalLink } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Tech from './Tech';
@@ -10,16 +12,16 @@ function ProjectPreview({ projectData }) {
       image,
       descriptionEn,
       descriptionSr,
+      demoLink,
       projectURL,
+      visitBtn,
+      readBtn,
    } = projectData;
-   const { i18n } = useTranslation();
+   const { i18n, t } = useTranslation();
    const currentLanguage = i18n.language;
 
    return (
-      <Link
-         to={`/${projectURL}`}
-         className="rounded-3xl flex flex-col shadow-preview overflow-hidden hover:translate-y-[-4px] transition duration-200 p-2 md:p-4 sm:p-2! gap-2 dark:bg-primary-300/25"
-      >
+      <div className="rounded-3xl grid grid-rows-[0.5fr_1fr_0.1fr] shadow-preview overflow-hidden p-2 pb-4 md:p-4 sm:p-2! sm:pb-3! gap-2 dark:bg-primary-300/25">
          <img
             src={image}
             alt={currentLanguage === 'en' ? titleEn : titleSr}
@@ -41,7 +43,32 @@ function ProjectPreview({ projectData }) {
                ))}
             </div>
          </div>
-      </Link>
+
+         <div
+            className={`grid grid-cols-1 ${demoLink && 'grid-cols-2'} ${
+               currentLanguage === 'en' ? 'text-xl' : 'text-lg'
+            } gap-3 mx-2 sm:mx-1 h-14 font-mono font-semibold mt-1`}
+         >
+            {demoLink && (
+               <Link
+                  to={demoLink}
+                  target="_blank"
+                  className={`rounded-2xl flex items-center justify-center gap-2 ${visitBtn} transition ease-out hover:-translate-y-0.5 hover:saturate-120`}
+               >
+                  <span>{t('Projects.visit-btn')}</span>
+                  <FiExternalLink className="stroke-[2.8px] size-4.5" />
+               </Link>
+            )}
+
+            <Link
+               to={`/${projectURL}`}
+               className={`rounded-2xl flex items-center justify-center gap-2 ${readBtn} transition ease-out hover:-translate-y-0.5 hover:saturate-120`}
+            >
+               <span>{t('Projects.read-more-btn')}</span>
+               <HiOutlineBookOpen className="stroke-[2.5px]" />
+            </Link>
+         </div>
+      </div>
    );
 }
 

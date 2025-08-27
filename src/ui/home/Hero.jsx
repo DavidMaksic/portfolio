@@ -93,7 +93,7 @@ function Hero() {
                   to="https://drive.google.com/file/d/1d_AVw-WwmVMxCHYAzpCIk4jsLAQzXqhn/view?usp=drive_link"
                   target="_blank"
                   aria-label="CV"
-                  className="flex items-center gap-2 hover:bg-primary-200/50 transition p-2 rounded-xl"
+                  className="flex items-center gap-2 hover:bg-primary-200/50 transition py-2 px-3 rounded-xl"
                >
                   <SiReaddotcv className="size-6 stroke-[0.2px]" />
                   {t('CV')}

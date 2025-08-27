@@ -9,12 +9,14 @@
    "HeroPart1": "I'm ",
    "HeroPart2": ", a Front-End developer who builds and designs websites using ",
    "HeroPart3": " and ",
-   "CV": "Resume",
+   "CV": "Download CV",
 
    "Projects": {
       "h1": "My Projects",
       "show-more-btn": "Show more",
-      "show-less-btn": "Show less"
+      "show-less-btn": "Show less",
+      "visit-btn": "Visit",
+      "read-more-btn": "Read more"
    },
 
    "About": {

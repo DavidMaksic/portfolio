@@ -114,6 +114,7 @@ button,
    --shadow-preview: 0 0 40px 0px #d6d6d6;
    --shadow-article: 0 0 40px 0px #f4f4f4;
    --shadow-links: 0 0 40px 0px #e8e8e8;
+   --shadow-hue: 0 0 20px 0px;
 }
 
 @layer base {
