@@ -49,7 +49,7 @@ function ProjectPreview({ projectData }) {
                currentLanguage === 'en'
                   ? 'text-xl xs:text-lg'
                   : 'text-lg xs:text-base'
-            } mx-2 sm:mx-1 h-14 xs:h-12.5 font-mono font-semibold mt-1`}
+            } mx-2 sm:mx-1 h-14 xs:h-12.5 font-mono font-semibold! mt-1`}
          >
             {demoLink && (
                <Link
