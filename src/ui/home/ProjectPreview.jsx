@@ -46,23 +46,27 @@ function ProjectPreview({ projectData }) {
 
          <div
             className={`grid grid-cols-1 ${demoLink && 'grid-cols-2'} ${
-               currentLanguage === 'en' ? 'text-xl' : 'text-lg'
-            } gap-3 mx-2 sm:mx-1 h-14 font-mono font-semibold mt-1`}
+               currentLanguage === 'en'
+                  ? 'text-xl xs:text-lg'
+                  : 'text-lg xs:text-base'
+            } mx-2 sm:mx-1 h-14 xs:h-12.5 font-mono font-semibold mt-1`}
          >
             {demoLink && (
                <Link
                   to={demoLink}
                   target="_blank"
-                  className={`rounded-2xl flex items-center justify-center gap-2 ${visitBtn} transition ease-out hover:-translate-y-0.5 hover:saturate-120`}
+                  className={`rounded-l-2xl flex items-center justify-center gap-2 ${visitBtn} transition ease-out hover:saturate-120 border-r border-r-primary-50`}
                >
                   <span>{t('Projects.visit-btn')}</span>
-                  <FiExternalLink className="stroke-[2.8px] size-4.5" />
+                  <FiExternalLink className="stroke-[2.8px] size-4.5 xs:size-4" />
                </Link>
             )}
 
             <Link
                to={`/${projectURL}`}
-               className={`rounded-2xl flex items-center justify-center gap-2 ${readBtn} transition ease-out hover:-translate-y-0.5 hover:saturate-120`}
+               className={`rounded-r-2xl flex items-center justify-center gap-2 ${readBtn} ${
+                  !demoLink && 'rounded-l-2xl'
+               } transition ease-out hover:saturate-120`}
             >
                <span>{t('Projects.read-more-btn')}</span>
                <HiOutlineBookOpen className="stroke-[2.5px]" />
