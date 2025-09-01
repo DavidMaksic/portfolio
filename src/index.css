@@ -1127,3 +1127,7 @@ p {
          radial-gradient(circle at bottom, var(--color-primary), transparent);
    }
 }
+
+code {
+   @apply bg-primary-300/60 px-2 py-0.5 rounded-md;
+}
