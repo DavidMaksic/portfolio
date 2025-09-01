@@ -41,6 +41,14 @@ function HeroImage({ image, title }) {
       };
    }, []);
 
+   const hasLink =
+      featuredProject?.codeLink !== undefined ||
+      otherProject?.codeLink !== undefined;
+
+   const noLinks =
+      featuredProject?.codeLink === undefined &&
+      otherProject?.codeLink === undefined;
+
    return (
       <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[3rem] sm:mx-0! bg-white dark:bg-primary-300/25">
          <img
@@ -49,7 +57,11 @@ function HeroImage({ image, title }) {
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
-         <div className="py-4 px-6 xs:px-4 flex justify-between items-center gap-6">
+         <div
+            className={`py-4 px-6 xs:px-4 flex justify-between items-center ${
+               noLinks ? 'gap-0!' : 'gap-6'
+            }`}
+         >
             <div className="flex items-center gap-2 flex-wrap">
                {featuredProject?.techStack.map((tech) => (
                   <Tech icon={tech.icon} name={tech.name} key={tech.name} />
@@ -60,8 +72,7 @@ function HeroImage({ image, title }) {
             </div>
 
             <div className="flex xs:flex-col items-center gap-2 xs:gap-2">
-               {featuredProject?.codeLink !== undefined ||
-               otherProject?.codeLink !== undefined ? (
+               {hasLink && (
                   <Link
                      to={featuredProject?.codeLink || otherProject?.codeLink}
                      target="_blank"
@@ -69,10 +80,9 @@ function HeroImage({ image, title }) {
                   >
                      <FaGithub className="size-6" />
                   </Link>
-               ) : null}
+               )}
 
-               {featuredProject?.demoLink !== undefined ||
-               otherProject?.demoLink !== undefined ? (
+               {hasLink && (
                   <Link
                      to={featuredProject?.demoLink || otherProject?.demoLink}
                      target="_blank"
@@ -80,7 +90,7 @@ function HeroImage({ image, title }) {
                   >
                      <FiExternalLink className="size-6" />
                   </Link>
-               ) : null}
+               )}
             </div>
          </div>
       </div>
