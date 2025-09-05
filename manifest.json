@@ -1,0 +1,15 @@
+{
+   "name": "Portfolio",
+   "short_name": "Portfolio",
+   "icons": [
+      {
+         "src": "/assets/icon-phone.png",
+         "sizes": "136x136",
+         "type": "image/png"
+      }
+   ],
+   "start_url": "/",
+   "display": "standalone",
+   "theme_color": "#ffffff",
+   "background_color": "#ffffff"
+}
