@@ -23,12 +23,12 @@ export default defineConfig({
             start_url: '/',
             icons: [
                {
-                  src: '/public/logo-mobile-sm.png',
+                  src: '/logo-mobile-sm.png',
                   sizes: '192x192',
                   type: 'image/png',
                },
                {
-                  src: '/public/logo-mobile-lg.png',
+                  src: '/logo-mobile-lg.png',
                   sizes: '512x512',
                   type: 'image/png',
                },
