@@ -14,7 +14,7 @@ function Layout() {
    return (
       <div>
          <div
-            className={`background-gradient bg-primary dark:bg-primary transition ${
+            className={`background-gradient bg-primary transition ${
                pathname === '/' && 'background-glow'
             } `}
          >

@@ -119,7 +119,7 @@ button,
 
 @layer base {
    [data-theme='dark'] {
-      --color-primary: rgb(9, 9, 9);
+      --color-primary: #090909;
 
       --color-primary-950: #fafafa;
       --color-primary-900: #f4f4f4;
