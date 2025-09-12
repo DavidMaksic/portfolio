@@ -3,8 +3,8 @@ import { AnimatePresence } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
-import enFlag from './../../../assets/en-flag.png';
-import srFlag from './../../../assets/sr-flag.png';
+import enFlag from './../../../public/en-flag.png';
+import srFlag from './../../../public/sr-flag.png';
 
 const languages = [
    {
@@ -38,7 +38,7 @@ function LanguageButton() {
       setLanguage((prevState) => ({
          ...prevState,
          currentLanguage: languageCode,
-         flag: `/assets/${languageCode}-flag.png`,
+         flag: `/public/${languageCode}-flag.png`,
       }));
    };
 

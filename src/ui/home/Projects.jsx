@@ -26,14 +26,14 @@ import { CgShortcut } from 'react-icons/cg';
 import { motion } from 'motion/react';
 
 import ProjectPreview from './ProjectPreview';
-import CasamentoImg from './../../../assets/casamento.png';
-import EthosCmsImg from './../../../assets/ethos-cms.png';
-import UseGamesImg from './../../../assets/use-games.png';
-import YakuzaImg from './../../../assets/yakuza.png';
-import EthosImg from './../../../assets/ethos.png';
-import timerImg from './../../../assets/timer.png';
-import blogImg from './../../../assets/blog.png';
-import vsCode from './../../../assets/vscode.png';
+import CasamentoImg from './../../../public/casamento.png';
+import EthosCmsImg from './../../../public/ethos-cms.png';
+import UseGamesImg from './../../../public/use-games.png';
+import YakuzaImg from './../../../public/yakuza.png';
+import EthosImg from './../../../public/ethos.png';
+import timerImg from './../../../public/timer.png';
+import blogImg from './../../../public/blog.png';
+import vsCode from './../../../public/vscode.png';
 
 export const featuredProjects = [
    {

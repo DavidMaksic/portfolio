@@ -12,9 +12,8 @@ export default defineConfig({
       mdx(),
       VitePWA({
          registerType: 'autoUpdate',
-         includeAssets: ['favicon.png'],
          manifest: {
-            name: 'David Maksić Portfolio',
+            name: '>David Maksić • Portfolio',
             short_name: 'Portfolio',
             description:
                'On this portfolio I showcase all of my most imporant projects.',
@@ -24,12 +23,12 @@ export default defineConfig({
             start_url: '/',
             icons: [
                {
-                  src: '/assets/logo-mobile-sm.png',
+                  src: '/public/logo-mobile-sm.png',
                   sizes: '192x192',
                   type: 'image/png',
                },
                {
-                  src: '/assets/logo-mobile-lg.png',
+                  src: '/public/logo-mobile-lg.png',
                   sizes: '512x512',
                   type: 'image/png',
                },
