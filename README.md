@@ -27,3 +27,7 @@ This project was inspired by:
 -  [Radnaabazar.vercel.app](https://radnaabazar.vercel.app/en)
 -  [benoldham.dev](https://www.benoldham.dev/)
 -  [bilelhamitouche.vercel.app](https://bilelhamitouche.vercel.app/)
+
+<br>
+
+Special thanks to **Jonas Schmedtmann**, thanks to whom I learned everything I know; his work was an inspiration for most of my projects. If you are new at learning web development check him out!
