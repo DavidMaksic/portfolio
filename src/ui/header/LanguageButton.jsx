@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from 'motion/react';
 import { useOutsideClick } from '../../hooks/useOutsideClick';
-import { AnimatePresence } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
@@ -53,10 +53,19 @@ function LanguageButton() {
 
          <AnimatePresence>
             {open && (
-               <ul
-                  className="absolute space-y-1 p-1 mt-3 min-w-[9.9rem] text-xl lg:right-0 rounded-2xl bg-primary border border-primary-300 dark:bg-[#27252b] xs:dark:bg-[#2d2a33] dark:border-primary-400/10 shadow-lg cursor-pointer"
+               <motion.ul
+                  className="absolute space-y-1 p-1 mt-3 min-w-[9.9rem] text-xl lg:right-0 rounded-2xl bg-primary border border-primary-300 dark:bg-[#27252b] xs:dark:bg-[#2d2a33] dark:border-primary-400/10 shadow-lg cursor-pointer will-change-transform"
                   ref={ref}
                   onClick={() => setOpen(false)}
+                  initial={{ opacity: 0, y: -8, scale: 0.97 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -8, scale: 0.97 }}
+                  transition={{
+                     type: 'spring',
+                     stiffness: 500,
+                     damping: 30,
+                     duration: 0.12,
+                  }}
                >
                   {languages.map((item) => (
                      <li
@@ -78,7 +87,7 @@ function LanguageButton() {
                         />
                      </li>
                   ))}
-               </ul>
+               </motion.ul>
             )}
          </AnimatePresence>
       </div>
