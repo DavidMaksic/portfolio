@@ -7,6 +7,9 @@ function Footer() {
    const location = useLocation();
    const pathname = location.pathname;
 
+   const startYear = 2025;
+   const currentYear = new Date().getFullYear();
+
    return (
       <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center  w-[45.5rem] md:w-[40rem] sm:w-full! self-center backdrop-blur-lg rounded-3xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
          <div className="flex xs:flex-col xs:gap-14 justify-between items-center w-full">
@@ -79,9 +82,17 @@ function Footer() {
                {t('Footer.p1-part4')}.
             </span>
 
-            <span className="text-base text-primary-700 text-center">
-               {t('Footer.p2')}
-            </span>
+            <div className="text-base text-primary-700 text-center">
+               {t('Footer.copyright-1')}
+               <span>
+                  {'©'}
+                  {startYear}
+                  <span className="font-medium">−</span>
+                  {currentYear}
+               </span>
+
+               {t('Footer.copyright-2')}
+            </div>
          </div>
       </div>
    );
