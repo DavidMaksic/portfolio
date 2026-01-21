@@ -6,7 +6,12 @@ import {
 } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
-import { SiMdx, SiReactquery, SiReactrouter, SiRedux } from 'react-icons/si';
+import {
+   SiPostgresql,
+   SiReactquery,
+   SiReactrouter,
+   SiRedux,
+} from 'react-icons/si';
 
 const coreTech = [
    { icon: <RiNextjsFill className="size-9" />, name: 'Next.js' },
@@ -34,7 +39,7 @@ const otherTech = [
    { icon: <SiRedux className="size-8" />, name: 'Redux' },
    { icon: <SiReactrouter className="size-8" />, name: 'React Router' },
    { icon: <SiReactquery className="size-8" />, name: 'React Query' },
-   { icon: <SiMdx className="size-8" />, name: 'MDX' },
+   { icon: <SiPostgresql className="size-8" />, name: 'PostgreSQL' },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
 ];
 
