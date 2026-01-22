@@ -22,12 +22,10 @@
    "About": {
       "h1": "About me",
       "name": "David Maksić",
-      "p1": "I'm a self-taught Front-End web developer from Serbia. I'm 25 and my current focus is learning Next.js and React. Other technologies I'm interested in are TypeScript and UI libraries (and many more).",
-      "p2-part1": "My web-dev journey started when I found out you don't need to be math expert to code, but mainly to exercise logic. I was recommended ",
-      "p2-part2": " as a first step into web development in 2021 and have started slowly looking into it throughout 2022. As my learning got more serious, in 2023 I decided to work harder as I started building small projects where I practiced the basics: HTML, CSS and Javascript.",
-      "p3-part1": "In 2024 I started learning ",
-      "p3-part2": " which changed my perspective of coding; building modern web apps got so much more easier and fun. After some time I decided to cover ",
-      "p3-part3": " as well."
+      "p1": "I'm a self-taught Front-End web developer, with focus on building user-friendly web applications using modern technologies.",
+      "p2-part1": "My programming journey started when I found out that writing code is less about advanced mathematics and more about logical thinking. I was recommended ",
+      "p2-part2": " as a first step into web development. As my learning got more serious, I decided to work harder and build projects where I could practice React, Next.js, and other technologies.",
+      "p3": "Over the past three years, I consistently studied programming by using documentations, blogs, coding challenges, tutorials, courses and lately, AI models."
    },
 
    "Skills": {

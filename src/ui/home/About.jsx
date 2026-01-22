@@ -29,7 +29,7 @@ function About() {
             />
 
             <div className="flex flex-col gap-8">
-               <div className="flex flex-col gap-3 text-primary-700 leading-8 md:leading-9 xs:leading-8.5">
+               <div className="flex flex-col gap-3 text-primary-700 leading-9 md:leading-9 xs:leading-8.5">
                   <span>{t('About.p1')}</span>
 
                   <span>
@@ -37,12 +37,7 @@ function About() {
                      {t('About.p2-part2')}
                   </span>
 
-                  <span>
-                     {t('About.p3-part1')} <strong>React</strong>,
-                     {t('About.p3-part2')}
-                     <strong>Next.js</strong>
-                     {t('About.p3-part3')}
-                  </span>
+                  <span>{t('About.p3')}</span>
                </div>
 
                <span className="self-end text-5xl text-primary-800 font-stylish pr-10">
