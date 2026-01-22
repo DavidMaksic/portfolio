@@ -211,6 +211,10 @@ export const otherProjects = [
             icon: <SiRedux />,
          },
          {
+            name: 'React Router',
+            icon: <SiReactrouter />,
+         },
+         {
             name: 'Responsive',
             icon: <FaMobileScreenButton />,
          },

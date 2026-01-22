@@ -111,7 +111,7 @@ button,
    --color-primary-100: #f4f4f4;
    --color-primary-50: #fafafa;
 
-   --shadow-preview: 0 0 40px 0px #d6d6d6;
+   --shadow-preview: 0 0 40px 0px #cbcbcb;
    --shadow-article: 0 0 40px 0px #f4f4f4;
    --shadow-links: 0 0 40px 0px #e8e8e8;
    --shadow-hue: 0 0 20px 0px;
@@ -291,7 +291,8 @@ p {
 
 @media (max-width: 3850px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 900px at 1400px -100px,
             #ddcd9f 0px,
             transparent 65%
@@ -322,7 +323,8 @@ p {
 
 @media (max-width: 2570px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1000px 800px at 900px -80px,
             #ddcd9f 0px,
             transparent 55%
@@ -353,7 +355,8 @@ p {
 
 @media (max-width: 1921px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             800px 600px at 700px -60px,
             #ddcd9f 0px,
             transparent 45%
@@ -384,7 +387,8 @@ p {
 
 @media (max-width: 1580px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             800px 600px at 500px -60px,
             #ddcd9f 0px,
             transparent 45%
@@ -415,7 +419,8 @@ p {
 
 @media (max-width: 1270px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             800px 600px at 400px -60px,
             #ddcd9f 0px,
             transparent 45%
@@ -446,7 +451,8 @@ p {
 
 @media (max-width: 1024px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             800px 600px at 300px -40px,
             #ddcd9f 0px,
             transparent 40%
@@ -477,7 +483,8 @@ p {
 
 @media (max-width: 768px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             800px 600px at 200px -40px,
             #ddcd9f 0px,
             transparent 40%
@@ -508,7 +515,8 @@ p {
 
 @media (max-width: 650px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             700px 600px at 120px -40px,
             #ddcd9f 0px,
             transparent 40%
@@ -539,7 +547,8 @@ p {
 
 @media (max-width: 450px) {
    .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             600px 600px at 100px -60px,
             #ddcc9f 0px,
             transparent 40%
@@ -570,7 +579,8 @@ p {
 
 @media (max-width: 3850px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             2600px 1300px at 1500px -80px,
             #184460b7 0px,
             transparent 50%
@@ -594,7 +604,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             2600px 1300px at 1500px -80px,
             #184460b7 0px,
             transparent 50%
@@ -625,7 +636,8 @@ p {
 
 @media (max-width: 2570px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             2200px 1300px at 900px -50px,
             #184460b7 0px,
             transparent 35%
@@ -649,7 +661,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             2200px 1300px at 900px -50px,
             #184460b7 0px,
             transparent 35%
@@ -680,7 +693,8 @@ p {
 
 @media (max-width: 1921px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 900px at 800px -150px,
             #184460b7 0px,
             transparent 40%
@@ -709,7 +723,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 900px at 800px -150px,
             #184460b7 0px,
             transparent 40%
@@ -745,7 +760,8 @@ p {
 
 @media (max-width: 1580px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 600px -50px,
             #184460b7 0px,
             transparent 30%
@@ -769,7 +785,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 600px -50px,
             #184460b7 0px,
             transparent 30%
@@ -800,7 +817,8 @@ p {
 
 @media (max-width: 1270px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 500px -50px,
             #184460b7 0px,
             transparent 30%
@@ -824,7 +842,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 500px -50px,
             #184460b7 0px,
             transparent 30%
@@ -855,7 +874,8 @@ p {
 
 @media (max-width: 1024px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 350px -50px,
             #184460b7 0px,
             transparent 30%
@@ -879,7 +899,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 350px -50px,
             #184460b7 0px,
             transparent 30%
@@ -910,7 +931,8 @@ p {
 
 @media (max-width: 768px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 250px -50px,
             #184460b7 0px,
             transparent 30%
@@ -934,7 +956,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 250px -50px,
             #184460b7 0px,
             transparent 30%
@@ -965,7 +988,8 @@ p {
 
 @media (max-width: 650px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 150px -80px,
             #184460b7 0px,
             transparent 30%
@@ -989,7 +1013,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1700px 1000px at 150px -80px,
             #184460b7 0px,
             transparent 30%
@@ -1020,7 +1045,8 @@ p {
 
 @media (max-width: 450px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 1000px at 100px -80px,
             #184460b7 0px,
             transparent 30%
@@ -1044,7 +1070,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 1000px at 100px -80px,
             #184460b7 0px,
             transparent 30%
@@ -1075,7 +1102,8 @@ p {
 
 @media (max-width: 390px) {
    [data-theme='dark'] .background-gradient {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 1000px at 100px -80px,
             #184460b7 0px,
             transparent 30%
@@ -1099,7 +1127,8 @@ p {
    }
 
    [data-theme='dark'] .background-glow {
-      background-image: radial-gradient(
+      background-image:
+         radial-gradient(
             1200px 1000px at 100px -80px,
             #184460b7 0px,
             transparent 30%
