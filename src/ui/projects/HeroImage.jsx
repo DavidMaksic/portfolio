@@ -15,10 +15,10 @@ function HeroImage({ image, title }) {
 
    // Title is needed to figure out which is the current project, so we can get its techStack
    const [featuredProject] = featured.filter(
-      (item) => item.titleEn === title || item.titleSr === title
+      (item) => item.titleEn === title || item.titleSr === title,
    );
    const [otherProject] = other.filter(
-      (item) => item.titleEn === title || item.titleSr === title
+      (item) => item.titleEn === title || item.titleSr === title,
    );
 
    // Image Zoom logic
@@ -41,13 +41,10 @@ function HeroImage({ image, title }) {
       };
    }, []);
 
-   const hasLink =
-      featuredProject?.codeLink !== undefined ||
-      otherProject?.codeLink !== undefined;
+   const hasCodeLink = featuredProject?.codeLink || otherProject?.codeLink;
+   const hasDemoLink = featuredProject?.demoLink || otherProject?.demoLink;
 
-   const noLinks =
-      featuredProject?.codeLink === undefined &&
-      otherProject?.codeLink === undefined;
+   const noLinks = !hasCodeLink && !hasDemoLink;
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[3rem] sm:mx-0! bg-white dark:bg-primary-300/25">
@@ -72,7 +69,7 @@ function HeroImage({ image, title }) {
             </div>
 
             <div className="flex xs:flex-col items-center gap-2 xs:gap-2">
-               {hasLink && (
+               {hasCodeLink && (
                   <Link
                      to={featuredProject?.codeLink || otherProject?.codeLink}
                      target="_blank"
@@ -82,7 +79,7 @@ function HeroImage({ image, title }) {
                   </Link>
                )}
 
-               {hasLink && (
+               {hasDemoLink && (
                   <Link
                      to={featuredProject?.demoLink || otherProject?.demoLink}
                      target="_blank"
