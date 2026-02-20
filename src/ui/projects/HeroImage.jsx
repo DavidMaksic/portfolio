@@ -1,19 +1,15 @@
 import { featuredProjects, otherProjects } from '../home/Projects';
+import { Link, useLocation } from 'react-router-dom';
 import { FiExternalLink } from 'react-icons/fi';
-import { useMediaQuery } from 'react-responsive';
-import { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
-
-import mediumZoom from 'medium-zoom';
 import Tech from '../home/Tech';
 
 function HeroImage({ image, title }) {
    const featured = featuredProjects.map((item) => item);
    const other = otherProjects.map((item) => item);
-   const isMobile = useMediaQuery({ maxWidth: 768 });
+   const { pathname } = useLocation();
 
-   // Title is needed to figure out which is the current project, so we can get its techStack
+   // Find current project based on title, to extract its tech stack
    const [featuredProject] = featured.filter(
       (item) => item.titleEn === title || item.titleSr === title,
    );
@@ -21,36 +17,18 @@ function HeroImage({ image, title }) {
       (item) => item.titleEn === title || item.titleSr === title,
    );
 
-   // Image Zoom logic
-   useEffect(() => {
-      const zoom = mediumZoom('.parent img', {
-         margin: isMobile ? 20 : 60,
-      });
-
-      const handleClick = (e) => {
-         if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
-            zoom.close();
-         }
-      };
-
-      document.addEventListener('click', handleClick);
-
-      return () => {
-         document.removeEventListener('click', handleClick);
-         zoom.detach();
-      };
-   }, []);
-
    const hasCodeLink = featuredProject?.codeLink || otherProject?.codeLink;
    const hasDemoLink = featuredProject?.demoLink || otherProject?.demoLink;
 
    const noLinks = !hasCodeLink && !hasDemoLink;
+   const hasZoom =
+      pathname === '/casamento' || pathname === '/yakuza' ? 'hero-image' : '';
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[3rem] sm:mx-0! bg-white dark:bg-primary-300/25">
          <img
             src={image}
-            className="rounded-3xl dark:opacity-90 dark:shadow-md"
+            className={`rounded-3xl dark:opacity-90 dark:shadow-md ${hasZoom}`}
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
