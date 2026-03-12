@@ -76,7 +76,7 @@ export const featuredProjects = [
       ],
       projectURL: 'ethos-blog',
       codeLink: 'https://github.com/DavidMaksic/ethos-blog',
-      demoLink: 'https://ethos-blog.vercel.app',
+      demoLink: 'https://ethos-blog.com',
       visitBtn:
          'bg-red-700/8 dark:bg-red-200/15 hover:bg-red-700/40 dark:hover:bg-red-300/40 text-red-800/50 dark:text-red-200/65 hover:text-red-50 hover:shadow-hue hover:shadow-red-700/25 dark:hover:shadow-red-300/15',
       readBtn:
