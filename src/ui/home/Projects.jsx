@@ -118,7 +118,6 @@ export const featuredProjects = [
          },
       ],
       projectURL: 'ethos-blog-cms',
-      codeLink: 'https://github.com/DavidMaksic/ethos-blog-cms',
       readBtn:
          'bg-lime-700/8 dark:bg-lime-200/15 hover:bg-lime-700/40 dark:hover:bg-lime-300/40 text-lime-800/55 dark:text-lime-200/65 hover:text-lime-50 hover:shadow-hue hover:shadow-lime-700/25 dark:hover:shadow-lime-300/15',
    },
