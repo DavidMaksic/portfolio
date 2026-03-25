@@ -7,6 +7,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 import {
+   SiBetterauth,
    SiPostgresql,
    SiReactquery,
    SiReactrouter,
@@ -39,7 +40,7 @@ const otherTech = [
    { icon: <SiRedux className="size-8" />, name: 'Redux' },
    { icon: <SiReactrouter className="size-8" />, name: 'React Router' },
    { icon: <SiReactquery className="size-8" />, name: 'React Query' },
-   { icon: <SiPostgresql className="size-8" />, name: 'PostgreSQL' },
+   { icon: <SiBetterauth className="size-8" />, name: 'Better Auth' },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
 ];
 

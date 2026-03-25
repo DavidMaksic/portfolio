@@ -13,7 +13,16 @@ import {
    RiSupabaseFill,
    RiTailwindCssFill,
 } from 'react-icons/ri';
-import { SiReactquery, SiRedux, SiReactrouter, SiUmami } from 'react-icons/si';
+import {
+   SiReactquery,
+   SiRedux,
+   SiReactrouter,
+   SiUmami,
+   SiBetterauth,
+   SiReacthookform,
+   SiZod,
+   SiResend,
+} from 'react-icons/si';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useTranslation } from 'react-i18next';
@@ -54,6 +63,10 @@ export const featuredProjects = [
             icon: <RiTailwindCssFill />,
          },
          {
+            name: 'Better Auth',
+            icon: <SiBetterauth />,
+         },
+         {
             name: 'Motion',
             icon: <TbBrandFramerMotion />,
          },
@@ -66,12 +79,20 @@ export const featuredProjects = [
             icon: <RiSupabaseFill />,
          },
          {
-            name: 'Umami',
-            icon: <SiUmami />,
+            name: 'Zod',
+            icon: <SiZod />,
          },
          {
             name: 'Responsive',
             icon: <FaMobileScreenButton />,
+         },
+         {
+            name: 'Resend',
+            icon: <SiResend />,
+         },
+         {
+            name: 'Umami',
+            icon: <SiUmami />,
          },
       ],
       projectURL: 'ethos-blog',
@@ -107,6 +128,10 @@ export const featuredProjects = [
          {
             name: 'React Router',
             icon: <SiReactrouter />,
+         },
+         {
+            name: 'React Hook Form',
+            icon: <SiReacthookform />,
          },
          {
             name: 'Motion',
@@ -154,43 +179,6 @@ export const featuredProjects = [
    },
 
    {
-      titleEn: 'O Casamento',
-      titleSr: 'O Casamento',
-      image: CasamentoImg,
-      descriptionEn:
-         'A brochure website for a fictional wedding company, which showcases what this company offers.',
-      descriptionSr:
-         'Вебсајт брошура за фикционалну фирму за венчања, која представља њену понуду.',
-      techStack: [
-         {
-            name: 'HTML',
-            icon: <FaHtml5 />,
-         },
-         {
-            name: 'SASS',
-            icon: <FaSass />,
-         },
-         {
-            name: 'JavaScript',
-            icon: <FaJs />,
-         },
-         {
-            name: 'Responsive',
-            icon: <FaMobileScreenButton />,
-         },
-      ],
-      projectURL: 'casamento',
-      codeLink: 'https://github.com/DavidMaksic/O-Casamento',
-      demoLink: 'https://davidmaksic.github.io/O-Casamento/',
-      visitBtn:
-         'bg-teal-700/8 dark:bg-teal-200/15 hover:bg-teal-700/40 dark:hover:bg-teal-300/40 text-teal-800/55 dark:text-teal-200/65 hover:text-teal-50 hover:shadow-hue hover:shadow-teal-700/25 dark:hover:shadow-teal-300/15',
-      readBtn:
-         'bg-cyan-700/8 dark:bg-cyan-200/15 hover:bg-cyan-700/40 dark:hover:bg-cyan-300/40 text-cyan-800/55 dark:text-cyan-200/65 hover:text-cyan-50 hover:shadow-hue hover:shadow-cyan-700/25 dark:hover:shadow-cyan-300/15',
-   },
-];
-
-export const otherProjects = [
-   {
       titleEn: 'Training Timer',
       titleSr: 'Тренинг Тајмер',
       image: timerImg,
@@ -227,6 +215,43 @@ export const otherProjects = [
          'bg-sky-700/8 dark:bg-sky-200/15 hover:bg-sky-700/40 dark:hover:bg-sky-300/40 text-sky-800/55 dark:text-sky-200/65 hover:text-sky-50 hover:shadow-hue hover:shadow-sky-700/25 dark:hover:shadow-sky-300/15',
       readBtn:
          'bg-blue-700/8 dark:bg-blue-200/15 hover:bg-blue-700/40 dark:hover:bg-blue-300/40 text-blue-800/55 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
+   },
+];
+
+export const otherProjects = [
+   {
+      titleEn: 'O Casamento',
+      titleSr: 'O Casamento',
+      image: CasamentoImg,
+      descriptionEn:
+         'A brochure website for a fictional wedding company, displaying what it offers.',
+      descriptionSr:
+         'Вебсајт брошура за фикционалну фирму за венчања, која представља њену понуду.',
+      techStack: [
+         {
+            name: 'HTML',
+            icon: <FaHtml5 />,
+         },
+         {
+            name: 'SASS',
+            icon: <FaSass />,
+         },
+         {
+            name: 'JavaScript',
+            icon: <FaJs />,
+         },
+         {
+            name: 'Responsive',
+            icon: <FaMobileScreenButton />,
+         },
+      ],
+      projectURL: 'casamento',
+      codeLink: 'https://github.com/DavidMaksic/O-Casamento',
+      demoLink: 'https://davidmaksic.github.io/O-Casamento/',
+      visitBtn:
+         'bg-teal-700/8 dark:bg-teal-200/15 hover:bg-teal-700/40 dark:hover:bg-teal-300/40 text-teal-800/55 dark:text-teal-200/65 hover:text-teal-50 hover:shadow-hue hover:shadow-teal-700/25 dark:hover:shadow-teal-300/15',
+      readBtn:
+         'bg-cyan-700/8 dark:bg-cyan-200/15 hover:bg-cyan-700/40 dark:hover:bg-cyan-300/40 text-cyan-800/55 dark:text-cyan-200/65 hover:text-cyan-50 hover:shadow-hue hover:shadow-cyan-700/25 dark:hover:shadow-cyan-300/15',
    },
 
    {
