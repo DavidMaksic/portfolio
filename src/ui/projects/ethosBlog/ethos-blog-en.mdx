@@ -32,6 +32,15 @@ import EthosMobileImg10 from './../../../../public/ethos-mobile-10.png';
 import EthosMobileImg11 from './../../../../public/ethos-mobile-11.png';
 import EthosMobileImg12 from './../../../../public/ethos-mobile-12.png';
 
+import Newsletter1 from './../../../../public/newsletter-1.png';
+import Newsletter2 from './../../../../public/newsletter-2.png';
+import Newsletter3 from './../../../../public/newsletter-3.jpg';
+import NewsletterMobile from './../../../../public/newsletter-mobile.png';
+
+import AuthImage1 from './../../../../public/auth-1.png';
+import AuthImage2 from './../../../../public/auth-2.png';
+import AuthMobile1 from './../../../../public/auth-mobile-1.jpg';
+
 # Ethos Blog
 
 ### A Next.js blog website featuring internationalization, user authentication and a comment system. Designed for a comfy reading experience.
@@ -42,15 +51,15 @@ Ethos Blog enables its users to do many things: read, comment, bookmark, etc. Th
 
 <br />
 
-Authentication and authorization was implemented using **NextAuth**. Internationalization is supported thanks to **`next-intl`** library. Site is styled with **Tailwind** and can be used on variety of devices thanks to the responsive design.
+Authentication is implemented using **Better Auth**. Emails are styled with **React Email**, and sent by **Resend**. Internationalization is supported thanks to **`next-intl`** library. Site is styled with **Tailwind** and can be used on a variety of devices thanks to the responsive design.
 
 <br />
 
-Light and dark mode are handled by **`next-themes`**. Dynamic metadata is implemented for SEO optimization. Complex layout animations are implemented thanks to **Motion** library.
+Light and dark mode are handled by **`next-themes`**. Dynamic metadata/OpenGraph/JSON-LD are implemented for SEO optimization. Complex layout animations are implemented thanks to **Motion** library. Data validation is implemented with **Zod**.
 
 <br />
 
-Both **Umami** and **Vercel** are used for analytics. Application data is stored in **Supabase** database. Deployed on **Vercel**.
+**Umami** is used for analytics. Application data is stored in **Supabase** database. Deployed on **Vercel**.
 
 <br />
 <br />
@@ -61,6 +70,8 @@ Both **Umami** and **Vercel** are used for analytics. Application data is stored
       'article',
       'archive',
       'about-page',
+      'newsletter',
+      'authentication',
       'user-profile',
       'credits',
    ]}
@@ -203,9 +214,74 @@ Here users can read the short description of this blog and etymology behind its 
 <br />
 <br />
 
+<ArticleH2 id={'newsletter'} text={'Newsletter'} />
+
+At the end of each page there is a newsletter sign-up.
+
+<br />
+
+<ArticleImage
+   image={Newsletter1}
+   imageMobile={NewsletterMobile}
+   alt="Newsletter component"
+   isResponsive={true}
+/>
+
+<br />
+
+After subscribing, user will get welcome email. Emails are sent using **Resend** library.
+
+<br />
+
+<ArticleImage image={Newsletter2} alt="Welcome email example" height="h-130" />
+
+<br />
+
+Now, whenever a new article is published user will be notified by an email.
+
+<br />
+
+<ArticleImage image={Newsletter3} alt="Article email example" height="h-200" />
+
+<br />
+<br />
+
+<ArticleH2 id={'authentication'} text={'Authentication'} />
+
+On this page user can sign in/up and reset their password. Aside from traditional credentials, users can also sign in using **OAuth**, like Google or Github.
+
+<br />
+
+<ArticleImage
+   image={AuthImage1}
+   imageMobile={AuthMobile1}
+   alt="Sign-in page"
+   isResponsive={true}
+   height="h-100"
+/>
+
+<br />
+
+If user chooses to reset their password, they will get confirmation email with instructions for that.
+
+<br />
+
+<ArticleImage
+   image={AuthImage2}
+   alt="Reset password email example"
+   height="h-130"
+/>
+
+<br />
+
+**Note:** Most email clients don't support custom styles and fonts, like Gmail or Outlook. But others, such as Apple or iOS Mail do allow them.
+
+<br />
+<br />
+
 <ArticleH2 id={'user-profile'} text={'User profile'} />
 
-After singing up/logging in, user can access their profile. By default, they will see the Overview page, which showcases some profile statistics.
+After being authenticated, user can access their profile. By default, they will see the overview page, which showcases some profile statistics.
 
 <br />
 
@@ -262,4 +338,4 @@ Finally, we come to the profile settings. Here user can change their username an
 
 <ArticleH2 id={'credits'} text={'Credits'} />
 
-Special thanks to **[Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/)**, thanks to whom I learned everything I know; his work was an inspiration for most of my projects. If you are new at learning web development check him out!
+Special thanks to **[Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/)**; his work was an inspiration for most of my projects. If you are new at learning web development, check him out!
