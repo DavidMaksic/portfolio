@@ -21,7 +21,7 @@ function ProjectPreview({ projectData }) {
    const currentLanguage = i18n.language;
 
    return (
-      <div className="rounded-3xl grid grid-rows-[0.5fr_1fr_0.1fr] shadow-preview overflow-hidden p-2 pb-4 md:p-4 sm:p-2! sm:pb-3! gap-2 dark:bg-primary-300/25">
+      <div className="rounded-3xl grid grid-rows-[0.5fr_auto_0.1fr] shadow-preview overflow-hidden p-2 pb-4 md:p-4 sm:p-2! sm:pb-3! gap-2 dark:bg-primary-300/25">
          <img
             src={image}
             alt={currentLanguage === 'en' ? titleEn : titleSr}

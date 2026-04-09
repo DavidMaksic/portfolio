@@ -17,11 +17,9 @@ import {
    SiReactquery,
    SiRedux,
    SiReactrouter,
-   SiUmami,
    SiBetterauth,
    SiReacthookform,
    SiZod,
-   SiResend,
 } from 'react-icons/si';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
@@ -43,6 +41,9 @@ import EthosImg from './../../../public/ethos.png';
 import timerImg from './../../../public/timer.png';
 import blogImg from './../../../public/blog.png';
 import vsCode from './../../../public/vscode.png';
+import ResendIcon from '../projects/ResendIcon';
+import SwiperIcon from '../projects/SwiperIcon';
+import BlockNoteIcon from '../projects/BlockNoteIcon';
 
 export const featuredProjects = [
    {
@@ -56,7 +57,7 @@ export const featuredProjects = [
       techStack: [
          {
             name: 'Next.js',
-            icon: <RiNextjsFill />,
+            icon: <RiNextjsFill className="text-[1.2rem]" />,
          },
          {
             name: 'Tailwind',
@@ -88,11 +89,11 @@ export const featuredProjects = [
          },
          {
             name: 'Resend',
-            icon: <SiResend />,
+            icon: <ResendIcon size="0.88em" />,
          },
          {
-            name: 'Umami',
-            icon: <SiUmami />,
+            name: 'Swiper',
+            icon: <SwiperIcon />,
          },
       ],
       projectURL: 'ethos-blog',
@@ -122,20 +123,24 @@ export const featuredProjects = [
             icon: <RiTailwindCssFill />,
          },
          {
-            name: 'React Query',
-            icon: <SiReactquery />,
-         },
-         {
             name: 'React Router',
             icon: <SiReactrouter />,
          },
          {
-            name: 'React Hook Form',
-            icon: <SiReacthookform />,
+            name: 'TanStack Query',
+            icon: <SiReactquery />,
          },
          {
             name: 'Motion',
             icon: <TbBrandFramerMotion />,
+         },
+         {
+            name: 'Swiper',
+            icon: <SwiperIcon />,
+         },
+         {
+            name: 'BlockNote',
+            icon: <BlockNoteIcon />,
          },
          {
             name: 'Supabase',
@@ -148,34 +153,38 @@ export const featuredProjects = [
    },
 
    {
-      titleEn: 'VS Code Redesign',
-      titleSr: 'VS Code Редизајн',
-      image: vsCode,
+      titleEn: 'O Casamento',
+      titleSr: 'O Casamento',
+      image: CasamentoImg,
       descriptionEn:
-         'Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my settings, extensions and shortcuts.',
+         'A brochure website for a fictional wedding company, displaying what it offers.',
       descriptionSr:
-         'Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом.',
+         'Вебсајт брошура за фикционалну фирму за венчања, која представља њену понуду.',
       techStack: [
          {
-            name: 'CSS',
-            icon: <FaCss3Alt />,
+            name: 'HTML',
+            icon: <FaHtml5 />,
          },
          {
-            name: 'Extensions',
-            icon: <IoExtensionPuzzleOutline />,
+            name: 'SASS',
+            icon: <FaSass />,
          },
          {
-            name: 'Shortcuts',
-            icon: <CgShortcut />,
+            name: 'JavaScript',
+            icon: <FaJs />,
          },
          {
-            name: 'Settings',
-            icon: <IoSettingsOutline />,
+            name: 'Responsive',
+            icon: <FaMobileScreenButton />,
          },
       ],
-      projectURL: 'vscode',
-      readBtn:
+      projectURL: 'casamento',
+      codeLink: 'https://github.com/DavidMaksic/O-Casamento',
+      demoLink: 'https://davidmaksic.github.io/O-Casamento/',
+      visitBtn:
          'bg-green-700/8 dark:bg-green-200/15 hover:bg-green-700/40 dark:hover:bg-green-300/40 text-green-800/55 dark:text-green-200/65 hover:text-green-50 hover:shadow-hue hover:shadow-green-700/25 dark:hover:shadow-green-300/15',
+      readBtn:
+         'bg-teal-700/8 dark:bg-teal-200/15 hover:bg-teal-700/40 dark:hover:bg-teal-300/40 text-teal-800/55 dark:text-teal-200/65 hover:text-teal-50 hover:shadow-hue hover:shadow-teal-700/25 dark:hover:shadow-teal-300/15',
    },
 
    {
@@ -212,48 +221,13 @@ export const featuredProjects = [
       codeLink: 'https://github.com/DavidMaksic/Training-Timer',
       demoLink: 'https://davidmaksic.github.io/Training-Timer/',
       visitBtn:
-         'bg-sky-700/8 dark:bg-sky-200/15 hover:bg-sky-700/40 dark:hover:bg-sky-300/40 text-sky-800/55 dark:text-sky-200/65 hover:text-sky-50 hover:shadow-hue hover:shadow-sky-700/25 dark:hover:shadow-sky-300/15',
+         'bg-cyan-700/8 dark:bg-cyan-200/15 hover:bg-cyan-700/40 dark:hover:bg-cyan-300/40 text-cyan-800/55 dark:text-cyan-200/65 hover:text-cyan-50 hover:shadow-hue hover:shadow-cyan-700/25 dark:hover:shadow-cyan-300/15',
       readBtn:
-         'bg-blue-700/8 dark:bg-blue-200/15 hover:bg-blue-700/40 dark:hover:bg-blue-300/40 text-blue-800/55 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
+         'bg-sky-700/8 dark:bg-sky-200/15 hover:bg-sky-700/40 dark:hover:bg-sky-300/40 text-sky-800/55 dark:text-sky-200/65 hover:text-sky-50 hover:shadow-hue hover:shadow-sky-700/25 dark:hover:shadow-sky-300/15',
    },
 ];
 
 export const otherProjects = [
-   {
-      titleEn: 'O Casamento',
-      titleSr: 'O Casamento',
-      image: CasamentoImg,
-      descriptionEn:
-         'A brochure website for a fictional wedding company, displaying what it offers.',
-      descriptionSr:
-         'Вебсајт брошура за фикционалну фирму за венчања, која представља њену понуду.',
-      techStack: [
-         {
-            name: 'HTML',
-            icon: <FaHtml5 />,
-         },
-         {
-            name: 'SASS',
-            icon: <FaSass />,
-         },
-         {
-            name: 'JavaScript',
-            icon: <FaJs />,
-         },
-         {
-            name: 'Responsive',
-            icon: <FaMobileScreenButton />,
-         },
-      ],
-      projectURL: 'casamento',
-      codeLink: 'https://github.com/DavidMaksic/O-Casamento',
-      demoLink: 'https://davidmaksic.github.io/O-Casamento/',
-      visitBtn:
-         'bg-teal-700/8 dark:bg-teal-200/15 hover:bg-teal-700/40 dark:hover:bg-teal-300/40 text-teal-800/55 dark:text-teal-200/65 hover:text-teal-50 hover:shadow-hue hover:shadow-teal-700/25 dark:hover:shadow-teal-300/15',
-      readBtn:
-         'bg-cyan-700/8 dark:bg-cyan-200/15 hover:bg-cyan-700/40 dark:hover:bg-cyan-300/40 text-cyan-800/55 dark:text-cyan-200/65 hover:text-cyan-50 hover:shadow-hue hover:shadow-cyan-700/25 dark:hover:shadow-cyan-300/15',
-   },
-
    {
       titleEn: 'useGames App',
       titleSr: 'useGames Апликација',
@@ -273,12 +247,12 @@ export const otherProjects = [
          },
          {
             name: 'REST',
-            icon: <TbApi />,
+            icon: <TbApi className="text-[1.45rem]" />,
          },
       ],
       projectURL: 'use-games',
       readBtn:
-         'bg-indigo-700/8 dark:bg-indigo-200/15 hover:bg-indigo-700/40 dark:hover:bg-indigo-300/40 text-indigo-800/55 dark:text-indigo-200/65 hover:text-indigo-50 hover:shadow-hue hover:shadow-indigo-700/25 dark:hover:shadow-indigo-300/15',
+         'bg-blue-700/8 dark:bg-blue-200/15 hover:bg-blue-700/40 dark:hover:bg-blue-300/40 text-blue-800/55 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
    },
 
    {
@@ -286,7 +260,7 @@ export const otherProjects = [
       titleSr: 'Блог Апликација',
       image: blogImg,
       descriptionEn:
-         'A simple blogging app with a bookmark feature. Built with vanilla JavaScript using MVC architecture.',
+         'A simple blogging app with bookmarks. Built with vanilla JavaScript using MVC architecture.',
       descriptionSr:
          'Једноставна блогинг апликација са функцијом обележавања чланака. Направљена са ванила JavaScript-ом користећи MVC архитектуру.',
       techStack: [
@@ -307,7 +281,38 @@ export const otherProjects = [
       codeLink: 'https://github.com/DavidMaksic/Blog-Lite',
       demoLink: 'https://davidmaksic.github.io/Blog-Lite/',
       visitBtn:
+         'bg-indigo-700/8 dark:bg-indigo-200/15 hover:bg-indigo-700/40 dark:hover:bg-indigo-300/40 text-indigo-800/55 dark:text-indigo-200/65 hover:text-indigo-50 hover:shadow-hue hover:shadow-indigo-700/25 dark:hover:shadow-indigo-300/15',
+      readBtn:
          'bg-violet-700/8 dark:bg-violet-200/15 hover:bg-violet-700/40 dark:hover:bg-violet-300/40 text-violet-800/55 dark:text-violet-200/65 hover:text-violet-50 hover:shadow-hue hover:shadow-violet-700/25 dark:hover:shadow-violet-300/15',
+   },
+
+   {
+      titleEn: 'VS Code Redesign',
+      titleSr: 'VS Code Редизајн',
+      image: vsCode,
+      descriptionEn:
+         'Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my extensions.',
+      descriptionSr:
+         'Најпопуларнији IDE модерно редизајниран, без непотребних опција и са лакшом навигацијом.',
+      techStack: [
+         {
+            name: 'CSS',
+            icon: <FaCss3Alt />,
+         },
+         {
+            name: 'Extensions',
+            icon: <IoExtensionPuzzleOutline />,
+         },
+         {
+            name: 'Shortcuts',
+            icon: <CgShortcut />,
+         },
+         {
+            name: 'Settings',
+            icon: <IoSettingsOutline />,
+         },
+      ],
+      projectURL: 'vscode',
       readBtn:
          'bg-fuchsia-700/8 dark:bg-fuchsia-200/15 hover:bg-fuchsia-700/40 dark:hover:bg-fuchsia-300/40 text-fuchsia-800/55 dark:text-fuchsia-200/65 hover:text-fuchsia-50 hover:shadow-hue hover:shadow-fuchsia-700/25 dark:hover:shadow-fuchsia-300/15',
    },
