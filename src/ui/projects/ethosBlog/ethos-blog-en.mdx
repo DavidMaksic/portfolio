@@ -37,7 +37,7 @@ import Newsletter2 from './../../../../public/newsletter-2.png';
 import Newsletter3 from './../../../../public/newsletter-3.jpg';
 import NewsletterMobile from './../../../../public/newsletter-mobile.png';
 
-import AuthImage1 from './../../../../public/auth-1.png';
+import AuthImage1 from './../../../../public/auth-1.webp';
 import AuthImage2 from './../../../../public/auth-2.png';
 import AuthMobile1 from './../../../../public/auth-mobile-1.jpg';
 
@@ -47,11 +47,7 @@ import AuthMobile1 from './../../../../public/auth-mobile-1.jpg';
 
 <HeroImage image={EthosImg} title="Ethos Blog" />
 
-This application combines a modern minimalistic design with robust authentication, built-in internationalization (supporting two languages), and email notifications.
-
-<br />
-
-It is powered by **Next.js**, which enables near-instant load times and navigation thanks to ISR (Incremental Static Generation).
+This application is powered by **Next.js**, which enables near-instant load times and navigation thanks to ISR (Incremental Static Generation).
 
 <br />
 
@@ -71,7 +67,7 @@ Light and dark mode are handled by **`next-themes`**. Dynamic metadata/OpenGraph
 <TableOfContents
    h2Arr={[
       'landing-page',
-      'article',
+      'article-view',
       'archive',
       'about-page',
       'newsletter',
@@ -100,7 +96,7 @@ Upon entering the website, user will first see the slider with featured articles
 <br />
 <br />
 
-Bellow, user can see articles that are featured by category.
+Below, user can see articles that are featured by category.
 
 <br />
 
@@ -128,9 +124,9 @@ Last segment of the landing page is the Latest articles section, where user has 
 <br />
 <br />
 
-<ArticleH2 id={'article'} text={'Article'} />
+<ArticleH2 id={'article-view'} text={'Article view'} />
 
-This is the main part of the blog. Bellow title there is the main image card with basic information about the author and some options.
+This is the main part of the blog. Below title there is the main image card with basic information about the author and some options.
 
 <br />
 
@@ -158,7 +154,7 @@ All articles are made using a WYSIWYG text editor, which means they will be rich
 <br />
 <br />
 
-After the article content, user will see a card with author's information. On the left side are basic article options: like, comment, bookmark and share. Bellow, user can leave a comment (if they are logged-in).
+After the article content, user will see a card with author's information. On the left side are basic article options: like, comment, bookmark and share. Below, user can leave a comment (if they are logged-in).
 
 <br />
 
@@ -186,7 +182,7 @@ This part of the page displays all comments and replies, with sorting option. Us
 <br />
 <br />
 
-<ArticleH2 id={'archive'} text={'Archive'} />
+<ArticleH2 id={'archive'} text={'Browsing articles'} />
 
 On this page, users can search, sort and filter all articles.
 
@@ -218,7 +214,7 @@ Here users can read the short description of this blog and etymology behind its 
 <br />
 <br />
 
-<ArticleH2 id={'newsletter'} text={'Newsletter'} />
+<ArticleH2 id={'newsletter'} text={'Subscription flow'} />
 
 At the end of each page there is a newsletter sign-up.
 
