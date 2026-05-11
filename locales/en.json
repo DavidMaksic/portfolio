@@ -22,10 +22,9 @@
    "About": {
       "h1": "About me",
       "name": "David Maksić",
-      "p1": "I'm a self-taught Front-End web developer, with focus on building user-friendly web applications using modern technologies.",
-      "p2-part1": "My programming journey started when I was recommended ",
-      "p2-part2": " as a first step into web development. As my learning got more serious, I decided to work harder and build projects where I could practice React, Next.js, and other software tools.",
-      "p3": "Over the past three years, I consistently studied programming by using documentations, blogs, coding challenges, tutorials, courses and lately, AI models."
+      "p1": "I'm a self-taught developer, whose skills were built through years of learning and thousands of hours of practical work.",
+      "p2": "Across multiple projects, I've tackled real-world challenges: server-side rendering, authentication, state management (Redux and Context API), and third-party integrations. I work with <strong>React</strong>, React Query/Router, <strong>Next.js</strong> and <strong>JavaScript</strong> daily; for styling, I utilize Tailwind and CSS. I'm currently expanding into Node.js/Express, Vue.js, and PostgreSQL.",
+      "p3": "Over the past three years, I consistently studied programming by using documentations, blogs, coding challenges, tutorials, courses and AI models."
    },
 
    "Skills": {

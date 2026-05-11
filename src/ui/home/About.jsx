@@ -1,6 +1,6 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
-import AboutImage from './../../../public/about-image.jpg';
+import AboutImage from '/about-image.jpg';
 
 function About() {
    const { t } = useTranslation();
@@ -31,12 +31,12 @@ function About() {
             <div className="flex flex-col gap-8">
                <div className="flex flex-col gap-3 text-primary-700 leading-9 md:leading-9 xs:leading-8.5">
                   <span>{t('About.p1')}</span>
-
                   <span>
-                     {t('About.p2-part1')} <strong>JavaScript</strong>{' '}
-                     {t('About.p2-part2')}
+                     <Trans
+                        i18nKey="About.p2"
+                        components={{ strong: <strong /> }}
+                     />
                   </span>
-
                   <span>{t('About.p3')}</span>
                </div>
 

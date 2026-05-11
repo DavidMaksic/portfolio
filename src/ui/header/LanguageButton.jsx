@@ -3,8 +3,8 @@ import { useOutsideClick } from '../../hooks/useOutsideClick';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
-import enFlag from './../../../public/en-flag.png';
-import srFlag from './../../../public/sr-flag.png';
+import enFlag from '/en-flag.png';
+import srFlag from '/sr-flag.png';
 
 const languages = [
    {
@@ -38,7 +38,7 @@ function LanguageButton() {
       setLanguage((prevState) => ({
          ...prevState,
          currentLanguage: languageCode,
-         flag: `/public/${languageCode}-flag.png`,
+         flag: `/${languageCode}-flag.png`,
       }));
    };
 
