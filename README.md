@@ -13,8 +13,7 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 Installation:
 
 ```
-npm i
-npm run dev
+npm i && npm run dev
 ```
 
 <br>
