@@ -23,7 +23,7 @@
       "h1": "About me",
       "name": "David Maksić",
       "p1": "I'm a self-taught developer, whose skills were built through years of learning and thousands of hours of practical work.",
-      "p2": "Across multiple projects, I've tackled real-world challenges: server-side rendering, authentication, state management (Redux and Context API), and third-party integrations. I work with <strong>React</strong>, React Query/Router, <strong>Next.js</strong> and <strong>JavaScript</strong> daily; for styling, I utilize Tailwind and CSS. I'm currently expanding into Node.js/Express, Vue.js, and PostgreSQL.",
+      "p2": "Across multiple projects, I've tackled real-world challenges: server-side rendering, authentication, state management (Redux and Context API), and third-party integrations. I work with <strong>React</strong>, React Query/Router, <strong>Next.js</strong> and <strong>JavaScript</strong> daily; for styling, I utilize Tailwind and CSS. I'm currently learning Node.js/Express, Vue.js, and PostgreSQL.",
       "p3": "Over the past three years, I consistently studied programming by using documentations, blogs, coding challenges, tutorials, courses and AI models."
    },
 
