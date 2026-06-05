@@ -13,8 +13,7 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 Installation:
 
 ```
-npm i
-npm run dev
+npm i && npm run dev
 ```
 
 <br>
@@ -30,4 +29,4 @@ This project was inspired by:
 
 <br>
 
-Special thanks to **Jonas Schmedtmann**, thanks to whom I learned everything I know; his work was an inspiration for most of my projects. If you are new at learning web development check him out!
+Special thanks to <u>**[Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/)**</u>; his work was an inspiration for most of my projects. If you are new at learning web development, check him out!
