@@ -1,47 +1,115 @@
-import { FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from 'react-icons/fa6';
+import {
+   FaCss3Alt,
+   FaGithub,
+   FaHtml5,
+   FaReact,
+   FaNodeJs,
+   FaDocker,
+   FaGitAlt,
+   FaVuejs,
+} from 'react-icons/fa6';
 import {
    RiNextjsFill,
    RiSupabaseFill,
    RiTailwindCssFill,
 } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
+import { BsJavascript, BsTypescript } from 'react-icons/bs';
 import { motion } from 'motion/react';
 import {
    SiBetterauth,
+   SiDrizzle,
+   SiExpress,
    SiPostgresql,
    SiReactquery,
    SiReactrouter,
    SiRedux,
+   SiTrpc,
+   SiVercel,
+   SiVitest,
 } from 'react-icons/si';
+import { BiLogoPostgresql } from 'react-icons/bi';
+import { DiRedis } from 'react-icons/di';
+import PlaywrightIcon from '../Icons/PlaywrightIcon';
+import TrpcIcon from '../Icons/TrpcIcon';
+import JwtIcon from '../Icons/JwtIcon';
 
-const coreTech = [
-   { icon: <RiNextjsFill className="size-9" />, name: 'Next.js' },
-   { icon: <FaReact className="size-9" />, name: 'React' },
+const frontEndStack = [
+   { icon: <RiNextjsFill />, name: 'Next.js' },
+   { icon: <FaReact />, name: 'React' },
+   { icon: <FaVuejs />, name: 'Vue' },
    {
-      icon: <FaJs className="size-9" />,
+      icon: <BsJavascript />,
       name: 'JavaScript',
    },
    {
-      icon: <RiTailwindCssFill className="size-9" />,
+      icon: <BsTypescript />,
+      name: 'TypeScript',
+   },
+   {
+      icon: <RiTailwindCssFill />,
       name: 'Tailwind',
    },
-   {
-      icon: <FaCss3Alt className="size-9" />,
-      name: 'CSS',
-   },
-   {
-      icon: <FaHtml5 className="size-9" />,
-      name: 'HTML',
-   },
+   { icon: <SiReactrouter />, name: 'React Router' },
+   { icon: <SiReactquery />, name: 'React Query' },
+   { icon: <SiRedux />, name: 'Redux' },
 ];
 
-const otherTech = [
-   { icon: <RiSupabaseFill className="size-8" />, name: 'Supabase' },
-   { icon: <SiRedux className="size-8" />, name: 'Redux' },
-   { icon: <SiReactrouter className="size-8" />, name: 'React Router' },
-   { icon: <SiReactquery className="size-8" />, name: 'React Query' },
-   { icon: <SiBetterauth className="size-8" />, name: 'Better Auth' },
-   { icon: <FaGithub className="size-8" />, name: 'Github' },
+const backEndStack = [
+   {
+      icon: <FaNodeJs />,
+      name: 'Node.js',
+   },
+   {
+      icon: <SiExpress />,
+      name: 'Express',
+   },
+   {
+      icon: <BiLogoPostgresql />,
+      name: 'PostgreSQL',
+   },
+   {
+      icon: <SiDrizzle />,
+      name: 'Drizzle',
+   },
+   {
+      icon: <DiRedis className="size-10!" />,
+      name: 'Redis',
+   },
+   {
+      icon: <TrpcIcon className="size-11! mt-0.5" />,
+      name: 'tRPC',
+   },
+   { icon: <SiBetterauth className="size-7!" />, name: 'Better Auth' },
+   {
+      icon: <JwtIcon />,
+      name: 'JWT',
+   },
+   { icon: <RiSupabaseFill className="size-7! mt-0.5" />, name: 'Supabase' },
+];
+
+const toolsAndPlatforms = [
+   { icon: <FaGithub />, name: 'Github' },
+   {
+      icon: <FaGitAlt className="size-8.5!" />,
+      name: 'Git',
+   },
+   {
+      icon: <SiVitest className="size-8.5!" />,
+      name: 'Vitest',
+   },
+   {
+      icon: <PlaywrightIcon />,
+      name: 'Playwright',
+   },
+   {
+      icon: <FaDocker />,
+      name: 'Docker',
+   },
+   {
+      icon: <SiVercel className="size-6.5! mt-0.5" />,
+      name: 'Vercel',
+   },
 ];
 
 function Skills() {
@@ -63,11 +131,11 @@ function Skills() {
          <div className="grid grid-cols-2 gap-6 md:grid-cols-1 md:px-20 sm:px-0!">
             <div className="flex flex-col gap-5 shadow-xs border border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
                <h4 className="text-primary-600 text-center">
-                  {t('Skills.core-tech')}
+                  {t('Skills.front-stack')}
                </h4>
 
-               <div className="grid grid-cols-2 gap-3">
-                  {coreTech.map((tech) => (
+               <div className="grid grid-cols-3 gap-3">
+                  {frontEndStack.map((tech) => (
                      <Tech icon={tech.icon} name={tech.name} key={tech.name} />
                   ))}
                </div>
@@ -76,11 +144,24 @@ function Skills() {
             <div className="flex flex-col gap-5 border shadow-xs border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
                <h4 className="text-primary-600 text-center">
                   {' '}
-                  {t('Skills.other-tech')}
+                  {t('Skills.back-stack')}
                </h4>
 
-               <div className="grid grid-cols-2 gap-3">
-                  {otherTech.map((tech) => (
+               <div className="grid grid-cols-3 gap-3">
+                  {backEndStack.map((tech) => (
+                     <Tech icon={tech.icon} name={tech.name} key={tech.name} />
+                  ))}
+               </div>
+            </div>
+
+            <div className="flex flex-col col-span-2 gap-5 border shadow-xs border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
+               <h4 className="text-primary-600 text-center">
+                  {' '}
+                  {t('Skills.tools-stack')}
+               </h4>
+
+               <div className="grid grid-cols-6 gap-3">
+                  {toolsAndPlatforms.map((tech) => (
                      <Tech icon={tech.icon} name={tech.name} key={tech.name} />
                   ))}
                </div>
@@ -92,8 +173,8 @@ function Skills() {
 
 function Tech({ icon, name }) {
    return (
-      <div className="flex flex-col gap-1 py-5 w-full border border-primary-300 dark:border-primary-400/30 rounded-2xl justify-center items-center text-lg hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
-         <span className="h-10">{icon}</span>
+      <div className="flex flex-col gap-1 py-4.5 w-full border border-primary-300 dark:border-primary-400/30 rounded-2xl justify-center items-center text-sm hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
+         <span className="h-10 [&_svg]:size-8">{icon}</span>
          <span className="pointer-events-none text-center">{name}</span>
       </div>
    );

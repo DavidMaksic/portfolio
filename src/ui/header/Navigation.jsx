@@ -37,10 +37,13 @@ function Navigation() {
                </li>
             ) : (
                <li>
-                  <Link to={'/'} className="transition hover:text-primary-700">
+                  <button
+                     onClick={() => window.history.back()}
+                     className="transition hover:text-primary-700"
+                  >
                      <span className="xs:hidden">{t('Header.return')}</span>
                      <TbArrowBackUp className="hidden xs:block size-7 stroke-[1.6px]" />
-                  </Link>
+                  </button>
                </li>
             )}
 

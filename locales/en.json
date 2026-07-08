@@ -29,8 +29,9 @@
 
    "Skills": {
       "h1": "Skills",
-      "core-tech": "Core Technologies",
-      "other-tech": "Database, Libraries and Tools"
+      "front-stack": "Frontend",
+      "back-stack": "Backend & Database",
+      "tools-stack": "Tools & Platforms"
    },
 
    "Footer": {

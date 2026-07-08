@@ -14,10 +14,7 @@ function About() {
          id="about"
          className="flex flex-col gap-10 scroll-mt-24 xs:px-2"
       >
-         <span
-            span
-            className="text-2xl text-primary-700 tracking-widest uppercase text-center font-bold"
-         >
+         <span className="text-2xl text-primary-700 tracking-widest uppercase text-center font-bold">
             {t('About.h1')}
          </span>
 
