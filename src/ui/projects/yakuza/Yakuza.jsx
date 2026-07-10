@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
-import YakuzaEnMdx from './yakuza-en.mdx';
-import YakuzaSrMdx from './yakuza-sr.mdx';
+import YakuzaEn from './yakuza-en.mdx';
+import YakuzaSr from './yakuza-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
 
 function Yakuza() {
@@ -27,8 +27,8 @@ function Yakuza() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <YakuzaEnMdx />}
-         {currentLanguage === 'sr' && <YakuzaSrMdx />}
+         {currentLanguage === 'en' && <YakuzaEn />}
+         {currentLanguage === 'sr' && <YakuzaSr />}
       </MDXWrapper>
    );
 }

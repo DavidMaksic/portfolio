@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
 import MDXWrapper from '../MDXWrapper';
-import TimerEnMdx from './timer-en.mdx';
-import TimerSrMdx from './timer-sr.mdx';
+import TimerEn from './timer-en.mdx';
+import TimerSr from './timer-sr.mdx';
 
 function Timer() {
    const { i18n } = useTranslation();
@@ -27,8 +27,8 @@ function Timer() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <TimerEnMdx />}
-         {currentLanguage === 'sr' && <TimerSrMdx />}
+         {currentLanguage === 'en' && <TimerEn />}
+         {currentLanguage === 'sr' && <TimerSr />}
       </MDXWrapper>
    );
 }

@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
-import EthosBlogCmsEnMdx from './ethos-blog-cms-en.mdx';
-import EthosBlogCmsSrMdx from './ethos-blog-cms-sr.mdx';
+import ArtfolioEn from './artfolio-en.mdx';
+import ArtfolioSr from './artfolio-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
 
-function EthosBlogCMS() {
+function Artfolio() {
    const { i18n } = useTranslation();
    const currentLanguage = i18n.language;
 
@@ -27,10 +27,10 @@ function EthosBlogCMS() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <EthosBlogCmsEnMdx />}
-         {currentLanguage === 'sr' && <EthosBlogCmsSrMdx />}
+         {currentLanguage === 'en' && <ArtfolioEn />}
+         {currentLanguage === 'sr' && <ArtfolioSr />}
       </MDXWrapper>
    );
 }
 
-export default EthosBlogCMS;
+export default Artfolio;

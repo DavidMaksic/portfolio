@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
-import VSCodeEnMdx from './vscode-en.mdx';
-import VSCodeSrMdx from './vscode-sr.mdx';
+import VSCodeEn from './vscode-en.mdx';
+import VSCodeSr from './vscode-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
 
 function VSCode() {
@@ -27,8 +27,8 @@ function VSCode() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <VSCodeEnMdx />}
-         {currentLanguage === 'sr' && <VSCodeSrMdx />}
+         {currentLanguage === 'en' && <VSCodeEn />}
+         {currentLanguage === 'sr' && <VSCodeSr />}
       </MDXWrapper>
    );
 }

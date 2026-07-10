@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
-import UseGamesEnMdx from './use-games-en.mdx';
-import UseGamesSrMdx from './use-games-sr.mdx';
+import UseGamesEn from './use-games-en.mdx';
+import UseGamesSr from './use-games-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
 
 function UseGames() {
@@ -27,8 +27,8 @@ function UseGames() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <UseGamesEnMdx />}
-         {currentLanguage === 'sr' && <UseGamesSrMdx />}
+         {currentLanguage === 'en' && <UseGamesEn />}
+         {currentLanguage === 'sr' && <UseGamesSr />}
       </MDXWrapper>
    );
 }

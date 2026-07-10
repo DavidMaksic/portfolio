@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
-import CasamentoEnMdx from './casamento-en.mdx';
-import CasamentoSrMdx from './casamento-sr.mdx';
+import CasamentoEn from './casamento-en.mdx';
+import CasamentoSr from './casamento-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
 
 function Casamento() {
@@ -27,8 +27,8 @@ function Casamento() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <CasamentoEnMdx />}
-         {currentLanguage === 'sr' && <CasamentoSrMdx />}
+         {currentLanguage === 'en' && <CasamentoEn />}
+         {currentLanguage === 'sr' && <CasamentoSr />}
       </MDXWrapper>
    );
 }

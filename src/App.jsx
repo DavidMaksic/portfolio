@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { DarkModeProvider } from './contexts/DarkModeContext';
 
-import EthosBlogCMS from './ui/projects/ethosBlogCMS/EthosBlogCMS';
 import PageNotFound from './ui/PageNotFound';
 import Casamento from './ui/projects/casamento/Casamento';
-import EthosBlog from './ui/projects/ethosBlog/EthosBlog';
-import UseGames from './ui/projects/useGames/useGames';
+import EthosBlog from './ui/projects/ethos-blog/EthosBlog';
+import EthosCMS from './ui/projects/ethos-cms/EthosCMS';
+import UseGames from './ui/projects/use-games/useGames';
+import Artfolio from './ui/projects/artfolio/Artfolio';
 import Yakuza from './ui/projects/yakuza/Yakuza';
 import VSCode from './ui/projects/vscode/VSCode';
 import Layout from './ui/Layout';
@@ -22,8 +23,9 @@ function App() {
                <Route element={<Layout />}>
                   <Route path="/" element={<Home />} />
                   <Route path="/ethos-blog" element={<EthosBlog />} />
-                  <Route path="/ethos-blog-cms" element={<EthosBlogCMS />} />
+                  <Route path="/ethos-cms" element={<EthosCMS />} />
                   <Route path="/casamento" element={<Casamento />} />
+                  <Route path="/artfolio" element={<Artfolio />} />
                   <Route path="/timer" element={<Timer />} />
                   <Route path="/use-games" element={<UseGames />} />
                   <Route path="/blog" element={<Blog />} />

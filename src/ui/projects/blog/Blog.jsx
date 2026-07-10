@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
 import MDXWrapper from '../MDXWrapper';
-import BlogEnMdx from './blog-en.mdx';
-import BlogSrMdx from './blog-sr.mdx';
+import BlogEn from './blog-en.mdx';
+import BlogSr from './blog-sr.mdx';
 
 function Blog() {
    const { i18n } = useTranslation();
@@ -27,8 +27,8 @@ function Blog() {
 
    return (
       <MDXWrapper>
-         {currentLanguage === 'en' && <BlogEnMdx />}
-         {currentLanguage === 'sr' && <BlogSrMdx />}
+         {currentLanguage === 'en' && <BlogEn />}
+         {currentLanguage === 'sr' && <BlogSr />}
       </MDXWrapper>
    );
 }

@@ -1,4 +1,4 @@
-import { featuredProjects, otherProjects } from '../home/Projects';
+import { featuredProjects, otherProjects } from '../../data/ProjectData';
 import { FiExternalLink } from 'react-icons/fi';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
@@ -41,7 +41,7 @@ function HeroImage({ image, title }) {
       <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[3rem] sm:mx-0! bg-white dark:bg-primary-300/25">
          <img
             src={image}
-            className="rounded-3xl dark:opacity-90 dark:shadow-md"
+            className="object-cover rounded-3xl dark:opacity-90 dark:shadow-md h-86"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
