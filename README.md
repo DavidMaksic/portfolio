@@ -10,14 +10,6 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 
 <br>
 
-Installation:
-
-```
-npm i && npm run dev
-```
-
-<br>
-
 This project was inspired by:
 
 -  [nelsonlai.me](https://nelsonlai.me)
