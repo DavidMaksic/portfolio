@@ -27,6 +27,7 @@ import {
    SiTrpc,
    SiVercel,
    SiVitest,
+   SiZod,
 } from 'react-icons/si';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { DiRedis } from 'react-icons/di';
@@ -72,18 +73,18 @@ const backEndStack = [
       icon: <SiDrizzle />,
       name: 'Drizzle',
    },
+   { icon: <SiBetterauth className="size-7!" />, name: 'Better Auth' },
    {
       icon: <DiRedis className="size-10!" />,
       name: 'Redis',
    },
    {
+      icon: <SiZod />,
+      name: 'Zod',
+   },
+   {
       icon: <TrpcIcon className="size-11! mt-0.5" />,
       name: 'tRPC',
-   },
-   { icon: <SiBetterauth className="size-7!" />, name: 'Better Auth' },
-   {
-      icon: <JwtIcon />,
-      name: 'JWT',
    },
    { icon: <RiSupabaseFill className="size-7! mt-0.5" />, name: 'Supabase' },
 ];
@@ -154,13 +155,13 @@ function Skills() {
                </div>
             </div>
 
-            <div className="flex flex-col col-span-2 gap-5 border shadow-xs border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
+            <div className="flex flex-col col-span-2 md:col-span-1 gap-5 border shadow-xs border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
                <h4 className="text-primary-600 text-center">
                   {' '}
                   {t('Skills.tools-stack')}
                </h4>
 
-               <div className="grid grid-cols-6 gap-3">
+               <div className="grid grid-cols-6 md:grid-cols-3 gap-3">
                   {toolsAndPlatforms.map((tech) => (
                      <Tech icon={tech.icon} name={tech.name} key={tech.name} />
                   ))}
@@ -173,7 +174,7 @@ function Skills() {
 
 function Tech({ icon, name }) {
    return (
-      <div className="flex flex-col gap-1 py-4.5 w-full border border-primary-300 dark:border-primary-400/30 rounded-2xl justify-center items-center text-sm hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
+      <div className="flex flex-col gap-1 py-4.5 w-full border border-primary-300 dark:border-primary-400/30 rounded-2xl justify-center items-center text-sm xs:text-xs 2xs:text-[0.7rem] hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
          <span className="h-10 [&_svg]:size-8">{icon}</span>
          <span className="pointer-events-none text-center">{name}</span>
       </div>
