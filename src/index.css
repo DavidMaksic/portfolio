@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@source inline("{bg-,dark:bg-,hover:bg-,dark:hover:bg-,text-,dark:text-,hover:text-,hover:shadow-,dark:hover:shadow-}{red,orange,amber,yellow,lime,green,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose}-{50,200,300,700,800}/{8,15,25,40,50,55,65}");
-
 html {
    scroll-behavior: smooth;
 }

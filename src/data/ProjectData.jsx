@@ -50,35 +50,24 @@ import EthosImg from '/ethos.png';
 import timerImg from '/timer.png';
 import blogImg from '/blog.png';
 import vsCode from '/vscode.png';
-
-const buttonColors = (color, textOpacity = '55') =>
-   `bg-${color}-700/8
-   dark:bg-${color}-200/15
-   hover:bg-${color}-700/40
-   dark:hover:bg-${color}-300/40
-   text-${color}-800/${textOpacity}
-   dark:text-${color}-200/65
-   hover:text-${color}-50
-   hover:shadow-hue
-   hover:shadow-${color}-700/25
-   dark:hover:shadow-${color}-300/15`;
+import '../styles/buttonVariants.css';
 
 const buttonVariant = {
-   red: buttonColors('red', '50'),
-   orange: buttonColors('orange'),
-   amber: buttonColors('amber'),
-   yellow: buttonColors('yellow'),
-   lime: buttonColors('lime'),
-   green: buttonColors('green'),
-   teal: buttonColors('teal'),
-   cyan: buttonColors('cyan'),
-   sky: buttonColors('sky'),
-   blue: buttonColors('blue'),
-   indigo: buttonColors('indigo'),
-   violet: buttonColors('violet'),
-   fuchsia: buttonColors('fuchsia'),
-   pink: buttonColors('pink'),
-   rose: buttonColors('rose'),
+   red: 'btn-red',
+   orange: 'btn-orange',
+   amber: 'btn-amber',
+   yellow: 'btn-yellow',
+   lime: 'btn-lime',
+   green: 'btn-green',
+   teal: 'btn-teal',
+   cyan: 'btn-cyan',
+   sky: 'btn-sky',
+   blue: 'btn-blue',
+   indigo: 'btn-indigo',
+   violet: 'btn-violet',
+   fuchsia: 'btn-fuchsia',
+   pink: 'btn-pink',
+   rose: 'btn-rose',
 };
 
 export const featuredProjects = [

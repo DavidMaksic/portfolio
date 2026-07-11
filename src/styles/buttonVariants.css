@@ -1,0 +1,80 @@
+@reference "../index.css";
+
+/* Red (textOpacity 50) */
+.btn-red {
+   @apply bg-red-700/8 dark:bg-red-200/15 hover:bg-red-700/40 dark:hover:bg-red-300/40
+         text-red-800/50 dark:text-red-200/65 hover:text-red-50
+         hover:shadow-hue hover:shadow-red-700/25 dark:hover:shadow-red-300/15;
+}
+
+/* All others (textOpacity 55) */
+.btn-orange {
+   @apply bg-orange-700/8 dark:bg-orange-200/15 hover:bg-orange-700/40 dark:hover:bg-orange-300/40
+         text-orange-800/55 dark:text-orange-200/65 hover:text-orange-50
+         hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15;
+}
+.btn-amber {
+   @apply bg-amber-700/8 dark:bg-amber-200/15 hover:bg-amber-700/40 dark:hover:bg-amber-300/40
+         text-amber-800/55 dark:text-amber-200/65 hover:text-amber-50
+         hover:shadow-hue hover:shadow-amber-700/25 dark:hover:shadow-amber-300/15;
+}
+.btn-yellow {
+   @apply bg-yellow-700/8 dark:bg-yellow-200/15 hover:bg-yellow-700/40 dark:hover:bg-yellow-300/40
+         text-yellow-800/55 dark:text-yellow-200/65 hover:text-yellow-50
+         hover:shadow-hue hover:shadow-yellow-700/25 dark:hover:shadow-yellow-300/15;
+}
+.btn-lime {
+   @apply bg-lime-700/8 dark:bg-lime-200/15 hover:bg-lime-700/40 dark:hover:bg-lime-300/40
+         text-lime-800/55 dark:text-lime-200/65 hover:text-lime-50
+         hover:shadow-hue hover:shadow-lime-700/25 dark:hover:shadow-lime-300/15;
+}
+.btn-green {
+   @apply bg-green-700/8 dark:bg-green-200/15 hover:bg-green-700/40 dark:hover:bg-green-300/40
+         text-green-800/55 dark:text-green-200/65 hover:text-green-50
+         hover:shadow-hue hover:shadow-green-700/25 dark:hover:shadow-green-300/15;
+}
+.btn-teal {
+   @apply bg-teal-700/8 dark:bg-teal-200/15 hover:bg-teal-700/40 dark:hover:bg-teal-300/40
+         text-teal-800/55 dark:text-teal-200/65 hover:text-teal-50
+         hover:shadow-hue hover:shadow-teal-700/25 dark:hover:shadow-teal-300/15;
+}
+.btn-cyan {
+   @apply bg-cyan-700/8 dark:bg-cyan-200/15 hover:bg-cyan-700/40 dark:hover:bg-cyan-300/40
+         text-cyan-800/55 dark:text-cyan-200/65 hover:text-cyan-50
+         hover:shadow-hue hover:shadow-cyan-700/25 dark:hover:shadow-cyan-300/15;
+}
+.btn-sky {
+   @apply bg-sky-700/8 dark:bg-sky-200/15 hover:bg-sky-700/40 dark:hover:bg-sky-300/40
+         text-sky-800/55 dark:text-sky-200/65 hover:text-sky-50
+         hover:shadow-hue hover:shadow-sky-700/25 dark:hover:shadow-sky-300/15;
+}
+.btn-blue {
+   @apply bg-blue-700/8 dark:bg-blue-200/15 hover:bg-blue-700/40 dark:hover:bg-blue-300/40
+         text-blue-800/55 dark:text-blue-200/65 hover:text-blue-50
+         hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15;
+}
+.btn-indigo {
+   @apply bg-indigo-700/8 dark:bg-indigo-200/15 hover:bg-indigo-700/40 dark:hover:bg-indigo-300/40
+         text-indigo-800/55 dark:text-indigo-200/65 hover:text-indigo-50
+         hover:shadow-hue hover:shadow-indigo-700/25 dark:hover:shadow-indigo-300/15;
+}
+.btn-violet {
+   @apply bg-violet-700/8 dark:bg-violet-200/15 hover:bg-violet-700/40 dark:hover:bg-violet-300/40
+         text-violet-800/55 dark:text-violet-200/65 hover:text-violet-50
+         hover:shadow-hue hover:shadow-violet-700/25 dark:hover:shadow-violet-300/15;
+}
+.btn-fuchsia {
+   @apply bg-fuchsia-700/8 dark:bg-fuchsia-200/15 hover:bg-fuchsia-700/40 dark:hover:bg-fuchsia-300/40
+         text-fuchsia-800/55 dark:text-fuchsia-200/65 hover:text-fuchsia-50
+         hover:shadow-hue hover:shadow-fuchsia-700/25 dark:hover:shadow-fuchsia-300/15;
+}
+.btn-pink {
+   @apply bg-pink-700/8 dark:bg-pink-200/15 hover:bg-pink-700/40 dark:hover:bg-pink-300/40
+         text-pink-800/55 dark:text-pink-200/65 hover:text-pink-50
+         hover:shadow-hue hover:shadow-pink-700/25 dark:hover:shadow-pink-300/15;
+}
+.btn-rose {
+   @apply bg-rose-700/8 dark:bg-rose-200/15 hover:bg-rose-700/40 dark:hover:bg-rose-300/40
+         text-rose-800/55 dark:text-rose-200/65 hover:text-rose-50
+         hover:shadow-hue hover:shadow-rose-700/25 dark:hover:shadow-rose-300/15;
+}
