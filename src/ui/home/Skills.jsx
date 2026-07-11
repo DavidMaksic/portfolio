@@ -20,9 +20,10 @@ function Skills() {
          <span className="text-2xl text-primary-700 tracking-widest uppercase text-center font-bold">
             {t('Skills.h1')}
          </span>
+
          <div className="grid grid-cols-2 gap-6 md:grid-cols-1 md:px-20 sm:px-0!">
             <div className="relative overflow-hidden flex flex-col gap-5 shadow-preview border border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
-               <div className="pointer-events-none absolute -bottom-90 -right-80 w-180 h-180 rounded-full dark:bg-primary-400/15 blur-3xl  xl:hidden" />
+               <div className="pointer-events-none absolute -bottom-90 -right-80 w-180 h-180 rounded-full dark:bg-primary-400/15 blur-3xl xl:hidden will-change-transform" />
 
                <h4 className="text-primary-600 text-center">
                   {t('Skills.front-stack')}
@@ -33,8 +34,9 @@ function Skills() {
                   ))}
                </div>
             </div>
+
             <div className="relative overflow-hidden flex flex-col gap-5 border shadow-preview border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
-               <div className="pointer-events-none absolute -bottom-90 -left-80 w-180 h-180 rounded-full dark:bg-primary-400/15 blur-3xl  xl:hidden" />
+               <div className="pointer-events-none absolute -bottom-90 -left-80 w-180 h-180 rounded-full dark:bg-primary-400/15 blur-3xl xl:hidden will-change-transform" />
 
                <h4 className="text-primary-600 text-center">
                   {t('Skills.back-stack')}
@@ -45,8 +47,9 @@ function Skills() {
                   ))}
                </div>
             </div>
+
             <div className="relative overflow-hidden flex flex-col col-span-2 md:col-span-1 gap-5 border shadow-preview border-primary-400/30 dark:border-primary-400/10 rounded-2xl px-8 py-7 bg-white/50 dark:bg-primary-300/25 backdrop-blur-lg">
-               <div className="pointer-events-none absolute w-180 h-180 rounded-full dark:bg-primary-400/15 blur-3xl translate-x-[14%] -top-120 xl:hidden" />
+               <div className="pointer-events-none absolute w-180 h-180 rounded-full dark:bg-primary-400/15 blur-3xl translate-x-[14%] -top-120 xl:hidden will-change-transform" />
 
                <h4 className="text-primary-600 text-center">
                   {t('Skills.tools-stack')}
