@@ -36,7 +36,7 @@ function Navigation() {
                   </a>
                </li>
             ) : (
-               <li>
+               <li className="flex items-center">
                   <button
                      onClick={() => window.history.back()}
                      className="transition hover:text-primary-700"

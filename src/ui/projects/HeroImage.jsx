@@ -41,7 +41,7 @@ function HeroImage({ image, title }) {
       <div className="mt-10 mb-12 flex flex-col shadow-article rounded-3xl parent mx-[8rem] md:mx-[3rem] sm:mx-0! bg-white dark:bg-primary-300/25">
          <img
             src={image}
-            className="object-cover rounded-3xl dark:opacity-90 dark:shadow-md h-86"
+            className="object-cover rounded-3xl dark:opacity-90 dark:shadow-md h-86 md:h-72 sm:h-57! xs:h-52!"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
@@ -59,7 +59,7 @@ function HeroImage({ image, title }) {
                   ))}
             </div>
 
-            <div className="flex xs:flex-col items-center gap-2 xs:gap-2">
+            <div className="flex md:flex-col items-center gap-2 xs:gap-2">
                {hasCodeLink && (
                   <Link
                      to={featuredProject?.codeLink || otherProject?.codeLink}
