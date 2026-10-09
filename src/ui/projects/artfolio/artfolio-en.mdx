@@ -1,12 +1,223 @@
-import UnderConstructionImg from '/under-construction.avif';
+import TableOfContents from './../TableOfContents';
+import ArticleImage from './../ArticleImage.jsx';
+import ArticleH2 from './../ArticleH2';
 import HeroImage from './../HeroImage.jsx';
+
+import artfolio_cover from '/artfolio/artfolio.png';
+import artfolio_1 from '/artfolio/artfolio-1.png';
+import artfolio_2 from '/artfolio/artfolio-2.png';
+import artfolio_3 from '/artfolio/artfolio-3.png';
+import artfolio_4 from '/artfolio/artfolio-4.png';
+import artfolio_5 from '/artfolio/artfolio-5.png';
+import artfolio_6 from '/artfolio/artfolio-6.png';
+import artfolio_7 from '/artfolio/artfolio-7.png';
+import artfolio_8 from '/artfolio/artfolio-8.png';
+import artfolio_9 from '/artfolio/artfolio-9.png';
+
+import artfolio_mobile_1 from '/artfolio/artfolio-mobile-1.png';
+import artfolio_mobile_2 from '/artfolio/artfolio-mobile-2.png';
+import artfolio_mobile_2_pt_2 from '/artfolio/artfolio-mobile-2-pt-2.png';
+import artfolio_mobile_3 from '/artfolio/artfolio-mobile-3.png';
+import artfolio_mobile_3_pt_2 from '/artfolio/artfolio-mobile-3-pt-2.png';
+import artfolio_mobile_4 from '/artfolio/artfolio-mobile-4.png';
+import artfolio_mobile_5 from '/artfolio/artfolio-mobile-5.png';
+import artfolio_mobile_6 from '/artfolio/artfolio-mobile-6.png';
+import artfolio_mobile_7 from '/artfolio/artfolio-mobile-7.png';
+import artfolio_mobile_8 from '/artfolio/artfolio-mobile-8.png';
+import artfolio_mobile_9 from '/artfolio/artfolio-mobile-9.png';
 
 # Artfolio
 
 ### A full-stack social media platform for artists.
 
-<HeroImage image={UnderConstructionImg} title="Artfolio" />
+<HeroImage image={artfolio_cover} title="Artfolio" />
 
-<div className="text-center uppercase mt-20 mb-10">
-   This project is currently under development
-</div>
+This is a full-stack monorepo application, with client done in **Vue** using **TypeScript**, and server set up with **Node.js** and **Express**.
+
+<br />
+
+**Better Auth** is used for authentication, with **Redis** caching the sessions. Emails are sent by Mailjet. Site is styled with Tailwind, and can be used on a variety of devices thanks to the responsive design.
+
+<br />
+
+**PostgreSQL** is used as this project's database, with **Drizzle** as its ORM. Zod ensures data validation, while **tRPC** is implemented for end-to-end type safety. **Playwright** covers E2E testing, with **Vitest** used for unit tests. Docker sets up local postgres and redis containers.
+
+<br />
+
+Application data is stored in Neon database. Upstash Redis is used for production Redis caching. Client is deployed on Vercel, while the server is hosted by Render.
+
+<br />
+<br />
+
+<TableOfContents
+   h2Arr={[
+      'main-feed',
+      'post-detail',
+      'explore-page',
+      'authentication',
+      'profile-page',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'main-feed'} text={'Main Feed'} />
+
+When entering the app, first thing user will see is the main feed. Header features page navigation and an option to sign in. Feed consists of up to 20 posts before user is prompted to load more with a button (to avoid infinite scroll). On the right side, user can see latest comments.
+
+<br />
+
+<ArticleImage
+   image={artfolio_1}
+   imageMobile={artfolio_mobile_1}
+   alt="Main feed"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'post-detail'} text={'Post Detail'} />
+
+When user clicks on the post preview, they will see the post with more details, including engagement options like follow, like and bookmark. They can post comments and navigate to explore page through listed category/tags.
+
+<br />
+
+<ArticleImage
+   image={artfolio_2}
+   imageMobile={artfolio_mobile_2}
+   alt="Post detail"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+On mobile devices, user must scroll to see all mentioned post options.
+
+<br />
+
+<ArticleImage
+   image={artfolio_mobile_2_pt_2}
+   alt="Post options on mobile devices"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'explore-page'} text={'Explore Page'} />
+
+On this page, user can see other people's posts, with search and multiple filter options. Explore is also limited in how many posts it shows before loading more through a button, to avoid infinite scroll.
+
+<br />
+
+<ArticleImage
+   image={artfolio_3}
+   imageMobile={artfolio_mobile_3}
+   alt="Explore page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Filters are abstracted into a drawer on mobile devices.
+
+<br />
+
+<ArticleImage
+   image={artfolio_mobile_3_pt_2}
+   alt="Filters drawer on mobile devices"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'authentication'} text={'Authentication'} />
+
+Users can sign in through _one-time-password_ (OTP) email, or by using Google/Discord OAuth.
+
+<br />
+
+<ArticleImage
+   image={artfolio_4}
+   imageMobile={artfolio_mobile_4}
+   alt="Sign in page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+They will be greeted with short profile setup, which requires of them to fill their username and display name during the first step.
+
+<br />
+
+<ArticleImage
+   image={artfolio_5}
+   imageMobile={artfolio_mobile_5}
+   alt="Profile setup"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+On the second step (which is optional), user can fill some additional data about themselves. After this step, new user will be redirected to the main feed, where they will see posts of artists they can choose to follow.
+
+<br />
+
+<ArticleImage
+   image={artfolio_6}
+   imageMobile={artfolio_mobile_6}
+   alt="Profile setup, part 2"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'profile-page'} text={'Profile Page'} />
+
+This page showcases all posts of an artist on the right, with their profile information on the left.
+
+<br />
+
+<ArticleImage
+   image={artfolio_7}
+   imageMobile={artfolio_mobile_7}
+   alt="Profile page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Users can edit their profile information, update profile image, or delete their account.
+
+<br />
+
+<ArticleImage
+   image={artfolio_8}
+   imageMobile={artfolio_mobile_8}
+   alt="Profile edit"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+When posting new art, users can select multiple images (up to 10), add description, choose a category, and add tags.
+
+<br />
+
+<ArticleImage
+   image={artfolio_9}
+   imageMobile={artfolio_mobile_9}
+   alt="New post"
+   isResponsive={true}
+/>
+
+<br />
+<br />

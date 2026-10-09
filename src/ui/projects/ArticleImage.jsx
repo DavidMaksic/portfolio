@@ -11,12 +11,12 @@ function ArticleImage({
             <img
                src={image}
                alt={alt}
-               className={`rounded-2xl h-91 object-cover lg:h-full dark:opacity-90 ${height}`}
+               className={`rounded-2xl h-91 object-cover lg:h-full dark:opacity-90  shadow-image ${height}`}
             />
             <img
                src={imageMobile}
                alt={alt}
-               className={`rounded-2xl h-91 object-cover lg:hidden dark:opacity-90 ${height}`}
+               className={`rounded-2xl h-91 object-cover lg:hidden dark:opacity-90  shadow-image ${height}`}
             />
          </div>
       );
@@ -27,7 +27,7 @@ function ArticleImage({
             <img
                src={image}
                alt={alt}
-               className={`rounded-xl h-110 lg:h-full dark:opacity-90 ${height}`}
+               className={`rounded-xl h-110 lg:h-full dark:opacity-90 shadow-image ${height}`}
             />
          </div>
       );

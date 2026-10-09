@@ -9,6 +9,15 @@ function TableOfContents({ h2Arr }) {
       window.history.replaceState(null, '', `#${id}`);
    };
 
+   const formatTitle = (slug) =>
+      slug
+         .replaceAll('-', ' ')
+         .replace(/\p{L}+/gu, (word, offset) =>
+            offset > 0 && word.length <= 3
+               ? word
+               : word.charAt(0).toUpperCase() + word.slice(1),
+         );
+
    return (
       <div className="mx-32 md:mx-[3rem] sm:mx-0! flex flex-col gap-5">
          <span className="font-bold">{t('TableOfContents')}</span>
@@ -21,8 +30,7 @@ function TableOfContents({ h2Arr }) {
                   key={index}
                   className="w-max py-2 pl-8 pr-40 xs:pr-32 text-lg rounded-xl text-primary-500 dark:text-primary-600/90 bg-white border border-primary-400/30 dark:border-primary-400/10 hover:bg-primary dark:bg-primary-300/15 dark:hover:bg-primary-300/10 transition duration-75"
                >
-                  {item.charAt(0).toUpperCase() +
-                     item.slice(1).replaceAll('-', ' ')}
+                  {formatTitle(item)}
                </a>
             ))}
          </div>

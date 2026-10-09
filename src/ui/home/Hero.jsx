@@ -15,7 +15,9 @@ function Hero() {
          whileInView={{ transform: 'translateY(0px)', opacity: 1 }}
          viewport={{ once: true }}
          id="#hero"
-         className="w-4/5 lg:w-11/12 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 lg:px-8 md:px-0! self-center"
+         className={`w-4/5 lg:w-11/12 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 px-px lg:px-15 xs:px-px! md:px-0! self-center ${
+            currentLanguage === 'en' ? '' : ' '
+         }`}
       >
          <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10">
             <motion.div
@@ -23,7 +25,7 @@ function Hero() {
                className={`${
                   currentLanguage === 'en'
                      ? 'font-bold leading-18 sm:leading-15 xs:leading-13 2xs:leading-13 text-6xl sm:text-[2.9rem] xs:text-[2.49rem] 2xs:text-[2.55rem]'
-                     : 'font-extrabold leading-18 sm:leading-15 xs:leading-12.5 2xs:leading-13 text-[4rem] md:text-6xl sm:text-[2.9rem]! xs:text-[2.49rem]!'
+                     : 'font-extrabold leading-18 md:leading-16 sm:leading-13! xs:leading-12.5 2xs:leading-13 text-[4rem] md:text-[3.27rem] sm:text-[2.5rem]! xs:text-[2.3rem]!'
                }  text-primary-800`}
             >
                {t('HeroPart1')}
@@ -52,13 +54,13 @@ function Hero() {
                         key="tailwind"
                         className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#00ce89] to-[#afd601]"
                      >
-                        Tailwind
+                        Vue
                      </span>,
                      <span
                         key="JavaScript"
                         className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#e95d00] to-[#ffc401]"
                      >
-                        JavaScript
+                        TypeScript
                      </span>,
                   ]}
                   className="inline-block font-semibold text-primary-600"

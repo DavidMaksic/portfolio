@@ -1,12 +1,223 @@
-import UnderConstructionImg from '/under-construction.avif';
+import TableOfContents from './../TableOfContents';
+import ArticleImage from './../ArticleImage.jsx';
+import ArticleH2 from './../ArticleH2';
 import HeroImage from './../HeroImage.jsx';
 
-# Артфолио
+import artfolio_cover from '/artfolio/artfolio.png';
+import artfolio_1 from '/artfolio/artfolio-1.png';
+import artfolio_2 from '/artfolio/artfolio-2.png';
+import artfolio_3 from '/artfolio/artfolio-3.png';
+import artfolio_4 from '/artfolio/artfolio-4.png';
+import artfolio_5 from '/artfolio/artfolio-5.png';
+import artfolio_6 from '/artfolio/artfolio-6.png';
+import artfolio_7 from '/artfolio/artfolio-7.png';
+import artfolio_8 from '/artfolio/artfolio-8.png';
+import artfolio_9 from '/artfolio/artfolio-9.png';
+
+import artfolio_mobile_1 from '/artfolio/artfolio-mobile-1.png';
+import artfolio_mobile_2 from '/artfolio/artfolio-mobile-2.png';
+import artfolio_mobile_2_pt_2 from '/artfolio/artfolio-mobile-2-pt-2.png';
+import artfolio_mobile_3 from '/artfolio/artfolio-mobile-3.png';
+import artfolio_mobile_3_pt_2 from '/artfolio/artfolio-mobile-3-pt-2.png';
+import artfolio_mobile_4 from '/artfolio/artfolio-mobile-4.png';
+import artfolio_mobile_5 from '/artfolio/artfolio-mobile-5.png';
+import artfolio_mobile_6 from '/artfolio/artfolio-mobile-6.png';
+import artfolio_mobile_7 from '/artfolio/artfolio-mobile-7.png';
+import artfolio_mobile_8 from '/artfolio/artfolio-mobile-8.png';
+import artfolio_mobile_9 from '/artfolio/artfolio-mobile-9.png';
+
+# Artfolio
 
 ### Друштвена мрежа за уметнике.
 
-<HeroImage image={UnderConstructionImg} title="Артфолио" />
+<HeroImage image={artfolio_cover} title="Artfolio" />
 
-<div className="text-center uppercase mt-20 mb-10">
-   Овај пројекат је тренутно у развоју
-</div>
+Ово је full-stack monorepo апликација, са клијентом направљеним са **Vue** користећи **TypeScript**, док сервер покреће **Node.js** и **Express**.
+
+<br />
+
+**Better Auth** је коришћен за аутентикацију, а **Redis** за session caching. Мејлове шаље Mailjet. **Tailwind** је коришћен за стилизовање и прилагодљиви дизајн, тако да је сајт могуће користити на уређајима разних величина.
+
+<br />
+
+**PostgreSQL** је коришћен за базу података; **Drizzle** обавља функцију ORM-а. Zod врши валидацију података, док **tRPC** осигурава безбедност тајпова на оба краја (end-to-end). **Playwright** покрива E2E тестирање, а **Vitest** је коришћен за unit тестове. Docker поставља локалне postgres и redis контејнере.
+
+<br />
+
+Подаци апликације су складиштени у Neon бази података. Upstash Redis чува Redis податке. Клијент је хостован на Vercel-у, а сервер на Render-у.
+
+<br />
+<br />
+
+<TableOfContents
+   h2Arr={[
+      'главна-страница',
+      'детаљна-објава',
+      'страница-за-истраживање',
+      'аутентикација',
+      'профилна-страница',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'главна-страница'} text={'Главна Страница'} />
+
+При уласку на сајт, прва ствар коју корисник може да види је главна страница. На врху странице се налази навигација и дугме за пријаву. Ова страница приказује до 20 објава, након којих корисник може да учита нове објаве кликом на дугме (ово има за циљ да избегне бесконачни скрол). На десној страни корисник може да види секцију са најскоријим коментарима.
+
+<br />
+
+<ArticleImage
+   image={artfolio_1}
+   imageMobile={artfolio_mobile_1}
+   alt="Главна страница"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'детаљна-објава'} text={'Детаљна Објава'} />
+
+Када корисник кликне на неку објаву, видеће исту објаву са додатним детаљима, попут опција за праћење аутора, лајковање и сачување објаве. Овде се налази и секција за коментаре, а након ње категорија објаве и тагови.
+
+<br />
+
+<ArticleImage
+   image={artfolio_2}
+   imageMobile={artfolio_mobile_2}
+   alt="Детаљна објава"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+На мобилним уређајима, корисници могу да скролују да виде горепоменуте опције.
+
+<br />
+
+<ArticleImage
+   image={artfolio_mobile_2_pt_2}
+   alt="Детаљније опције на мобилним уређајима"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'страница-за-истраживање'} text={'Страница за Истраживање'} />
+
+На овој страници, корисник може да види објаве других уметника, са опцијама претраге и разних филтера. И ова страница нуди ограничен број објава, са дугметом за учитавањ додатних, да би се избегао бесконачни скрол.
+
+<br />
+
+<ArticleImage
+   image={artfolio_3}
+   imageMobile={artfolio_mobile_3}
+   alt="Страница за истраживање"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Филтери су померени у "фиоку" на мобилним уређајима.
+
+<br />
+
+<ArticleImage
+   image={artfolio_mobile_3_pt_2}
+   alt="Филтери у фиоци на мобилним уређајима"
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'аутентикација'} text={'Аутентикација'} />
+
+Корисници могу да су пријаве кроз једнократну шифру путем мејла, или користећи Google/Discord OAuth сервис.
+
+<br />
+
+<ArticleImage
+   image={artfolio_4}
+   imageMobile={artfolio_mobile_4}
+   alt="Страница за пријаву"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Након пријаве, видеће страницу за успостављање профила, која од њих захтева да попуне основне податке током првог корака.
+
+<br />
+
+<ArticleImage
+   image={artfolio_5}
+   imageMobile={artfolio_mobile_5}
+   alt="Успостављање профила"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Током другог корака (који је необавезан), корисници могу да прошире опис свог профила додатним подацима. Након овог корака, новопријављени корисник ће бити пребачен на главну страницу, где ће видети објаве уметника које могу да запрате.
+
+<br />
+
+<ArticleImage
+   image={artfolio_6}
+   imageMobile={artfolio_mobile_6}
+   alt="Успостављање профила, други део"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'профилна-страница'} text={'Профилна Страница'} />
+
+Ова страница представља све објаве одређеног уметника са десне стране, док се на левој стране налазе подаци о уметнику.
+
+<br />
+
+<ArticleImage
+   image={artfolio_7}
+   imageMobile={artfolio_mobile_7}
+   alt="Профилна страница"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Корисници могу да измене податке на своме профилу, промене профилну слику, или да избришу свој профил.
+
+<br />
+
+<ArticleImage
+   image={artfolio_8}
+   imageMobile={artfolio_mobile_8}
+   alt="Измена профила"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+При постављању нове објаве, корисници могу да изаберу до 10 слика, напишу опис објаве, изаберу категорију и додају тагове.
+
+<br />
+
+<ArticleImage
+   image={artfolio_9}
+   imageMobile={artfolio_mobile_9}
+   alt="Нова објава"
+   isResponsive={true}
+/>
+
+<br />
+<br />

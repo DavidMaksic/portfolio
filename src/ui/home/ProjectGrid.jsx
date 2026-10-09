@@ -1,17 +1,9 @@
 import {
-   FaLinkedin,
-   FaCss3Alt,
-   FaGithub,
-   FaHtml5,
-   FaReact,
-   FaSass,
-   FaJs,
-} from 'react-icons/fa6';
-import {
    RiTailwindCssFill,
    RiSupabaseFill,
    RiNextjsFill,
 } from 'react-icons/ri';
+import { FaCss3Alt, FaHtml5, FaReact, FaSass, FaJs } from 'react-icons/fa6';
 import { TbBrandFramerMotion } from 'react-icons/tb';
 import { SiRedux, SiZod } from 'react-icons/si';
 

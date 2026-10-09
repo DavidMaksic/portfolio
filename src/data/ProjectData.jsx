@@ -10,7 +10,6 @@ import {
    FaJs,
 } from 'react-icons/fa6';
 import {
-   SiReacthookform,
    SiReactrouter,
    SiReactquery,
    SiBetterauth,
@@ -34,18 +33,17 @@ import { BsJavascript, BsTypescript } from 'react-icons/bs';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { CgShortcut } from 'react-icons/cg';
-import { DiRedis } from 'react-icons/di';
 
-import UnderConstructionImg from '/under-construction.avif';
 import PlaywrightIcon from '../ui/Icons/PlaywrightIcon';
 import BlockNoteIcon from '../ui/Icons/BlockNoteIcon';
+import ResendIcon from '../ui/Icons/ResendIcon';
+import SwiperIcon from '../ui/Icons/SwiperIcon';
+
 import CasamentoImg from '/casamento.png';
 import EthosCmsImg from '/ethos-cms.png';
 import UseGamesImg from '/use-games.png';
-import ResendIcon from '../ui/Icons/ResendIcon';
-import SwiperIcon from '../ui/Icons/SwiperIcon';
 import YakuzaImg from '/yakuza.png';
-import TrpcIcon from '../ui/Icons/TrpcIcon';
+import Artfolio from '/artfolio/artfolio.png';
 import EthosImg from '/ethos.png';
 import timerImg from '/timer.png';
 import blogImg from '/blog.png';
@@ -177,7 +175,7 @@ export const featuredProjects = [
    {
       titleEn: 'Artfolio',
       titleSr: 'Артфолио',
-      image: UnderConstructionImg,
+      image: Artfolio,
       descriptionEn: 'A full-stack social media platform for artists.',
       descriptionSr: 'Друштвена мрежа за уметнике.',
       techStack: [
@@ -224,7 +222,9 @@ export const featuredProjects = [
       ],
       projectURL: 'artfolio',
       codeLink: 'https://github.com/DavidMaksic/artfolio',
-      readBtn: buttonVariant.yellow,
+      demoLink: 'https://artfolio-project.vercel.app/',
+      visitBtn: buttonVariant.yellow,
+      readBtn: buttonVariant.lime,
    },
 
    {

@@ -24,7 +24,7 @@
          hover:shadow-hue hover:shadow-yellow-700/25 dark:hover:shadow-yellow-300/15;
 }
 .btn-lime {
-   @apply bg-lime-700/8 dark:bg-lime-200/15 hover:bg-lime-700/40 dark:hover:bg-lime-300/40
+   @apply bg-lime-700/10 dark:bg-lime-200/15 hover:bg-lime-700/40 dark:hover:bg-lime-300/40
          text-lime-800/55 dark:text-lime-200/65 hover:text-lime-50
          hover:shadow-hue hover:shadow-lime-700/25 dark:hover:shadow-lime-300/15;
 }
@@ -33,6 +33,11 @@
          text-green-800/55 dark:text-green-200/65 hover:text-green-50
          hover:shadow-hue hover:shadow-green-700/25 dark:hover:shadow-green-300/15;
 }
+/* .btn-emerald {
+   @apply bg-emerald-700/8 dark:bg-emerald-200/15 hover:bg-emerald-700/40 dark:hover:bg-emerald-300/40
+         text-emerald-800/55 dark:text-emerald-200/65 hover:text-emerald-50
+         hover:shadow-hue hover:shadow-emerald-700/25 dark:hover:shadow-emerald-300/15;
+} */
 .btn-teal {
    @apply bg-teal-700/8 dark:bg-teal-200/15 hover:bg-teal-700/40 dark:hover:bg-teal-300/40
          text-teal-800/55 dark:text-teal-200/65 hover:text-teal-50
@@ -68,6 +73,11 @@
          text-fuchsia-800/55 dark:text-fuchsia-200/65 hover:text-fuchsia-50
          hover:shadow-hue hover:shadow-fuchsia-700/25 dark:hover:shadow-fuchsia-300/15;
 }
+/* .btn-fuchsia {
+   @apply bg-fuchsia-700/8 dark:bg-fuchsia-200/15 hover:bg-fuchsia-700/40 dark:hover:bg-fuchsia-300/40
+         text-fuchsia-800/55 dark:text-fuchsia-200/65 hover:text-fuchsia-50
+         hover:shadow-hue hover:shadow-fuchsia-700/25 dark:hover:shadow-fuchsia-300/15;
+} */
 .btn-pink {
    @apply bg-pink-700/8 dark:bg-pink-200/15 hover:bg-pink-700/40 dark:hover:bg-pink-300/40
          text-pink-800/55 dark:text-pink-200/65 hover:text-pink-50
