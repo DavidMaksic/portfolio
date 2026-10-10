@@ -22,9 +22,9 @@
    "About": {
       "h1": "О мени",
       "name": "Давид Максић",
-      "p1": "Ја сам самоуки Front-End developer, који је знање стекао самостално − кроз вишегодишње учење и хиљаде сати практичног рада.",
-      "p2": "Кроз више пројеката, решавао сам реалне проблеме: server-side rendering, аутентикацију, state менаџмент (Redux и Context API), интеграцију екстерних система. Свакодневно радим са <strong>React</strong>-ом, React Query/Router-ом, <strong>Next.js-ом</strong>, солидно владам <strong>JavaScript</strong>-ом, a за стилизовање користим Tailwind и CSS. Тренутно учим Node.js/Express, Vue.js и PostgreSQL.",
-      "p3": "Последње три године конзистентно учим програмирање користећи званичне документације, курсеве и coding изазове."
+      "p1": "Ја сам Full-Stack developer, са преко 3 године искуства правећи веб апликације.",
+      "p2": "Кроз више пројеката, решавао сам реалне проблеме: server-side rendering, аутентикацију, state менаџмент (Redux и Context API), интеграцију екстерних система. Свакодневно користим <strong>React/Vue.js</strong> и <strong>TypeScript</strong>, a стилизујем са Tailwind-ом. На бекенду користим <strong>Node.js/Express</strong>, уз PostgreSQL и Drizzle ORM.",
+      "p3": "Више од три године конзистентно учим програмирање користећи званичне документације, курсеве и coding изазове."
    },
 
    "Skills": {
