@@ -39,15 +39,15 @@ import BlockNoteIcon from '../ui/Icons/BlockNoteIcon';
 import ResendIcon from '../ui/Icons/ResendIcon';
 import SwiperIcon from '../ui/Icons/SwiperIcon';
 
-import CasamentoImg from '/casamento.png';
-import EthosCmsImg from '/ethos-cms.png';
-import UseGamesImg from '/use-games.png';
-import YakuzaImg from '/yakuza.png';
-import Artfolio from '/artfolio/artfolio.png';
-import EthosImg from '/ethos.png';
-import timerImg from '/timer.png';
-import blogImg from '/blog.png';
-import vsCode from '/vscode.png';
+import ethos_blog_img from '/ethos-blog/ethos-preview.png';
+import ethos_cms_img from '/ethos-cms/ethos-cms-preview.png';
+import casamento_img from '/casamento/casamento.png';
+import use_games_img from '/use-games/use-games.png';
+import artfolio_img from '/artfolio/artfolio-preview.png';
+import yakuza_img from '/yakuza/yakuza.png';
+import timer_img from '/timer/timer.png';
+import blog_img from '/blog/blog.png';
+import vs_code from '/vscode/vscode.png';
 import '../styles/buttonVariants.css';
 
 const buttonVariant = {
@@ -72,7 +72,7 @@ export const featuredProjects = [
    {
       titleEn: 'Ethos Blog',
       titleSr: 'Етос Блог',
-      image: EthosImg,
+      image: ethos_blog_img,
       descriptionEn:
          'A Next.js blog website featuring internationalization, user authentication and a comment system. Designed for a comfy reading experience.',
       descriptionSr:
@@ -129,7 +129,7 @@ export const featuredProjects = [
    {
       titleEn: 'Ethos CMS',
       titleSr: 'Етос CMS',
-      image: EthosCmsImg,
+      image: ethos_cms_img,
       descriptionEn:
          'A Content Management System (CMS) app for managing Ethos Blog website. Only verified authors have access to the app. Contains WYSIWYG text editor.',
       descriptionSr:
@@ -175,7 +175,7 @@ export const featuredProjects = [
    {
       titleEn: 'Artfolio',
       titleSr: 'Артфолио',
-      image: Artfolio,
+      image: artfolio_img,
       descriptionEn: 'A full-stack social media platform for artists.',
       descriptionSr: 'Друштвена мрежа за уметнике.',
       techStack: [
@@ -230,7 +230,7 @@ export const featuredProjects = [
    {
       titleEn: 'Training Timer',
       titleSr: 'Тренинг Тајмер',
-      image: timerImg,
+      image: timer_img,
       descriptionEn:
          'A simple timer with preset feature for creating multiple workouts.',
       descriptionSr:
@@ -269,7 +269,7 @@ export const otherProjects = [
    {
       titleEn: 'O Casamento',
       titleSr: 'O Casamento',
-      image: CasamentoImg,
+      image: casamento_img,
       descriptionEn:
          'A brochure website for a fictional wedding company, displaying what it offers.',
       descriptionSr:
@@ -302,7 +302,7 @@ export const otherProjects = [
    {
       titleEn: 'useGames App',
       titleSr: 'useGames Апликација',
-      image: UseGamesImg,
+      image: use_games_img,
       descriptionEn:
          'App which fetches game data using REST API. Users can browse, rate and save games.',
       descriptionSr:
@@ -328,7 +328,7 @@ export const otherProjects = [
    {
       titleEn: 'Blog App',
       titleSr: 'Блог Апликација',
-      image: blogImg,
+      image: blog_img,
       descriptionEn:
          'A simple blogging app with bookmarks. Built with vanilla JavaScript using MVC architecture.',
       descriptionSr:
@@ -357,7 +357,7 @@ export const otherProjects = [
    {
       titleEn: 'VS Code Redesign',
       titleSr: 'VS Code Редизајн',
-      image: vsCode,
+      image: vs_code,
       descriptionEn:
          'Most popular IDE redesigned for the current year, with no clutter and easier navigation, featuring all of my extensions.',
       descriptionSr:
@@ -387,7 +387,7 @@ export const otherProjects = [
    {
       titleEn: 'Yakuza Kiwami 2 Website Redesign',
       titleSr: 'Yakuza Kiwami 2 Вебсајт Редизајн',
-      image: YakuzaImg,
+      image: yakuza_img,
       descriptionEn:
          'A complete redesign of the promotional website for the award-winning video-game Yakuza Kiwami 2.',
       descriptionSr:
