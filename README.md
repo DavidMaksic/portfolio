@@ -6,7 +6,7 @@ You can check out [the live demo here](https://davidmaksic.vercel.app/).
 
 <br>
 
-![portfolio image](/public/portfolio.png)
+![portfolio image](/public/portfolio.webp)
 
 <br>
 
