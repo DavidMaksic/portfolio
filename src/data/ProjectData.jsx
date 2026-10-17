@@ -41,13 +41,13 @@ import SwiperIcon from '../ui/Icons/SwiperIcon';
 
 import ethos_blog_img from '/ethos-blog/ethos-preview.png';
 import ethos_cms_img from '/ethos-cms/ethos-cms-preview.png';
-import casamento_img from '/casamento/casamento.png';
-import use_games_img from '/use-games/use-games.png';
+import casamento_img from '/casamento/casamento-preview.png';
+import use_games_img from '/use-games/use-games-preview.png';
 import artfolio_img from '/artfolio/artfolio-preview.png';
-import yakuza_img from '/yakuza/yakuza.png';
+import yakuza_img from '/yakuza/yakuza-preview.png';
 import timer_img from '/timer/timer.png';
-import blog_img from '/blog/blog.png';
-import vs_code from '/vscode/vscode.png';
+import blog_img from '/blog/blog-preview.png';
+import vs_code from '/vscode/vscode-preview.png';
 import '../styles/buttonVariants.css';
 
 const buttonVariant = {
