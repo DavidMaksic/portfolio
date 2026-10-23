@@ -16,7 +16,7 @@ export default function WordRotate({ words, duration = 2000, className = '' }) {
    return (
       <motion.div
          layout
-         className="inline-block overflow-hidden relative align-bottom pb-1"
+         className="inline-block overflow-hidden relative align-bottom pb-1 md:px-26"
       >
          <AnimatePresence mode="wait">
             <motion.span

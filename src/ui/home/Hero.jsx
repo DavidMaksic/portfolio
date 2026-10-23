@@ -15,7 +15,7 @@ function Hero() {
          whileInView={{ transform: 'translateY(0px)', opacity: 1 }}
          viewport={{ once: true }}
          id="#hero"
-         className={`w-4/5 lg:w-11/12 md:w-full mx-auto text-center gap-24 lg:gap-10 xs:gap-12 px-px lg:px-15 xs:px-px! md:px-0! self-center ${
+         className={`w-4/5 lg:w-11/12 md:w-full! mx-auto text-center gap-24 lg:gap-10 xs:gap-12 px-px lg:px-15 md:px-0! self-center ${
             currentLanguage === 'en' ? '' : ' '
          }`}
       >
@@ -24,8 +24,8 @@ function Hero() {
                layout
                className={`${
                   currentLanguage === 'en'
-                     ? 'font-bold leading-18 sm:leading-15 xs:leading-13 2xs:leading-13 text-6xl sm:text-[2.9rem] xs:text-[2.49rem] 2xs:text-[2.55rem]'
-                     : 'font-extrabold leading-18 md:leading-16 sm:leading-13! xs:leading-12.5 2xs:leading-13 text-[4rem] md:text-[3.27rem] sm:text-[2.5rem]! xs:text-[2.3rem]!'
+                     ? 'font-bold leading-18 sm:leading-15 xs:leading-13 2xs:leading-13 text-6xl sm:text-[2.9rem] xs:text-[2.4rem] 2xs:text-[2.4rem]'
+                     : 'font-extrabold leading-18 sm:leading-15! xs:leading-13! 2xs:leading-13 text-[4rem] md:text-[3.5rem] sm:text-[2.9rem]! xs:text-[2.45rem]!'
                }  text-primary-800`}
             >
                {t('HeroPart1')}
